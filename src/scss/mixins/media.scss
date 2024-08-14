@@ -1,0 +1,94 @@
+@mixin _HDesktop {
+   @media (min-width: 1600px) {
+      @content;
+   }
+}
+
+@mixin _LDesktop {
+   @media (min-width: 1400px) {
+      @content;
+   }
+}
+
+@mixin _Desktop {
+   @media (min-width: 1200px) {
+      @content;
+   }
+}
+
+@mixin _XSDesktop {
+   @media (min-width: 1024px) {
+      @content;
+   }
+}
+
+@mixin _Laptop {
+   @media (min-width: 992px) {
+      @content;
+   }
+}
+
+@mixin _Tablet {
+   @media (min-width: 768px) {
+      @content;
+   }
+}
+
+@mixin _LMobile {
+   @media (min-width: 625px) {
+      @content;
+   }
+}
+
+@mixin _SLMobile {
+   @media (min-width: 576px) {
+      @content;
+   }
+}
+
+@mixin _Mobile {
+   @media (min-width: 375px) {
+      @content;
+   }
+}
+
+@mixin _SMobile {
+   @media (min-width: 320px) {
+      @content;
+   }
+}
+
+.media-init {
+   // min-width: 576px
+   @include _SLMobile {
+      color: inherit;
+   }
+   // min-width: 768px
+   @include _Tablet {
+      color: inherit;
+   }
+
+   // min-width: 992px
+   @include _Laptop {
+      color: inherit;
+   }
+   //min-width: 1024px
+   @include _XSDesktop {
+      color: inherit;
+   }
+
+   // min-width: 1200px
+   @include _Desktop {
+      color: inherit;
+   }
+
+   // min-width: 1400px
+   @include _LDesktop {
+      color: inherit;
+   }
+
+   // min-width: 1600px
+   @include _HDesktop {
+      color: inherit;
+   }
+}

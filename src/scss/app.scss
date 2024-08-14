@@ -1,0 +1,92 @@
+@import "./mixins/mixins";
+@import "./libs/libs";
+@import "./fonts/fonts";
+@import "./base/base";
+
+html {
+   scroll-behavior: smooth;
+   font-size: $fontSize;
+}
+
+body {
+   &.scroll-hidden {
+      overflow: hidden;
+   }
+}
+
+body {
+   min-width: 320px;
+}
+
+.container {
+   max-width: $containerMaxWidth;
+   width: 100%;
+   padding: 0 15px;
+   margin: 0 auto;
+
+   // min-width: 768px
+   @include _Tablet {
+      padding: 0 39px;
+   }
+
+   // min-width: 992px
+   @include _Laptop {
+      padding: 0 16px;
+   }
+
+   // min-width: 1200px
+   @include _Desktop {
+      padding: 0 30px;
+   }
+
+   // min-width: 1400px
+   @include _LDesktop {
+      padding: 0 40px;
+   }
+
+   // min-width: 1600px
+   @include _HDesktop {
+      padding: 0 40px;
+   }
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+
+   * {
+      box-sizing: border-box;
+   }
+}
+
+body {
+   font-family: $fontFamily;
+   font-weight: $fontWeight;
+   color: cl("grey");
+}
+
+img {
+   width: 100%;
+   height: auto;
+
+   max-width: 100%;
+}
+
+.lz-hidden {
+   opacity: 0;
+   overflow: hidden;
+   visibility: hidden;
+   pointer-events: none;
+}
+
+.main {
+   flex: 1 0 auto;
+}
+
+.footer {
+   flex: 0 0 auto;
+}
+
+@import "./components/components";
+@import "./sections/sections";

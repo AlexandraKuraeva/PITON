@@ -1,0 +1,56 @@
+.fav {
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__left {
+   }
+
+   &__content {
+   }
+
+   &__list {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+   }
+
+   &__item {
+      list-style: none;
+      border-bottom: 1px solid #d4e1b4;
+   }
+
+   &__right {
+      display: none;
+      @include _Tablet {
+         display: block;
+      }
+   }
+
+   &__empty {
+   }
+
+   &__empty-text {
+      font-size: rem(18);
+      font-weight: 500;
+      margin-bottom: 15px;
+      @include _Tablet {
+         font-size: rem(20);
+      }
+
+      @include _Desktop {
+         font-size: rem(24);
+         margin-bottom: 30px;
+      }
+   }
+
+   &__empty-link {
+      display: inline-block;
+      text-decoration: none;
+      min-width: 220px;
+      padding: 18px 0;
+      margin-bottom: 20px;
+   }
+}

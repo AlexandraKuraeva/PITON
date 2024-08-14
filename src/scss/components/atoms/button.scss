@@ -1,0 +1,14 @@
+.button {
+   text-transform: uppercase;
+   color: cl("white");
+   background-color: cl("red");
+   padding: 14px 20px;
+   text-align: center;
+   display: inline-block;
+   font-size: rem(14);
+   cursor: pointer;
+
+   @include _Laptop {
+      font-size: rem(16);
+   }
+}

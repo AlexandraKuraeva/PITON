@@ -1,0 +1,19 @@
+// min-width: 768px
+@include _Tablet {
+}
+
+// min-width: 992px
+@include _Laptop {
+}
+
+// min-width: 1200px
+@include _Desktop {
+}
+
+// min-width: 1400px
+@include _LDesktop {
+}
+
+// min-width: 1600px
+@include _HDesktop {
+}

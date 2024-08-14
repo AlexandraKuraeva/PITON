@@ -1,0 +1,109 @@
+.section-table {
+   &__wrapper {
+      padding-left: 15px;
+      max-width: $containerMaxWidth;
+      width: 100%;
+
+      margin: 0 auto;
+      // min-width: 768px
+      @include _Tablet {
+         padding: 0 24px;
+      }
+      // min-width: 992px
+      @include _Laptop {
+         padding: 0 16px;
+      }
+      // min-width: 1200px
+      @include _Desktop {
+         padding: 0 30px;
+      }
+      // min-width: 1400px
+      @include _LDesktop {
+         padding: 0 40px;
+      }
+   }
+
+   .table-block {
+      position: relative;
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+         height: 11px;
+         border-top: 4px solid #fefefe;
+         border-bottom: 4px solid #ffffff;
+      }
+
+      &::-webkit-scrollbar-thumb {
+         background-color: cl("green");
+         border-radius: 1000px;
+      }
+
+      &::-webkit-scrollbar-track {
+         background: #d4e1b4;
+         border-top: 4px solid #fefefe;
+         border-bottom: 4px solid #ffffff;
+      }
+
+      &__content {
+         position: relative;
+         width: 100%;
+
+         min-width: 700px;
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;
+         overflow: hidden;
+         margin-bottom: 20px;
+         border-spacing: 0;
+         border-collapse: collapse;
+
+         // min-width: 768px
+         @include _Tablet {
+            margin-bottom: 0;
+         }
+
+         & tr {
+            border-left: 1px solid #d4e1b4;
+            border-right: 1px solid #d4e1b4;
+         }
+
+         & th {
+            padding: 10px 20px;
+            background-color: cl("green");
+            color: #fff;
+            font-weight: 600;
+            font-size: rem(16);
+            line-height: 1.1;
+            text-align: left;
+            // min-width: 992px
+            @include _Laptop {
+               padding: 17px 40px;
+               font-size: rem(20);
+            }
+            // min-width: 1200px
+            @include _Desktop {
+            }
+            // min-width: 1400px
+            @include _LDesktop {
+            }
+
+            &:first-child {
+               max-width: 240px;
+               @include _Laptop {
+                  max-width: none;
+               }
+            }
+         }
+         & td {
+            padding: 10px 20px;
+            font-weight: 500;
+            font-size: rem(14);
+            border-bottom: 1px solid #d4e1b4;
+            border-right: 1px solid #d4e1b4;
+            // min-width: 992px
+            @include _Laptop {
+               padding: 20px 40px;
+               font-size: rem(18);
+            }
+         }
+      }
+   }
+}

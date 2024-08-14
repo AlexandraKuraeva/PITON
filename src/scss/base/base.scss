@@ -1,0 +1,24 @@
+@import "./variables/variables.scss";
+@import "./functions/functions.scss";
+
+:root {
+   // container styles
+   --lz-container-max-width: 1250px;
+   --lz-container-padding: 0 20px;
+
+   // font styles
+   --lz-font-family: "Circe", sans-serif;
+   --lz-default-font-weight: 400;
+   --lz-default-font-size: $defaultFontSize + "px";
+
+   // theme colors
+   // use function for set color cl(color_name)
+   // use function for set opacity to color cl(color_name, 0.5)
+   // example -> background-color: cl("violet", 0.5);
+   @if $colors {
+      @each $key, $value in $colors {
+         --lz-color-#{$key}: #{$value};
+         --lz-color-#{$key}--rgb: #{HexToRGB($value)};
+      }
+   }
+}

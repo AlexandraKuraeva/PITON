@@ -1,0 +1,264 @@
+.catalog-detail {
+   &__body {
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+
+      // min-width: 768px
+      @include _Tablet {
+         display: grid;
+         grid-template-columns: minmax(470px, auto) minmax(220px, 300px);
+         gap: 30px;
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         grid-template-columns: minmax(470px, auto) 270px;
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+         grid-template-columns: minmax(470px, auto) 300px;
+      }
+   }
+
+   &__left {
+   }
+
+   &__top {
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         display: grid;
+         grid-template-columns: 56% auto;
+         gap: 20px;
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+         gap: 32px;
+      }
+   }
+
+   &__slider {
+   }
+
+   &__favourite {
+      width: 50px;
+      height: 50px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid cl("green");
+      border-radius: 100%;
+
+      cursor: pointer;
+
+      position: absolute;
+      right: 10px;
+      top: 10px;
+
+      z-index: 1;
+
+      &.active {
+         path {
+            fill: cl("green");
+         }
+      }
+   }
+
+   &__available {
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: 150%;
+
+      color: #ff5656;
+
+      margin-top: 20px;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         margin-top: 0;
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__props {
+      margin-top: 20px;
+   }
+
+   &__price {
+      margin-top: 20px;
+
+      font-weight: 500;
+      font-size: rem(26);
+      line-height: 110%;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+         font-size: rem(32);
+      }
+   }
+
+   &__btns {
+      margin-top: 10px;
+      display: grid;
+      gap: 10px;
+
+      max-width: 290px;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         margin-top: 20px;
+         max-width: unset;
+         gap: 20px;
+         grid-template-columns: minmax(auto, 254px) minmax(auto, 254px);
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         grid-template-columns: 1fr;
+         max-width: 300px;
+         gap: 10px;
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__btn {
+   }
+
+   &__pays {
+      margin-top: 20px;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         margin-top: 30px;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__advantages {
+      margin-top: 30px;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         margin-top: 50px;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__tabs {
+      margin-top: 40px;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         margin-top: 60px;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__descr {
+   }
+
+   &__right {
+      display: none;
+
+      // min-width: 768px
+      @include _Tablet {
+         display: block;
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__cart {
+   }
+
+   &__delivery {
+      margin-top: 30px;
+   }
+}

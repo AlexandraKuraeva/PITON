@@ -1,0 +1,26 @@
+.search {
+   &__body {
+   }
+
+   &__form {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      border-left: 1px solid cl("light-grey");
+      padding: 15px;
+   }
+
+   &__input {
+      border: none;
+      width: 100%;
+      max-width: 140px;
+      font-size: rem(16);
+      &::placeholder {
+         color: cl("light-grey");
+         text-transform: uppercase;
+      }
+   }
+
+   &__btn {
+   }
+}

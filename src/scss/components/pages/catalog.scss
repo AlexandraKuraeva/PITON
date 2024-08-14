@@ -1,0 +1,134 @@
+.catalog {
+   &.catalog_page_section {
+      &.section {
+         padding-top: 0;
+      }
+   }
+
+   &.section {
+      padding-top: 0;
+
+      // min-width: 768px
+      @include _Tablet {
+         padding-top: 10px;
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         padding-top: 20px;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+   &__wrapper {
+   }
+
+   &__body {
+      // min-width: 768px
+      @include _Tablet {
+         display: grid;
+         grid-template-columns: 1fr 2fr;
+         gap: 30px;
+         align-items: flex-start;
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         gap: 20px;
+         grid-template-columns: 277px auto;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         grid-template-columns: 300px auto;
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+         gap: 30px;
+      }
+   }
+
+   &__filter {
+      display: none;
+
+      &.active {
+         display: block;
+
+         position: fixed;
+         z-index: 111;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         width: 100%;
+         height: 100vh;
+      }
+
+      // min-width: 768px
+      @include _Tablet {
+         display: block;
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__filter-trigger {
+      justify-content: flex-start;
+
+      // min-width: 768px
+      @include _Tablet {
+         display: none;
+      }
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+      column-gap: 20px;
+      margin-top: 20px;
+
+      // min-width: 768px
+      @include _Tablet {
+         row-gap: 30px;
+         margin-top: 0;
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         grid-template-columns: repeat(3, 1fr);
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__item {
+   }
+
+   &__pagination {
+      margin-top: 30px;
+   }
+}

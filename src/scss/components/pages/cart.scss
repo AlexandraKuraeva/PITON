@@ -1,0 +1,149 @@
+.cart {
+   p {
+      padding: 0;
+      margin: 0;
+   }
+
+   &__title-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+   &__common-count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      background: cl("green");
+      color: cl("white");
+      border-radius: 50%;
+      font-weight: 500;
+      font-size: 16px;
+
+      // min-width: 992px
+      @include _Laptop {
+         height: 40px;
+         width: 40px;
+         font-size: rem(18);
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         height: 50px;
+         width: 50px;
+      }
+   }
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__left {
+   }
+
+   &__content {
+   }
+
+   &__empty {
+   }
+
+   &__empty-text {
+      font-size: rem(18);
+      font-weight: 400;
+      margin-bottom: 15px;
+      @include _Tablet {
+         font-size: rem(20);
+      }
+
+      @include _Desktop {
+         font-size: rem(24);
+         margin-bottom: 30px;
+      }
+   }
+
+   &__empty-link {
+      display: inline-block;
+      padding: 18px 0;
+      text-decoration: none;
+      min-width: 255px;
+      margin-bottom: 20px;
+   }
+
+   &__list {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+   }
+
+   &__item {
+      border-bottom: 1px solid #d4e1b4;
+   }
+
+   &__right {
+      display: none;
+
+      @include _Tablet {
+         display: block;
+      }
+   }
+
+   &__total {
+      margin-top: 20px;
+
+      @include _Desktop {
+         margin-top: 50px;
+      }
+   }
+
+   &__total-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      @include _Laptop {
+         flex-direction: row;
+         justify-content: space-between;
+         gap: 30px;
+      }
+   }
+
+   &__total-title {
+      font-size: rem(20);
+      font-weight: 500;
+      margin-bottom: 10px;
+      @include _Laptop {
+         font-size: rem(24);
+      }
+
+      @include _Desktop {
+         font-size: rem(32);
+      }
+   }
+
+   &__total-price {
+      font-weight: 500;
+      font-size: rem(16);
+      @include _Laptop {
+         font-size: rem(22);
+      }
+      @include _Desktop {
+         font-size: rem(26);
+      }
+   }
+
+   &__total-btn {
+      @include _Tablet {
+         max-width: 290px;
+      }
+
+      @include _Laptop {
+         width: 305px;
+      }
+      a {
+         text-decoration: none;
+         display: block;
+      }
+   }
+}

@@ -1,0 +1,311 @@
+.catalog-detail-tabs {
+   &__body {
+   }
+
+   &__list {
+      border-bottom: 1px solid cl("green", 0.5);
+
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         gap: 30px;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__item {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: rem(18);
+      line-height: 110%;
+
+      padding-bottom: 14px;
+
+      &.active {
+         color: cl("green");
+
+         position: relative;
+
+         &::before {
+            position: absolute;
+            bottom: 0;
+            content: "";
+            width: 100%;
+            height: 3px;
+
+            background-color: cl("green");
+         }
+      }
+   }
+
+   &__content-list {
+      margin-top: 30px;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         margin-top: 50px;
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__content-item {
+      display: none;
+
+      &.active {
+         display: block;
+      }
+   }
+
+   &__content {
+      margin-top: 20px;
+   }
+
+   &__title {
+      font-weight: 500;
+      font-size: rem(24);
+      line-height: 110%;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         font-size: rem(32);
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__decription {
+   }
+
+   &__details {
+      margin-top: 20px;
+   }
+
+   &__reviews {
+   }
+}
+.tab-description {
+   line-height: 150%;
+}
+.tab-details {
+   &__body {
+   }
+
+   &__list {
+      display: grid;
+      gap: 10px;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         gap: 20px;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__item {
+      display: grid;
+      grid-template-columns: auto max-content;
+      grid-template-areas: "chapter page";
+      align-items: end;
+      gap: 0 0.25rem;
+   }
+
+   &__label {
+      font-size: rem(14);
+      line-height: 110%;
+
+      color: #b7bea5;
+
+      grid-area: chapter;
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+         position: absolute;
+         padding-left: 0.25ch;
+         content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+         text-align: right;
+      }
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         font-size: rem(18);
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__value {
+      font-size: rem(14);
+      line-height: 110%;
+
+      grid-area: page;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         font-size: rem(18);
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+}
+.tab-reviews {
+   &__body {
+   }
+
+   &__list {
+   }
+
+   &__item {
+   }
+
+   &__form {
+      margin-top: 30px;
+
+      max-width: 375px;
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         max-width: 410px;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+}
+.review-item {
+   &__body {
+      padding-bottom: 20px;
+      border-bottom: 1px solid cl("green", 0.5);
+   }
+
+   &__header {
+   }
+
+   &__name {
+      font-weight: 500;
+      font-size: rem(20);
+      line-height: 110%;
+   }
+
+   &__date {
+      font-size: rem(18);
+      line-height: 110%;
+
+      color: #b7bea5;
+
+      margin-top: 6px;
+   }
+
+   &__text {
+      margin-top: 20px;
+      font-size: rem(18);
+      line-height: 150%;
+   }
+
+   &__stars {
+      margin-top: 20px;
+
+      display: flex;
+      gap: 8px;
+      align-items: center;
+   }
+}
+.review-form {
+   &__body {
+   }
+
+   &__title {
+   }
+
+   &__fields {
+      margin-top: 20px;
+      display: grid;
+      gap: 10px;
+   }
+
+   &__field {
+   }
+
+   &__btn {
+      margin-top: 10px;
+   }
+}
+.btn {
+}

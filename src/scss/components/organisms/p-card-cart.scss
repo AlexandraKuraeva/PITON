@@ -1,0 +1,154 @@
+.p-card-cart {
+   &:first-child {
+      & .p-card-cart__wrapper {
+         padding-top: 0;
+      }
+   }
+   & p {
+      margin: 0;
+   }
+   &__wrapper {
+      padding: 20px 0;
+   }
+
+   &__body {
+      display: flex;
+      gap: 20px;
+
+      @include _Tablet {
+      }
+   }
+
+   &__image {
+      width: 83px;
+      height: 83px;
+      @include _Laptop {
+         width: 100px;
+         height: 100px;
+      }
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      flex: 1;
+      @include _Tablet {
+         flex-direction: row;
+         justify-content: space-between;
+      }
+   }
+
+   &__left {
+      display: flex;
+      gap: 8px;
+      justify-content: space-between;
+
+      & .btn--mobile {
+         @include _Tablet {
+            display: none;
+         }
+      }
+   }
+
+   &__product {
+      span {
+         display: block;
+         font-size: rem(14);
+         @include _Laptop {
+            font-size: rem(16);
+         }
+      }
+   }
+
+   &__name {
+      font-size: rem(16);
+      font-weight: 500;
+      color: cl("black");
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: block;
+
+      @include _Laptop {
+         font-size: rem(18);
+      }
+   }
+
+   &__del {
+      cursor: pointer;
+   }
+
+   &__right {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      @include _Tablet {
+         flex: 0 1 25%;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+      @include _Laptop {
+         flex-wrap: nowrap;
+         flex: 1;
+         gap: 30px;
+         justify-content: end;
+      }
+
+      @include _Desktop {
+         gap: 50px;
+      }
+      .btn--desctop {
+         display: none;
+
+         @include _Tablet {
+            display: block;
+            order: 2;
+         }
+         @include _Laptop {
+            order: 0;
+         }
+      }
+   }
+
+   &__price-block {
+      @include _Tablet {
+         order: 1;
+      }
+      @include _Laptop {
+         order: 0;
+      }
+   }
+
+   &__new-price {
+      font-weight: 500;
+      font-size: rem(16);
+      @include _Laptop {
+         font-size: rem(22);
+      }
+   }
+
+   &__old-price {
+      text-decoration: line-through;
+      font-size: rem(14);
+      color: #b7bea5;
+
+      @include _Laptop {
+         font-size: rem(18);
+      }
+   }
+
+   &__quantity {
+      @include _Tablet {
+         order: 3;
+      }
+      @include _Laptop {
+         order: 0;
+      }
+   }
+}

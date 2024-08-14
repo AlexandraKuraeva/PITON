@@ -1,0 +1,21 @@
+.hamburger-main {
+   &__body {
+      background-color: cl("grey");
+      height: 46px;
+      width: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+
+      & span {
+         display: block;
+         width: 16px;
+         height: 2px;
+         background-color: cl("white");
+      }
+   }
+}

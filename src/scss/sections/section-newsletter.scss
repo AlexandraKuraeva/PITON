@@ -1,0 +1,137 @@
+.section-newsletter {
+}
+
+.newsletter-form {
+   &__wrapper {
+      background-color: cl("gray-2");
+      padding: 20px 0;
+      // min-width: 1200px
+      @include _Desktop {
+         padding: 30px 0;
+      }
+      // min-width: 1400px
+      @include _LDesktop {
+         padding: 50px 0;
+      }
+   }
+   &__body {
+      display: flex;
+      flex-direction: column;
+
+      // min-width: 768px
+      @include _Tablet {
+         flex-direction: row;
+         justify-content: space-between;
+         gap: 20px;
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         align-items: center;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+         gap: 100px;
+      }
+   }
+
+   &__left {
+      @include _Tablet {
+         flex: 0 0 50%;
+      }
+      @include _Laptop {
+         flex: 0 0 33%;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         flex: 0 0 40%;
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__title {
+      font-size: rem(18);
+      line-height: 1.1;
+      margin-bottom: 10px;
+      font-weight: 500;
+      @include _Tablet {
+         margin-bottom: 0;
+      }
+      @include _Laptop {
+         font-size: rem(20);
+      }
+
+      @include _Desktop {
+         font-size: rem(24);
+      }
+
+      @include _LDesktop {
+         font-size: rem(30);
+      }
+   }
+
+   &__right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      @include _Laptop {
+         flex-direction: row;
+      }
+      // min-width: 1200px
+      @include _Desktop {
+         gap: 20px;
+      }
+   }
+
+   &__input {
+      height: 54px;
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         flex: 1;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__btn {
+      height: 54px;
+      padding: 20px 0;
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         width: 100%;
+         max-width: 218px;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+}

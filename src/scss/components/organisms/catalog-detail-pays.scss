@@ -1,0 +1,21 @@
+.catalog-detail-pays {
+   &__body {
+   }
+
+   &__label {
+      font-size: rem(16);
+      line-height: 150%;
+   }
+
+   &__list {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      margin-top: 10px;
+   }
+
+   &__item {
+   }
+}

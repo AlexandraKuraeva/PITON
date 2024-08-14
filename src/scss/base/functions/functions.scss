@@ -1,0 +1,39 @@
+@use "sass:math";
+
+@function prc($sizePx) {
+   $result: math.div($sizePx, $defaultFontSize) * 100%;
+   @return $result;
+}
+
+@function prc2($firstSizePx, $secondSizePx) {
+   $result: math.div($firstSizePx, $secondSizePx) * 100%;
+   @return $result;
+}
+
+@function rem($sizePx) {
+   $result: math.div($sizePx, $defaultFontSize) + rem;
+   @return $result;
+}
+
+@function em($sizePx) {
+   $result: math.div($sizePx, $defaultFontSize) + em;
+   @return $result;
+}
+
+@function em2($sizePx, $fontSize) {
+   $result: math.div($sizePx, $fontSize) + em;
+   @return $result;
+}
+
+// colors
+@function HexToRGB($hex) {
+   @return red($hex), green($hex), blue($hex);
+}
+
+@function cl($name, $opacity: false) {
+   @if $opacity {
+      @return rgba(var(--lz-color-#{unquote($name)}--rgb), $opacity);
+   } @else {
+      @return var(--lz-color-#{unquote($name)});
+   }
+}

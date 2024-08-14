@@ -1,0 +1,70 @@
+.section-banner-line {
+   &__pic-body {
+      position: relative;
+      height: 100%;
+      & img {
+         display: block;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+   &__wrapper {
+      height: 85px;
+      // min-width: 768px
+      @include _Tablet {
+         height: auto;
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         padding: 0 16px;
+         max-width: $containerMaxWidth;
+         width: 100%;
+         margin: 0 auto;
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         padding: 0 30px;
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+         padding: 0 40px;
+      }
+   }
+
+   &__title {
+      color: cl("white");
+      font-size: rem(20);
+      font-weight: 500;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+      max-width: fit-content;
+      margin: auto;
+      max-height: fit-content;
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+         font-size: rem(30);
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+         font-size: rem(40);
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+}

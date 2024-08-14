@@ -1,0 +1,68 @@
+.swiper-default {
+   &__pagination {
+      position: static;
+
+      .swiper-pagination-bullet {
+         width: 6px;
+         height: 6px;
+         background: cl("green");
+         opacity: 1;
+
+         transition: 0.2s all;
+
+         &.swiper-pagination-bullet-active {
+            width: 18px;
+            border-radius: 10px;
+         }
+      }
+
+      // min-width: 768px
+      @include _Tablet {
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+
+   &__navigation {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+
+   &__prev,
+   &__next {
+      width: 54px;
+      height: 54px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 100%;
+      border: 1px solid cl("black", 0.2);
+
+      cursor: pointer;
+
+      &.swiper-button-disabled {
+         svg {
+            path {
+               stroke: cl("black", 0.2);
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,14 @@
+.operating-mode {
+   &__body {
+      display: flex;
+      gap: 10px;
+   }
+
+   &__icon {
+   }
+
+   &__text {
+      font-size: rem(14);
+      line-height: 1.4;
+   }
+}

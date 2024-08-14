@@ -1,0 +1,33 @@
+/*
+**
+
+global variables
+
+**
+*/
+
+// native css variables needed for rewriting in child themes (build proccess)
+$colors: (
+   "red": #e52c2d,
+   "light-red": rgba(229, 44, 45, 0.5),
+   "grey": #333333,
+   "light-grey": rgba(51, 51, 51, 0.5),
+   "white": #fff,
+);
+
+// global font-size
+$defaultFontSize: 16;
+
+// scss variables
+// container styles
+$containerPadding: var(--lz-container-padding);
+$containerMaxWidth: var(--lz-container-max-width);
+
+// font styles
+$fontFamily: var(--lz-font-family);
+$fontWeight: var(--lz-default-font-weight);
+$fontSize: var(--lz-default-font-size);
+
+// zIndexes
+$headerIndex: 111;
+$popupIndex: 222;

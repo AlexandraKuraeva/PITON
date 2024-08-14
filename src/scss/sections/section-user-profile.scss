@@ -1,0 +1,92 @@
+.section-user-profile {
+}
+.user-profile {
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__tabs-mobile {
+      // min-width: 992px
+      @include _Laptop {
+         display: none;
+      }
+   }
+
+   &__tabs-desktop {
+      display: none;
+
+      // min-width: 992px
+      @include _Laptop {
+         display: block;
+      }
+
+      & .personal-account-tabs .personal-account-tabs__container {
+         padding: 0;
+      }
+   }
+}
+
+.user-profile-content {
+   @include _Laptop {
+      display: grid;
+      grid-template-columns: auto 270px;
+      gap: 60px;
+   }
+   // min-width: 1200px
+   @include _Desktop {
+      grid-template-columns: auto 315px;
+   }
+
+   &__row {
+      margin-top: 20px;
+      // min-width: 768px
+      @include _Tablet {
+         display: grid;
+         grid-template-columns: 2fr 1fr;
+         gap: 30px;
+      }
+      // min-width: 992px
+      @include _Laptop {
+         display: block;
+         margin-top: 30px;
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+   &__main-content {
+   }
+}
+
+.user-profile-content-left-panel {
+   &__inner-sidebar {
+      display: none;
+
+      @include _Tablet {
+         display: block;
+      }
+
+      @include _Laptop {
+         display: none;
+      }
+   }
+}
+
+.user-profile-content-right-panel {
+   display: none;
+   // min-width: 992px
+   @include _Laptop {
+      display: block;
+   }
+}
+
+.main-section-user-profile {
+   font-size: rem(14);
+   line-height: 1.5;
+   @include _Tablet {
+      font-size: rem(16);
+   }
+}

@@ -1,0 +1,59 @@
+.delivery-block {
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__title {
+      font-weight: 500;
+      margin-bottom: 16px;
+      font-size: rem(18);
+      // min-width: 992px
+      @include _Laptop {
+         font-size: rem(24);
+         margin-bottom: 20px;
+      }
+   }
+   &__descr {
+      margin-bottom: 30px;
+
+      & p {
+         line-height: 1.5;
+         font-size: rem(16);
+      }
+
+      // min-width: 992px
+      @include _Laptop {
+      }
+
+      // min-width: 1200px
+      @include _Desktop {
+      }
+
+      // min-width: 1400px
+      @include _LDesktop {
+      }
+   }
+   &__list {
+      margin: 0;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      & li {
+         margin-bottom: 8px;
+      }
+   }
+
+   &__dropdown-list {
+      margin-bottom: 20px;
+   }
+}
+
+.delivery-block .search__form {
+   & .search__input {
+      height: 50px;
+   }
+   & .search__btn {
+      width: 50px;
+   }
+}
