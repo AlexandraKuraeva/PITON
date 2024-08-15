@@ -1,0 +1,19 @@
+.footer-sub-menu {
+   &__item {
+      display: block;
+      font-size: rem(14);
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+
+      @include _Desktop {
+         &:not(:last-child) {
+            margin-bottom: 25px;
+         }
+      }
+   }
+
+   &__link {
+      color: cl("gray");
+   }
+}

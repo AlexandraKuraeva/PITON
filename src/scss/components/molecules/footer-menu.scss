@@ -1,0 +1,41 @@
+.footer-menu {
+   &__body {
+   }
+
+   &__list {
+      @include _Tablet {
+         display: flex;
+         gap: 30px;
+      }
+
+      @include _Desktop {
+         gap: 80px;
+      }
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+         @include _Tablet {
+            margin-bottom: 0;
+         }
+      }
+   }
+
+   &__link {
+      font-size: rem(18);
+      font-weight: 700;
+      text-transform: uppercase;
+      color: cl("gray");
+      line-height: 1.8;
+      margin-bottom: 10px;
+      display: block;
+
+      @include _Desktop {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__sub-menu {
+   }
+}

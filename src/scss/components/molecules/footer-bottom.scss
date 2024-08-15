@@ -1,0 +1,33 @@
+.footer {
+   &__bottom {
+   }
+}
+.footer-bottom {
+   &__body {
+      padding: 20px 0;
+
+      @include _Desktop {
+         padding: 30px 0;
+      }
+   }
+
+   &__list {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+
+      @include _Tablet {
+         flex-direction: row;
+         justify-content: space-between;
+      }
+   }
+
+   &__item {
+      color: cl("light-grey");
+      font-size: rem(14);
+      line-height: 1;
+      svg {
+         margin-left: 10px;
+      }
+   }
+}

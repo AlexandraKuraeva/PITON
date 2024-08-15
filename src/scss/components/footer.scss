@@ -1,16 +1,38 @@
 .footer {
+   &__wrapper-top {
+      box-shadow: 0px 3px 30px 0px #0000001a;
+      padding: 40px 0;
+
+      @include _Tablet {
+         padding: 60px 0;
+      }
+
+      @include _Desktop {
+         padding: 80px 0;
+      }
+   }
    &__body {
    }
 
    &__top {
+      @include _Tablet {
+         display: flex;
+
+         gap: 30px;
+      }
    }
 
    &__left {
       display: flex;
       flex-direction: column;
+
+      @include _Desktop {
+         flex: 0 0 270px;
+      }
    }
 
    &__logo {
+      margin-bottom: 30px;
       &.logo {
          display: flex;
          align-items: center;
@@ -30,11 +52,12 @@
       .logo__text {
          font-size: rem(14);
          font-weight: 400;
+         max-width: 210px;
       }
    }
 
    &__operating-mode {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
 
       @include _Desktop {
          margin-bottom: 30px;
@@ -87,6 +110,9 @@
    }
 
    &__middle {
+      @include _Desktop {
+         flex: 1 0 auto;
+      }
       & .footer__social-media {
       }
    }
@@ -98,6 +124,10 @@
    }
 
    &__right {
+      display: none;
+      @include _Desktop {
+         display: block;
+      }
    }
 
    &__button {
@@ -105,136 +135,8 @@
 
       @include _Desktop {
          display: block;
+         margin-top: 30px;
+         width: 270px;
       }
-   }
-}
-
-.footer-left {
-   &__operating-mode {
-   }
-}
-.operating-mode {
-   &__body {
-   }
-
-   &__icon {
-   }
-
-   &__text {
-   }
-}
-
-.footer-breadcrumbs {
-   &__body {
-   }
-
-   &__list {
-   }
-
-   &__item {
-   }
-
-   &__link {
-   }
-}
-.footer-menu {
-   &__body {
-   }
-
-   &__list {
-   }
-
-   &__item {
-   }
-
-   &__link {
-      font-size: rem(18);
-      font-weight: 700;
-      text-transform: uppercase;
-   }
-
-   &__sub-menu {
-   }
-}
-.footer-sub-menu {
-   &__item {
-   }
-
-   &__link {
-   }
-}
-
-.footer-contacts {
-   &__body {
-   }
-
-   &__list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-
-      @include _Tablet {
-         gap: 16px;
-      }
-
-      @include _Desktop {
-         gap: 20px;
-      }
-   }
-
-   &__item {
-      font-size: rem(14);
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      color: cl("gray");
-   }
-
-   &__icon {
-   }
-
-   &__label {
-      &.tel {
-         font-weight: 700;
-         text-decoration: underline;
-      }
-
-      &.email {
-         text-decoration: underline;
-      }
-   }
-
-   &__social-media {
-   }
-}
-.footer-contacts--left {
-   margin-bottom: 30px;
-}
-.footer-contacts--left .footer-contacts {
-   &__body {
-      display: flex;
-      gap: 30px;
-      align-items: end;
-   }
-
-   @include _Tablet {
-      display: none;
-   }
-}
-
-.footer-contacts--middle {
-   display: none;
-
-   @include _Tablet {
-      display: block;
-   }
-   @include _Desktop {
-      display: none;
-   }
-}
-.footer-contacts--right {
-   display: none;
-   @include _Desktop {
-      display: block;
    }
 }

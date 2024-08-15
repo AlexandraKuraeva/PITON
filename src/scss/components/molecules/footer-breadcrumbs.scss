@@ -1,0 +1,16 @@
+.footer-breadcrumbs {
+   &__body {
+   }
+
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__item {
+   }
+
+   &__link {
+      color: cl("light-grey");
+   }
+}
