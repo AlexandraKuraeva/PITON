@@ -1,0 +1,22 @@
+.input {
+   width: 100%;
+   font-size: rem(16);
+   background-color: cl("white");
+   padding: 12px 16px;
+   border-radius: 10px;
+   border: none;
+
+   &::placeholder {
+      font-size: inherit;
+      color: cl("light-grey");
+   }
+
+   &--grey {
+      background-color: #eeeeee;
+      padding: 14px 16px;
+
+      @include _Desktop {
+         padding: 16px 20px;
+      }
+   }
+}

@@ -8,12 +8,12 @@
 // import { glightBoxReviewInit } from "./components/g-lightbox/glightbox-review.js";
 import { HeaderMenu } from "./components/header-menu.js";
 import { HeaderSubMenu } from "./components/header-submenu.js";
-// import { header } from "./components/header.js";
+//import { header } from "./components/header.js";
 // import { initMap } from "./components/map.js";
 // import { ProductCard } from "./components/product-card.js";
 // import reviewReadFullInit from "./components/review-read-full.js";
 // import { ServicesMenu } from "./components/services-menu.js";
-// import { initSliders } from "./components/slider.js";
+import { initSliders } from "./components/slider.js";
 // import { initTabs } from "./components/tabs.js";
 // import { mapsInfo } from "./config/maps-info.js";
 
@@ -24,7 +24,7 @@ function app() {
    const headerMenu = new HeaderMenu();
    const headerSubMenu = new HeaderSubMenu();
    //    new ServicesMenu();
-   //    const allSliders = initSliders();
+   const allSliders = initSliders();
    //    console.log(allSliders);
    //    initAccordion();
    //    initTabs();
