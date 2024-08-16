@@ -129,6 +129,11 @@ body {
    }
 
    &__button {
+      font-size: rem(14);
+
+      @include _Desktop {
+         font-size: rem(16);
+      }
    }
 }
 
@@ -309,6 +314,7 @@ body {
       font-size: rem(14);
       white-space: nowrap;
       gap: 6px;
+      line-height: 1.5;
 
       @include _Desktop {
          font-size: rem(16);

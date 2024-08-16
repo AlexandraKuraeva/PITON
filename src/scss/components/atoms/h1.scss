@@ -1,0 +1,19 @@
+.h1 {
+   font-size: rem(32);
+   font-weight: 400;
+   line-height: 1.25;
+   text-transform: uppercase;
+
+   span {
+      font-weight: 350;
+      display: block;
+   }
+
+   @include _Tablet {
+      font-size: rem(40);
+   }
+
+   @include _Desktop {
+      font-size: rem(60);
+   }
+}

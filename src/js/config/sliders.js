@@ -1,15 +1,28 @@
 const sliders = [
    {
-      field: document.querySelectorAll(".swiper"),
+      field: document.querySelectorAll(".hero-slider-swiper"),
 
       options: {
-         spaceBetween: 30,
-
+         speed: 300,
          loop: true,
-
+         effect: "creative",
+         creativeEffect: {
+            prev: {
+               opacity: 0,
+            },
+            next: {
+               opacity: 0,
+            },
+         },
          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button__next",
+            prevEl: ".swiper-button__prev",
+         },
+
+         breakpoints: {
+            768: {
+               speed: 800,
+            },
          },
       },
    },

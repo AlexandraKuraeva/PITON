@@ -2,22 +2,24 @@
    text-transform: uppercase;
    color: cl("white");
    border-radius: 10px;
-   padding: 14px 20px;
+   padding: 12px 20px;
    text-align: center;
    display: inline-block;
-   font-size: rem(14);
+   font-size: rem(16);
    cursor: pointer;
    display: flex;
    align-items: center;
    justify-content: center;
    gap: 10px;
-
-   @include _Laptop {
-      font-size: rem(16);
-   }
+   transition: all 0.2s ease;
+   line-height: 1.5;
 
    &--red {
       background-color: cl("red");
+
+      &:hover {
+         background-color: cl("hover-red");
+      }
    }
    &--sharp {
       border-radius: 0;
@@ -25,10 +27,21 @@
 
    &--grey {
       background-color: cl("grey");
-      font-size: rem(16);
+
+      &:hover {
+         background-color: cl("hover-grey");
+      }
 
       @include _Desktop {
          font-size: rem(18);
       }
+   }
+   @include _Laptop {
+      font-size: rem(16);
+   }
+
+   @include _Desktop {
+      padding: 14px 20px;
+      font-size: rem(18);
    }
 }

@@ -3,7 +3,7 @@
       width: 150px;
       height: 40px;
 
-      @include _LDesktop {
+      @include _Desktop {
          width: 170px;
          height: 46px;
       }
