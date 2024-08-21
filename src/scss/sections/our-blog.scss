@@ -1,0 +1,65 @@
+.our-blog {
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__title {
+      margin-bottom: 20px;
+
+      @include _Desktop {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__desc {
+      margin-bottom: 30px;
+      font-weight: 350;
+
+      @include _Tablet {
+         margin-bottom: 40px;
+      }
+
+      @include _Desktop {
+         font-size: rem(18);
+         margin-bottom: 60px;
+      }
+   }
+
+   &__list {
+      display: grid;
+      gap: 10px;
+      @include _Tablet {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 30px;
+      }
+
+      @include _Desktop {
+         grid-template-columns: repeat(3, 1fr);
+      }
+   }
+
+   &__item {
+   }
+
+   &__bottom {
+      margin-top: 30px;
+
+      @include _Tablet {
+         margin-top: 40px;
+      }
+
+      @include _Desktop {
+         margin-top: 60px;
+      }
+   }
+
+   &__button {
+      margin: 0 0 0 auto;
+
+      @include _Desktop {
+         max-width: 370px;
+      }
+   }
+}

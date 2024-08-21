@@ -5,6 +5,9 @@
    padding: 12px 16px;
    border-radius: 10px;
    border: none;
+   @include _Desktop {
+      padding: 14px 20px;
+   }
 
    &::placeholder {
       font-size: inherit;

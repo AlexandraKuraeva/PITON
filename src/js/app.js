@@ -4,7 +4,7 @@
 // import { Dropdown } from "./components/dropdown.js";
 // import { Example } from "./components/example.js";
 // import { FooterMenuMasonry } from "./components/footer-menu-masonry.js";
-// import { glightBoxImgInit } from "./components/g-lightbox/glightbox-img.js";
+import { lightboxVideo } from "./components/g-lightbox/glightbox-video.js";
 // import { glightBoxReviewInit } from "./components/g-lightbox/glightbox-review.js";
 import { HeaderMenu } from "./components/header-menu.js";
 import { HeaderSubMenu } from "./components/header-submenu.js";
@@ -42,7 +42,7 @@ function app() {
    //       new Dropdown(dropdownElement);
    //    });
    //    reviewReadFullInit();
-   //    glightBoxImgInit();
+   lightboxVideo();
    //    glightBoxReviewInit();
    //    // Header
    //    // const header = new Header();

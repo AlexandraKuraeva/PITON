@@ -1,0 +1,244 @@
+.about-products {
+   &__wrapper {
+   }
+}
+
+.great-deals {
+   &__title {
+      margin-bottom: 20px;
+   }
+
+   &__desc {
+      font-weight: 350;
+      margin-bottom: 30px;
+
+      @include _Tablet {
+         margin-bottom: 40px;
+      }
+
+      @include _Desktop {
+         margin-bottom: 60px;
+      }
+   }
+
+   &__bottom-text {
+      p {
+         @include _Desktop {
+            font-size: rem(18);
+         }
+      }
+   }
+
+   &__bottom-text--right {
+      display: none;
+      @include _Desktop {
+         display: block;
+      }
+   }
+
+   &__bottom-text--bottom {
+      @include _Desktop {
+         display: none;
+      }
+   }
+
+   &__row {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 20px;
+
+      @include _Tablet {
+         flex-direction: row;
+         margin-bottom: 40px;
+      }
+
+      @include _Desktop {
+         margin-bottom: 48px;
+      }
+   }
+
+   &__num-list {
+      @include _Tablet {
+         flex: 0 0 calc(45% - 30px);
+      }
+
+      @include _Desktop {
+         flex: 0 0 calc(51% - 30px);
+      }
+   }
+
+   &__media {
+   }
+
+   &__btns {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      @include _Tablet {
+         flex-direction: row;
+         gap: 20px;
+      }
+   }
+}
+
+.num-list {
+   &__body {
+      @include _Desktop {
+         margin-bottom: 60px;
+      }
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include _Tablet {
+         gap: 30px;
+      }
+   }
+
+   &__item {
+      display: flex;
+      gap: 10px;
+
+      @include _Desktop {
+         gap: 20px;
+      }
+   }
+
+   &__num {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: rem(18);
+      background: rgba(229, 44, 45, 0.1);
+      border-radius: 50%;
+      color: cl("red");
+      flex: 0 0 auto;
+
+      @include _Desktop {
+         font-size: rem(20);
+         width: 40px;
+         height: 40px;
+         font-size: rem(20);
+      }
+   }
+
+   &__text {
+      p {
+         margin: 0;
+
+         @include _Desktop {
+            font-size: rem(18);
+         }
+      }
+   }
+
+   &__title {
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: rem(18);
+
+      @include _Desktop {
+         margin-bottom: 15px;
+         font-size: rem(20);
+      }
+   }
+}
+.media-video {
+   position: relative;
+   width: 100%;
+   &__substrate {
+      position: relative;
+      height: 220px;
+
+      @include _Tablet {
+         height: 340px;
+      }
+
+      @include _Desktop {
+         height: 500px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(22, 28, 45, 0.19);
+         border-radius: 14px;
+         z-index: 1;
+         box-shadow: 0px 21.21px 23.26px -13.68px rgba(0, 0, 0, 0.09);
+      }
+   }
+
+   &__img {
+      border-radius: 14px;
+      display: block;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   &__content {
+   }
+
+   &__link {
+      display: block;
+      position: relative;
+   }
+}
+.video-link {
+   width: 100%;
+   height: 100%;
+   &__btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 62px;
+      height: 62px;
+      background: rgb(255, 255, 255);
+      border-radius: 50%;
+      transition: outline 0.02s ease;
+
+      @include _Desktop {
+         width: 92px;
+         height: 92px;
+
+         svg {
+            width: 26px;
+            height: 30px;
+         }
+      }
+      span {
+         width: 100%;
+         height: 100%;
+         display: block;
+         position: relative;
+
+         svg {
+            position: absolute;
+            top: 50%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+         }
+      }
+
+      &:hover {
+         outline: 2px solid rgb(255, 255, 255);
+
+         background: inherit;
+      }
+   }
+}
+.js-video-link {
+}

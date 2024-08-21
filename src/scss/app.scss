@@ -16,6 +16,7 @@ body {
 
 body {
    min-width: 320px;
+   line-height: 1.25;
 }
 
 .container {
@@ -86,6 +87,10 @@ img {
 
 .footer {
    flex: 0 0 auto;
+}
+
+.background-grey {
+   background-color: #eee;
 }
 
 @import "./components/components";

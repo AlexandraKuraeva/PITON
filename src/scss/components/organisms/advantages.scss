@@ -1,0 +1,65 @@
+.advantages {
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+      column-gap: 30px;
+
+      @include _Tablet {
+         grid-template-columns: repeat(3, 1fr);
+         row-gap: 30px;
+         column-gap: 100px;
+      }
+
+      @include _Desktop {
+         grid-template-columns: repeat(5, 1fr);
+         column-gap: 70px;
+      }
+   }
+
+   &__item {
+   }
+}
+
+.advatnage-card {
+   &__body {
+   }
+
+   &__icon {
+      margin-bottom: 16px;
+      @include _Desktop {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__content {
+   }
+
+   &__title {
+      font-size: rem(18);
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 10px;
+
+      @include _Desktop {
+         font-size: rem(20);
+      }
+   }
+
+   &__descr {
+      line-height: 1.25;
+      color: cl("light-grey");
+
+      font-size: rem(16);
+      @include _Desktop {
+         font-size: rem(18);
+      }
+   }
+}

@@ -1,0 +1,94 @@
+.card-blog {
+   &__body {
+      border-radius: 20px;
+      background-color: #fff;
+   }
+
+   &__img {
+      height: 150px;
+
+      @include _Tablet {
+         height: 180px;
+      }
+
+      @include _Desktop {
+         height: 300px;
+      }
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         border-radius: 20px 20px 0 0;
+      }
+   }
+
+   &__inner {
+      padding: 20px 20px 10px;
+
+      @include _Desktop {
+         padding: 30px 30px 15px;
+      }
+   }
+   &__link {
+      color: cl("grey");
+      &:hover {
+         .card-blog__title {
+            color: cl("hover-red");
+         }
+
+         .card-blog__bottom {
+            svg {
+               transform: translateX(10px);
+            }
+         }
+      }
+   }
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+
+   &__tag {
+      color: cl("red");
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
+   }
+
+   &__date {
+      color: #b7b7b7;
+   }
+
+   &__title {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: rem(18);
+      margin-bottom: 20px;
+      line-height: 1.1;
+
+      @include _Desktop {
+         font-size: 20px;
+      }
+   }
+
+   &__text {
+      margin: 0;
+
+      @include _Desktop {
+         font-size: rem(18);
+         margin-bottom: 16px;
+      }
+   }
+
+   &__bottom {
+      text-align: right;
+      margin-top: 10px;
+
+      svg {
+         transition: all 0.3s ease;
+      }
+   }
+}

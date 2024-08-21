@@ -1,0 +1,13 @@
+.h2 {
+   font-size: rem(28);
+   font-weight: 400;
+   line-height: 1.25;
+
+   span {
+      font-weight: 350;
+   }
+   @include _Desktop {
+      font-size: rem(40);
+      line-height: 1.4;
+   }
+}

@@ -1,0 +1,19 @@
+.label {
+   font-size: rem(16);
+   position: relative;
+
+   @include _Desktop {
+      font-size: rem(18);
+   }
+
+   &.required {
+      &::after {
+         content: url(../../icons/required.svg);
+
+         width: 10px;
+         position: absolute;
+         top: -2px;
+         margin-left: 4px;
+      }
+   }
+}

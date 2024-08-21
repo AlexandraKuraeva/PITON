@@ -1,0 +1,29 @@
+.red-line {
+   background-color: cl("red");
+
+   &__body {
+      padding: 10px 0;
+
+      @include _Tablet {
+         padding: 20px 0;
+      }
+
+      @include _Desktop {
+         padding: 30px 0;
+      }
+   }
+
+   &__text {
+      color: cl("white");
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: rem(18);
+      text-align: center;
+
+      @include _Desktop {
+         font-size: rem(20);
+      }
+   }
+}
+.container {
+}
