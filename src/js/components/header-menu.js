@@ -1,8 +1,3 @@
-// длина строки общей у элементов меню
-//  необходимо для обпеределния ограничения вывод пунктов меню
-// если больше этой цифры, то выносим за кнопку "more"
-const maxDlina = 103;
-
 class HeaderMenu {
    constructor() {
       this.headerMenu = document.querySelector(".header-menu");
@@ -13,6 +8,7 @@ class HeaderMenu {
 
    inithandlers() {
       this.initTriggerClickHadler();
+      this.closeMenuOnOutsideClick();
    }
 
    initTriggerClickHadler() {
@@ -21,6 +17,17 @@ class HeaderMenu {
             el.classList.toggle("active");
             this.headerMenu.classList.toggle("active");
          });
+      });
+   }
+
+   closeMenuOnOutsideClick() {
+      document.querySelector("body").addEventListener("click", (event) => {
+         if (!event.target.closest(".main-nav__body") && !event.target.closest(".js-header-menu-trigger")) {
+            this.triggers.forEach((el) => {
+               el.classList.remove("active");
+               this.headerMenu.classList.remove("active");
+            });
+         }
       });
    }
 }

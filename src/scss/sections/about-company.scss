@@ -1,0 +1,136 @@
+.about-company {
+   &__wrapper {
+   }
+
+   &__title {
+      margin-bottom: 30px;
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         border-radius: 20px;
+      }
+
+      @include _Desktop {
+         flex-direction: row;
+         gap: 130px;
+      }
+   }
+
+   &__left {
+   }
+
+   &__right {
+   }
+}
+
+.ac-left-column {
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      @include _Tablet {
+         flex-direction: row;
+         gap: 30px;
+         align-items: center;
+      }
+
+      @include _Desktop {
+         flex-direction: column;
+         align-items: start;
+         gap: 60px;
+      }
+   }
+
+   &__img {
+      order: 1;
+      max-width: 55%;
+
+      @include _Tablet {
+         order: 0;
+         max-width: 100%;
+         flex: 0 0 56%;
+      }
+
+      @include _Desktop {
+         order: 1;
+         flex: 1 1 auto;
+      }
+   }
+
+   &__subtitle {
+      font-size: rem(18);
+      text-transform: uppercase;
+      span {
+         color: cl("red");
+      }
+
+      @include _Desktop {
+         font-size: rem(20);
+      }
+   }
+}
+.ac-right-column {
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      @include _Tablet {
+         flex-direction: row;
+         gap: 30px;
+         align-items: center;
+      }
+
+      @include _Desktop {
+         flex-direction: column;
+         align-items: start;
+         gap: 80px;
+      }
+   }
+
+   &__wrap-images {
+      position: relative;
+      width: 100%;
+
+      @include _Tablet {
+         order: 1;
+      }
+
+      @include _Desktop {
+         order: 0;
+      }
+   }
+
+   &__small-img {
+      position: absolute;
+      display: none;
+   }
+
+   &__decor-img {
+      position: absolute;
+      display: none;
+   }
+
+   &__img {
+      max-width: 180px;
+      @include _Tablet {
+         max-width: 530px;
+      }
+   }
+
+   &__content {
+      @include _Tablet {
+         flex: 0 0 calc(50% - 15px);
+      }
+   }
+
+   &__link {
+   }
+}

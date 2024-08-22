@@ -297,12 +297,35 @@ body {
             }
          }
       }
+
+      &.has-sub-menu.active {
+         background-color: #eeeeee;
+
+         transition: all 0.3s ease-in-out;
+         & svg {
+            transform: rotate(180deg);
+            & path {
+               fill: cl("grey");
+            }
+         }
+      }
    }
 
    .has-sub-menu.active-sub-menu .header-menu {
       &__link {
          color: cl("grey");
          transition: all 0.3s ease-in-out;
+      }
+   }
+
+   .has-sub-menu.active .header-menu {
+      &__link {
+         color: cl("grey");
+         transition: all 0.3s ease-in-out;
+      }
+
+      &__toggle span {
+         background-color: cl("grey");
       }
    }
 
