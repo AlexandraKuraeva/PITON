@@ -1,6 +1,6 @@
 const sliders = [
    {
-      field: document.querySelectorAll(".hero-slider-swiper"),
+      field: document.querySelectorAll(".hero-swiper"),
 
       options: {
          speed: 300,
@@ -23,6 +23,19 @@ const sliders = [
             768: {
                speed: 800,
             },
+         },
+      },
+   },
+   {
+      field: document.querySelectorAll(".catalog-hero-swiper"),
+
+      options: {
+         speed: 300,
+         loop: true,
+
+         navigation: {
+            nextEl: ".swiper-button__next",
+            prevEl: ".swiper-button__prev",
          },
       },
    },

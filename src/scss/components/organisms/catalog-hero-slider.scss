@@ -1,0 +1,63 @@
+.catalog-hero-slider {
+   &__wrapper {
+      position: relative;
+      padding-bottom: 40px;
+      box-shadow: 0px 3px 30px 0px #0000001a;
+   }
+
+   &__body {
+   }
+}
+
+.catalog-hero-slide {
+   &__wrapper {
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      @include _Tablet {
+         flex-direction: row;
+      }
+   }
+
+   &__picture {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      height: 255px;
+   }
+
+   &__content {
+      padding-top: 160px;
+
+      @include _Tablet {
+         flex: 0 0 50%;
+         padding-top: 0;
+      }
+   }
+
+   &__title {
+   }
+
+   &__desc {
+   }
+
+   &__buttons {
+   }
+}
+
+.catalog-hero {
+   &__title {
+   }
+
+   &__subtitle {
+   }
+
+   &__buttons {
+   }
+}
+.button {
+}
+.button--red {
+}

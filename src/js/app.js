@@ -8,7 +8,7 @@ import { lightboxVideo } from "./components/g-lightbox/glightbox-video.js";
 // import { glightBoxReviewInit } from "./components/g-lightbox/glightbox-review.js";
 import { HeaderMenu } from "./components/header-menu.js";
 import { HeaderSubMenu } from "./components/header-submenu.js";
-//import { header } from "./components/header.js";
+import { header } from "./components/header.js";
 // import { initMap } from "./components/map.js";
 // import { ProductCard } from "./components/product-card.js";
 // import reviewReadFullInit from "./components/review-read-full.js";
