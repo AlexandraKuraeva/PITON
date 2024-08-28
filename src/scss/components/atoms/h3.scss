@@ -1,0 +1,8 @@
+.h3 {
+   font-size: rem(28);
+   font-weight: 350;
+
+   @include _Desktop {
+      font-size: rem(30);
+   }
+}

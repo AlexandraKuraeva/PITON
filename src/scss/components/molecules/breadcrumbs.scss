@@ -1,0 +1,30 @@
+.breadcrumbs {
+   &__body {
+      margin: 20px 0;
+   }
+
+   &__list {
+   }
+
+   &__item {
+      display: inline-block;
+      &:not(:last-child):after {
+         content: "/";
+         margin: 0 5px;
+         color: #333;
+         opacity: 0.5;
+      }
+      &:last-child {
+         & .breadcrumbs__link {
+            color: cl("red");
+            opacity: 0.5;
+         }
+      }
+   }
+
+   &__link {
+      display: inline;
+      color: #333;
+      opacity: 0.5;
+   }
+}

@@ -43,7 +43,7 @@ function initSlider(sliderField, slider, allSliders) {
       }
    } else {
       const resulOptions = prepareOption(sliderField, slider);
-      console.log(resulOptions);
+      //console.log(resulOptions);
 
       const swiper = new Swiper(sliderField, resulOptions);
       allSliders.push(swiper);
@@ -55,7 +55,7 @@ function initSliders() {
 
    sliders.forEach((slider) => {
       console.log(slider);
-      console.log(isNodeList(slider.field));
+      //console.log(isNodeList(slider.field));
 
       if (isNodeList(slider.field)) {
          slider.field.forEach((f) => {

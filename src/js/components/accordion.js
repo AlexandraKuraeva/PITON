@@ -5,16 +5,16 @@ function initAccordion() {
       const accordionItems = accordion.querySelectorAll(".accordion__f-a-q");
 
       accordionItems.forEach((item) => {
-         const question = item.querySelector(".accordion__question");
+         const question = item.querySelector(".accordion__label");
 
          question.addEventListener("click", () => {
-            const question = item.querySelector(".accordion__question");
+            const question = item.querySelector(".accordion__label");
             if (question.classList.contains("is-open")) {
                question.classList.remove("is-open");
                return;
             }
             accordionItems.forEach((item) => {
-               const question = item.querySelector(".accordion__question");
+               const question = item.querySelector(".accordion__label");
                question.classList.remove("is-open");
             });
 

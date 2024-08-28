@@ -1,4 +1,4 @@
-// import { initAccordion } from "./components/accordion.js";
+import { initAccordion } from "./components/accordion.js";
 // import { CatalogDetail } from './components/catalog-detail.js';
 // import { CatalogFilter } from "./components/catalog-filter.js";
 // import { Dropdown } from "./components/dropdown.js";
@@ -8,16 +8,17 @@ import { lightboxVideo } from "./components/g-lightbox/glightbox-video.js";
 // import { glightBoxReviewInit } from "./components/g-lightbox/glightbox-review.js";
 import { HeaderMenu } from "./components/header-menu.js";
 import { HeaderSubMenu } from "./components/header-submenu.js";
-import { header } from "./components/header.js";
 // import { initMap } from "./components/map.js";
 // import { ProductCard } from "./components/product-card.js";
 // import reviewReadFullInit from "./components/review-read-full.js";
 // import { ServicesMenu } from "./components/services-menu.js";
+import { header } from "./components/header.js";
 import { initSliders } from "./components/slider.js";
 // import { initTabs } from "./components/tabs.js";
 // import { mapsInfo } from "./config/maps-info.js";
 
 function app() {
+   console.log(header);
    //    const example = new Example();
    //    example.sayHi();
    //    const footerMenuMasonry = new FooterMenuMasonry();
@@ -26,7 +27,7 @@ function app() {
    //    new ServicesMenu();
    const allSliders = initSliders();
    //    console.log(allSliders);
-   //    initAccordion();
+   initAccordion();
    //    initTabs();
    //    const productCards = document.querySelectorAll(".product-card");
    //    productCards.forEach((card) => {
@@ -45,7 +46,7 @@ function app() {
    lightboxVideo();
    //    glightBoxReviewInit();
    //    // Header
-   //    // const header = new Header();
+   //    //const header = new Header();
    //    const filter = new CatalogFilter();
    //    const catalofDetail = new CatalogDetail();
 }

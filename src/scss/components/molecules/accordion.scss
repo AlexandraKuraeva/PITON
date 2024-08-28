@@ -1,0 +1,73 @@
+.accordion {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
+   @include _Desktop {
+      gap: 20px;
+   }
+   &__f-a-q {
+      background-color: #fff;
+
+      border-radius: 10px;
+   }
+
+   &__label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 12px 20px;
+      @include _Tablet {
+         padding: 20px;
+      }
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
+      span {
+         margin-right: 20px;
+         flex: 0 0 24px;
+      }
+      p {
+         flex: 1 1 auto;
+         margin: 0;
+         line-height: 1.25;
+      }
+      svg {
+         transition: all 0.4s;
+      }
+   }
+
+   &__content {
+      max-height: 0px;
+      overflow: hidden;
+      padding-left: 64px;
+      padding-right: 20px;
+      transition: all 0.2s ease;
+      opacity: 0;
+
+      @include _Tablet {
+         padding-right: 60px;
+      }
+      @include _Desktop {
+         font-size: rem(18);
+      }
+
+      p {
+         margin: 0;
+         font-weight: 350;
+      }
+   }
+}
+
+.accordion__label.is-open ~ .accordion__content {
+   max-height: 3000px;
+   padding-bottom: 20px;
+   transition: all 0.2s linear;
+   opacity: 1;
+}
+
+.accordion__label.is-open svg {
+   transform: rotate(180deg);
+}

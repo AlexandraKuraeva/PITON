@@ -1,16 +1,33 @@
 @@include('../blocks/header-with-margin.html')
+<div class="breadcrumbs">
+   <div class="container">
+      <div class="breadcrumbs__body">
+         <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+               <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+               <a class="breadcrumbs__link" href="#">Каталог</a>
+            </li>
 
+            <li class="breadcrumbs__item">
+               <a class="breadcrumbs__link" href="#">Каталог</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
 <section class="catalog-hero-slider section_first">
    <div class="catalog-hero-slider__wrapper">
       <div class="catalog-hero-slider__body">
          <div class="swiper catalog-hero-swiper">
             <div class="swiper-wrapper">
                <!-- Slides -->
+
                <div class="swiper-slide catalog-hero-slide">
                   <div class="catalog-hero-slide__wrapper">
                      <div class="container">
                         <div class="catalog-hero-slide__body">
-                           <!-- На планшете picture будет абсолютом -->
                            <div class="catalog-hero-slide__picture">
                               <picture>
                                  <source srcset="../../images/catalog/1400.png" media="(min-width: 1200px)" />
@@ -19,67 +36,75 @@
                               </picture>
                            </div>
 
-                           <div class="catalog-hero-slide__content hero__content">
-                              <!-- navigation buttons -->
-                              <div class="swiper-button__btns">
-                                 <div class="swiper-button__wrapper">
-                                    <div class="swiper-button__prev">
-                                       <svg
-                                          width="30"
-                                          height="16"
-                                          viewBox="0 0 30 16"
-                                          fill="none"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                       >
-                                          <path
-                                             d="M29 9C29.5523 9 30 8.55228 30 8C30 7.44772 29.5523 7 29 7V9ZM0.292893 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM29 7L1 7L1 9L29 9V7Z"
-                                             fill="#333333"
-                                             fill-opacity="0.5"
-                                          />
-                                       </svg>
-                                    </div>
-                                    <div class="swiper-button__next">
-                                       <svg
-                                          width="30"
-                                          height="16"
-                                          viewBox="0 0 30 16"
-                                          fill="none"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                       >
-                                          <path
-                                             d="M1 9C0.447715 9 4.82823e-08 8.55228 0 8C1.13224e-08 7.44772 0.447715 7 1 7V9ZM29.7071 7.29289C30.0976 7.68342 30.0976 8.31658 29.7071 8.70711L23.3431 15.0711C22.9526 15.4616 22.3195 15.4616 21.9289 15.0711C21.5384 14.6805 21.5384 14.0474 21.9289 13.6569L27.5858 8L21.9289 2.34315C21.5384 1.95262 21.5384 1.31946 21.9289 0.928932C22.3195 0.538408 22.9526 0.538408 23.3431 0.928932L29.7071 7.29289ZM1 7L29 7L29 9L1 9V7Z"
-                                             fill="#333333"
-                                             fill-opacity="0.5"
-                                          />
-                                       </svg>
-                                    </div>
-                                 </div>
-                              </div>
-                              <h1 class="h1 catalog-hero__title">HAN`S YUEMING <span>Laser Group</span></h1>
+                           <div class="catalog-hero-slide__content">
+                              <h2 class="h2 catalog-hero__title">HAN`S YUEMING <span>Laser Group</span></h2>
                               <div class="catalog-hero__subtitle">
                                  <span>Премиальные станки лазерной резки</span> от лидера мирового рынка
                               </div>
                               <ul class="catalog-hero__desc">
                                  @@for(let i = 0; i < 3; i++){
                                  <li>
-                                    <span
-                                       ><svg
-                                          width="18"
-                                          height="13"
-                                          viewBox="0 0 18 13"
-                                          fill="none"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                       >
-                                          <path
-                                             d="M6.57216 12.7059C6.2614 12.7059 5.95124 12.5869 5.71392 12.3484L0 6.60579L1.71648 4.88007L6.57216 9.76015L16.2835 0L18 1.72572L7.4304 12.3484C7.19308 12.5869 6.88292 12.7059 6.57216 12.7059Z"
-                                             fill="#E52C2D"
-                                          />
-                                       </svg> </span
-                                    >Для резки листов, труб, профилей и 5-осевой обработки
+                                    <svg
+                                       width="18"
+                                       height="13"
+                                       viewBox="0 0 18 13"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M6.57216 12.7059C6.2614 12.7059 5.95124 12.5869 5.71392 12.3484L0 6.60579L1.71648 4.88007L6.57216 9.76015L16.2835 0L18 1.72572L7.4304 12.3484C7.19308 12.5869 6.88292 12.7059 6.57216 12.7059Z"
+                                          fill="#E52C2D"
+                                       />
+                                    </svg>
+                                    <span>Для резки листов, труб, профилей и 5-осевой обработки</span>
                                  </li>
                                  }
                               </ul>
-                              <div class="catalog-hero__buttons">
+                              <div class="catalog-hero__button">
+                                 <button class="button button--red">консультация</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide catalog-hero-slide">
+                  <div class="catalog-hero-slide__wrapper">
+                     <div class="container">
+                        <div class="catalog-hero-slide__body">
+                           <div class="catalog-hero-slide__picture">
+                              <picture>
+                                 <source srcset="../../images/catalog/1400.png" media="(min-width: 1200px)" />
+                                 <source srcset="../../images/catalog/768.png" media="(min-width: 550px)" />
+                                 <img src="../../images/catalog/360.png" alt="" />
+                              </picture>
+                           </div>
+
+                           <div class="catalog-hero-slide__content">
+                              <h2 class="h2 catalog-hero__title">HAN`S YUEMING <span>Laser Group</span></h2>
+                              <div class="catalog-hero__subtitle">
+                                 <span>Премиальные станки лазерной резки</span> от лидера мирового рынка
+                              </div>
+                              <ul class="catalog-hero__desc">
+                                 @@for(let i = 0; i < 3; i++){
+                                 <li>
+                                    <svg
+                                       width="18"
+                                       height="13"
+                                       viewBox="0 0 18 13"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M6.57216 12.7059C6.2614 12.7059 5.95124 12.5869 5.71392 12.3484L0 6.60579L1.71648 4.88007L6.57216 9.76015L16.2835 0L18 1.72572L7.4304 12.3484C7.19308 12.5869 6.88292 12.7059 6.57216 12.7059Z"
+                                          fill="#E52C2D"
+                                       />
+                                    </svg>
+                                    <span>Для резки листов, труб, профилей и 5-осевой обработки</span>
+                                 </li>
+                                 }
+                              </ul>
+                              <div class="catalog-hero__button">
                                  <button class="button button--red">консультация</button>
                               </div>
                            </div>
@@ -88,8 +113,1016 @@
                   </div>
                </div>
             </div>
+
+            <div class="swiper-button__btns cat-hero-nav-btns--mobile">
+               <div class="container">
+                  <div class="swiper-button__wrapper">
+                     <div class="catalog-hero-button__prev swiper-button__prev">
+                        <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M29 9C29.5523 9 30 8.55228 30 8C30 7.44772 29.5523 7 29 7V9ZM0.292893 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM29 7L1 7L1 9L29 9V7Z"
+                              fill="#333333"
+                              fill-opacity="0.5"
+                           />
+                        </svg>
+                     </div>
+                     <div class="catalog-hero-button__next swiper-button__next">
+                        <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1 9C0.447715 9 4.82823e-08 8.55228 0 8C1.13224e-08 7.44772 0.447715 7 1 7V9ZM29.7071 7.29289C30.0976 7.68342 30.0976 8.31658 29.7071 8.70711L23.3431 15.0711C22.9526 15.4616 22.3195 15.4616 21.9289 15.0711C21.5384 14.6805 21.5384 14.0474 21.9289 13.6569L27.5858 8L21.9289 2.34315C21.5384 1.95262 21.5384 1.31946 21.9289 0.928932C22.3195 0.538408 22.9526 0.538408 23.3431 0.928932L29.7071 7.29289ZM1 7L29 7L29 9L1 9V7Z"
+                              fill="#333333"
+                              fill-opacity="0.5"
+                           />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-button__btns cat-hero-nav-btns--desktop">
+               <div class="container position-relative">
+                  <div class="swiper-button__wrapper">
+                     <div class="catalog-hero-button__prev swiper-button__prev">
+                        <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M29 9C29.5523 9 30 8.55228 30 8C30 7.44772 29.5523 7 29 7V9ZM0.292893 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM29 7L1 7L1 9L29 9V7Z"
+                              fill="#333333"
+                              fill-opacity="0.5"
+                           />
+                        </svg>
+                     </div>
+                     <div class="catalog-hero-button__next swiper-button__next">
+                        <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1 9C0.447715 9 4.82823e-08 8.55228 0 8C1.13224e-08 7.44772 0.447715 7 1 7V9ZM29.7071 7.29289C30.0976 7.68342 30.0976 8.31658 29.7071 8.70711L23.3431 15.0711C22.9526 15.4616 22.3195 15.4616 21.9289 15.0711C21.5384 14.6805 21.5384 14.0474 21.9289 13.6569L27.5858 8L21.9289 2.34315C21.5384 1.95262 21.5384 1.31946 21.9289 0.928932C22.3195 0.538408 22.9526 0.538408 23.3431 0.928932L29.7071 7.29289ZM1 7L29 7L29 9L1 9V7Z"
+                              fill="#333333"
+                              fill-opacity="0.5"
+                           />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    </div>
 </section>
+
+<section class="section section-categories">
+   <div class="section-categories__wrapper">
+      <div class="container">
+         <h2 class="h2 section-categories__title">Категории <span>оборудования</span></h2>
+         <div class="section-categories__body">
+            <ul class="category__list">
+               <li class="category__item">
+                  <a href="#" class="category__link">
+                     <div class="category__img">
+                        <img src="../../images/catalog/1.jpg" alt="" />
+                     </div>
+                     <p class="category__text">Комбинированные (листа и труб)</p>
+                  </a>
+               </li>
+               @@for(let i = 0; i < 6; i++){
+               <li class="category__item">
+                  <a href="#" class="category__link">
+                     <div class="category__img">
+                        <img src="../../images/catalog/1.jpg" alt="" />
+                     </div>
+                     <p class="category__text">Станки лазерной резки листового металла</p>
+                  </a>
+               </li>
+               }
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section s-catalog-categories background-grey">
+   <div class="s-catalog-categories__wrapper">
+      <div class="container">
+         <div class="s-catalog-categories__body">
+            <div class="s-catalog-categories__top">
+               <h3 class="h3 s-catalog-categories__title">Станки лазерной резки листового металла</h3>
+               <div class="s-catalog-categories__link s-catalog-categories__link--top">
+                  <a href="#" class="button button--red"
+                     >перейти в раздел
+                     <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM31.7071 8.70711C32.0976 8.31658 32.0976 7.68342 31.7071 7.29289L25.3431 0.928932C24.9526 0.538408 24.3195 0.538408 23.9289 0.928932C23.5384 1.31946 23.5384 1.95262 23.9289 2.34315L29.5858 8L23.9289 13.6569C23.5384 14.0474 23.5384 14.6805 23.9289 15.0711C24.3195 15.4616 24.9526 15.4616 25.3431 15.0711L31.7071 8.70711ZM1 9H31V7H1V9Z"
+                           fill="white"
+                        />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="s-catalog-categories__slider">
+               <div class="s-catalog-categories__slider-nav-inner">
+                  <div class="swiper catalog-categories-swiper">
+                     <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide catalog-categories-swiper__card">
+                           <div class="categories-slider-card">
+                              <div class="categories-slider-card__wrapper">
+                                 <div class="categories-slider-card__body">
+                                    <div class="categories-slider-card__main">
+                                       <div class="categories-slider-card__img">
+                                          <img src="../../images/catalog/1.jpg" alt="" />
+                                       </div>
+
+                                       <span class="categories-slider-card__label">Ликвидация</span>
+
+                                       <a href="#" class="categories-slider-card__title">
+                                          HEAT-P1530 Однопаллетный станок лазерной резки листового металла
+                                       </a>
+                                       <p class="categories-slider-card__desc">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                          incididunt ut labore
+                                       </p>
+                                       <ul class="categories-slider-card__specif-list">
+                                          <li class="categories-slider-card__specif-item">
+                                             <span class="categories-slider-card__specif-title">Рабочее поле, мм</span>
+                                             <span class="categories-slider-card__specif-value">3000 х 1500</span>
+                                          </li>
+                                          <li class="categories-slider-card__specif-item">
+                                             <span class="categories-slider-card__specif-title"
+                                                >Мощность лазера, Вт</span
+                                             >
+                                             <span class="categories-slider-card__specif-value">1000 - 6000</span>
+                                          </li>
+                                       </ul>
+
+                                       <div class="categories-slider-card__link">
+                                          <a href="#" class="detailed">
+                                             <span>Подробнее</span
+                                             ><svg
+                                                width="22"
+                                                height="8"
+                                                viewBox="0 0 22 8"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                             >
+                                                <path
+                                                   d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM21.3536 4.35356C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464468C17.9763 0.269205 17.6597 0.269205 17.4645 0.464468C17.2692 0.65973 17.2692 0.976312 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53554C17.6597 7.7308 17.9763 7.7308 18.1716 7.53554L21.3536 4.35356ZM1 4.5L21 4.5L21 3.5L1 3.5L1 4.5Z"
+                                                   fill="#B8B8B8"
+                                                />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="categories-slider-card__bottom">
+                                       <div class="categories-slider-card__price-column price-column">
+                                          <div class="price-column__current">4 295 530 руб./шт</div>
+                                          <!-- <div class="price-column__old">4 586 400 руб.</div>
+                                          <div class="price-column__discount-row">
+                                             <span class="discount">6%</span>
+                                             <span class="benefit">Экономия 290 870 ₽</span>
+                                          </div> -->
+                                       </div>
+                                       <a href="" class="categories-slider-card__get button button--grey"
+                                          >получить предложение</a
+                                       >
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide catalog-categories-swiper__card">
+                           <div class="categories-slider-card">
+                              <div class="categories-slider-card__wrapper">
+                                 <div class="categories-slider-card__body">
+                                    <div class="categories-slider-card__main">
+                                       <div class="categories-slider-card__img">
+                                          <img src="../../images/catalog/1.jpg" alt="" />
+                                       </div>
+
+                                       <span class="categories-slider-card__label">Ликвидация</span>
+
+                                       <a href="#" class="categories-slider-card__title">
+                                          HEAT-P1530 Однопаллетный станок лазерной резки листового металла
+                                       </a>
+                                       <p class="categories-slider-card__desc">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                          incididunt ut labore
+                                       </p>
+                                       <ul class="categories-slider-card__specif-list">
+                                          <li class="categories-slider-card__specif-item">
+                                             <span class="categories-slider-card__specif-title">Рабочее поле, мм</span>
+                                             <span class="categories-slider-card__specif-value">3000 х 1500</span>
+                                          </li>
+                                          <li class="categories-slider-card__specif-item">
+                                             <span class="categories-slider-card__specif-title"
+                                                >Мощность лазера, Вт</span
+                                             >
+                                             <span class="categories-slider-card__specif-value">1000 - 6000</span>
+                                          </li>
+                                       </ul>
+
+                                       <div class="categories-slider-card__link">
+                                          <a href="#" class="detailed">
+                                             <span>Подробнее</span
+                                             ><svg
+                                                width="22"
+                                                height="8"
+                                                viewBox="0 0 22 8"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                             >
+                                                <path
+                                                   d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM21.3536 4.35356C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464468C17.9763 0.269205 17.6597 0.269205 17.4645 0.464468C17.2692 0.65973 17.2692 0.976312 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53554C17.6597 7.7308 17.9763 7.7308 18.1716 7.53554L21.3536 4.35356ZM1 4.5L21 4.5L21 3.5L1 3.5L1 4.5Z"
+                                                   fill="#B8B8B8"
+                                                />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="categories-slider-card__bottom">
+                                       <div class="categories-slider-card__price-column price-column">
+                                          <div class="price-column__current">4 295 530 руб./шт</div>
+                                          <div class="price-column__old">4 586 400 руб.</div>
+                                          <div class="price-column__discount-row">
+                                             <span class="discount">6%</span>
+                                             <span class="benefit">Экономия 290 870 ₽</span>
+                                          </div>
+                                       </div>
+                                       <a href="" class="categories-slider-card__get button button--grey"
+                                          >получить предложение</a
+                                       >
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide catalog-categories-swiper__card">
+                           <div class="categories-slider-card">
+                              <div class="categories-slider-card__wrapper">
+                                 <div class="categories-slider-card__body">
+                                    <div class="categories-slider-card__main">
+                                       <div class="categories-slider-card__img">
+                                          <img src="../../images/catalog/1.jpg" alt="" />
+                                       </div>
+
+                                       <span class="categories-slider-card__label">Ликвидация</span>
+
+                                       <a href="#" class="categories-slider-card__title">
+                                          HEAT-P1530 Однопаллетный станок лазерной резки листового металла
+                                       </a>
+                                       <p class="categories-slider-card__desc">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                          incididunt ut labore
+                                       </p>
+                                       <ul class="categories-slider-card__specif-list">
+                                          <li class="categories-slider-card__specif-item">
+                                             <span class="categories-slider-card__specif-title">Рабочее поле, мм</span>
+                                             <span class="categories-slider-card__specif-value">3000 х 1500</span>
+                                          </li>
+                                          <li class="categories-slider-card__specif-item">
+                                             <span class="categories-slider-card__specif-title"
+                                                >Мощность лазера, Вт</span
+                                             >
+                                             <span class="categories-slider-card__specif-value">1000 - 6000</span>
+                                          </li>
+                                       </ul>
+
+                                       <div class="categories-slider-card__link">
+                                          <a href="#" class="detailed">
+                                             <span>Подробнее</span
+                                             ><svg
+                                                width="22"
+                                                height="8"
+                                                viewBox="0 0 22 8"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                             >
+                                                <path
+                                                   d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM21.3536 4.35356C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464468C17.9763 0.269205 17.6597 0.269205 17.4645 0.464468C17.2692 0.65973 17.2692 0.976312 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53554C17.6597 7.7308 17.9763 7.7308 18.1716 7.53554L21.3536 4.35356ZM1 4.5L21 4.5L21 3.5L1 3.5L1 4.5Z"
+                                                   fill="#B8B8B8"
+                                                />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="categories-slider-card__bottom">
+                                       <div class="categories-slider-card__price-column price-column">
+                                          <div class="price-column__current">4 295 530 руб./шт</div>
+                                          <div class="price-column__old">4 586 400 руб.</div>
+                                          <div class="price-column__discount-row">
+                                             <span class="discount">6%</span>
+                                             <span class="benefit">Экономия 290 870 ₽</span>
+                                          </div>
+                                       </div>
+                                       <a href="" class="categories-slider-card__get button button--grey"
+                                          >получить предложение</a
+                                       >
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide catalog-categories-swiper__card">
+                           <div class="categories-slider-card">
+                              <div class="categories-slider-card__wrapper">
+                                 <div class="categories-slider-card__body">
+                                    <div class="categories-slider-card__main">
+                                       <div class="categories-slider-card__img">
+                                          <img src="../../images/catalog/1.jpg" alt="" />
+                                       </div>
+
+                                       <span class="categories-slider-card__label">Ликвидация</span>
+
+                                       <a href="#" class="categories-slider-card__title">
+                                          HEAT-P1530 Однопаллетный станок лазерной резки листового металла
+                                       </a>
+                                       <p class="categories-slider-card__desc">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                          incididunt ut labore
+                                       </p>
+                                       <ul class="categories-slider-card__specif-list">
+                                          <li class="categories-slider-card__specif-item">
+                                             <span class="categories-slider-card__specif-title">Рабочее поле, мм</span>
+                                             <span class="categories-slider-card__specif-value">3000 х 1500</span>
+                                          </li>
+                                          <li class="categories-slider-card__specif-item">
+                                             <span class="categories-slider-card__specif-title"
+                                                >Мощность лазера, Вт</span
+                                             >
+                                             <span class="categories-slider-card__specif-value">1000 - 6000</span>
+                                          </li>
+                                       </ul>
+
+                                       <div class="categories-slider-card__link">
+                                          <a href="#" class="detailed">
+                                             <span>Подробнее</span
+                                             ><svg
+                                                width="22"
+                                                height="8"
+                                                viewBox="0 0 22 8"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                             >
+                                                <path
+                                                   d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM21.3536 4.35356C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464468C17.9763 0.269205 17.6597 0.269205 17.4645 0.464468C17.2692 0.65973 17.2692 0.976312 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53554C17.6597 7.7308 17.9763 7.7308 18.1716 7.53554L21.3536 4.35356ZM1 4.5L21 4.5L21 3.5L1 3.5L1 4.5Z"
+                                                   fill="#B8B8B8"
+                                                />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="categories-slider-card__bottom">
+                                       <div class="categories-slider-card__price-column price-column">
+                                          <div class="price-column__current">4 295 530 руб./шт</div>
+                                          <!-- <div class="price-column__old">4 586 400 руб.</div>
+                                          <div class="price-column__discount-row">
+                                             <span class="discount">6%</span>
+                                             <span class="benefit">Экономия 290 870 ₽</span>
+                                          </div> -->
+                                       </div>
+                                       <a href="" class="categories-slider-card__get button button--grey"
+                                          >получить предложение</a
+                                       >
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide catalog-categories-swiper__card">
+                           <div class="categories-slider-card">
+                              <div class="categories-slider-card__wrapper">
+                                 <div class="categories-slider-card__body">
+                                    <div class="categories-slider-card__main">
+                                       <div class="categories-slider-card__img">
+                                          <img src="../../images/catalog/1.jpg" alt="" />
+                                       </div>
+
+                                       <span class="categories-slider-card__label">Ликвидация</span>
+
+                                       <a href="#" class="categories-slider-card__title">
+                                          HEAT-P1530 Однопаллетный станок лазерной резки листового металла
+                                       </a>
+                                       <p class="categories-slider-card__desc">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                          incididunt ut labore
+                                       </p>
+                                       <ul class="categories-slider-card__specif-list">
+                                          <li class="categories-slider-card__specif-item">
+                                             <span class="categories-slider-card__specif-title">Рабочее поле, мм</span>
+                                             <span class="categories-slider-card__specif-value">3000 х 1500</span>
+                                          </li>
+                                          <li class="categories-slider-card__specif-item">
+                                             <span class="categories-slider-card__specif-title"
+                                                >Мощность лазера, Вт</span
+                                             >
+                                             <span class="categories-slider-card__specif-value">1000 - 6000</span>
+                                          </li>
+                                       </ul>
+
+                                       <div class="categories-slider-card__link">
+                                          <a href="#" class="detailed">
+                                             <span>Подробнее</span
+                                             ><svg
+                                                width="22"
+                                                height="8"
+                                                viewBox="0 0 22 8"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                             >
+                                                <path
+                                                   d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM21.3536 4.35356C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464468C17.9763 0.269205 17.6597 0.269205 17.4645 0.464468C17.2692 0.65973 17.2692 0.976312 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53554C17.6597 7.7308 17.9763 7.7308 18.1716 7.53554L21.3536 4.35356ZM1 4.5L21 4.5L21 3.5L1 3.5L1 4.5Z"
+                                                   fill="#B8B8B8"
+                                                />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="categories-slider-card__bottom">
+                                       <div class="categories-slider-card__price-column price-column">
+                                          <div class="price-column__current">4 295 530 руб./шт</div>
+                                          <!-- <div class="price-column__old">4 586 400 руб.</div>
+                                          <div class="price-column__discount-row">
+                                             <span class="discount">6%</span>
+                                             <span class="benefit">Экономия 290 870 ₽</span>
+                                          </div> -->
+                                       </div>
+                                       <a href="" class="categories-slider-card__get button button--grey"
+                                          >получить предложение</a
+                                       >
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="catalog-categories-swiper__btns catalog-categories-swiper-nav catalog-categories-swiper-nav--desktop"
+                  >
+                     <div class="catalog-categories-swiper-nav__wrapper">
+                        <div class="swiper-button__prev catalog-categories-swiper__prev">
+                           <svg
+                              width="30"
+                              height="16"
+                              viewBox="0 0 30 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 d="M29 9C29.5523 9 30 8.55228 30 8C30 7.44772 29.5523 7 29 7V9ZM0.292893 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM29 7L1 7L1 9L29 9V7Z"
+                                 fill="white"
+                              />
+                           </svg>
+                        </div>
+                        <div class="swiper-button__next catalog-categories-swiper__next">
+                           <svg
+                              width="30"
+                              height="16"
+                              viewBox="0 0 30 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 d="M1 9C0.447715 9 4.82823e-08 8.55228 0 8C1.13224e-08 7.44772 0.447715 7 1 7V9ZM29.7071 7.29289C30.0976 7.68342 30.0976 8.31658 29.7071 8.70711L23.3431 15.0711C22.9526 15.4616 22.3195 15.4616 21.9289 15.0711C21.5384 14.6805 21.5384 14.0474 21.9289 13.6569L27.5858 8L21.9289 2.34315C21.5384 1.95262 21.5384 1.31946 21.9289 0.928932C22.3195 0.538408 22.9526 0.538408 23.3431 0.928932L29.7071 7.29289ZM1 7L29 7L29 9L1 9V7Z"
+                                 fill="white"
+                              />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="s-catalog-categories__bottom">
+               <div class="s-catalog-categories__bottom-wrapper">
+                  <div
+                     class="catalog-categories-swiper__btns catalog-categories-swiper-nav catalog-categories-swiper-nav--mobile"
+                  >
+                     <div class="catalog-categories-swiper-nav__wrapper">
+                        <div class="swiper-button__prev catalog-categories-swiper__prev">
+                           <svg
+                              width="30"
+                              height="16"
+                              viewBox="0 0 30 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 d="M29 9C29.5523 9 30 8.55228 30 8C30 7.44772 29.5523 7 29 7V9ZM0.292893 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM29 7L1 7L1 9L29 9V7Z"
+                                 fill="white"
+                              />
+                           </svg>
+                        </div>
+                        <div class="swiper-pagination catalog-categories-swiper__pagination"></div>
+                        <div class="swiper-button__next catalog-categories-swiper__next">
+                           <svg
+                              width="30"
+                              height="16"
+                              viewBox="0 0 30 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 d="M1 9C0.447715 9 4.82823e-08 8.55228 0 8C1.13224e-08 7.44772 0.447715 7 1 7V9ZM29.7071 7.29289C30.0976 7.68342 30.0976 8.31658 29.7071 8.70711L23.3431 15.0711C22.9526 15.4616 22.3195 15.4616 21.9289 15.0711C21.5384 14.6805 21.5384 14.0474 21.9289 13.6569L27.5858 8L21.9289 2.34315C21.5384 1.95262 21.5384 1.31946 21.9289 0.928932C22.3195 0.538408 22.9526 0.538408 23.3431 0.928932L29.7071 7.29289ZM1 7L29 7L29 9L1 9V7Z"
+                                 fill="white"
+                              />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="s-catalog-categories__link s-catalog-categories__link--bottom">
+                     <a href="#" class="button button--red"
+                        >перейти в раздел
+                        <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM31.7071 8.70711C32.0976 8.31658 32.0976 7.68342 31.7071 7.29289L25.3431 0.928932C24.9526 0.538408 24.3195 0.538408 23.9289 0.928932C23.5384 1.31946 23.5384 1.95262 23.9289 2.34315L29.5858 8L23.9289 13.6569C23.5384 14.0474 23.5384 14.6805 23.9289 15.0711C24.3195 15.4616 24.9526 15.4616 25.3431 15.0711L31.7071 8.70711ZM1 9H31V7H1V9Z"
+                              fill="white"
+                           />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="red-line">
+   <div class="container">
+      <div class="red-line__body">
+         <div class="red-line__text">УВЕЛИЧЬТЕ СКОРОСТЬ ПРОИЗВОДСТВА В 3 РАЗА</div>
+      </div>
+   </div>
+</section>
+
+<section class="section about-products background-grey">
+   <div class="about-products__wrapper">
+      <div class="container">
+         <h2 class="great-deals__title h2">Лазерные станки <span> от производителя</span></h2>
+
+         <p class="great-deals__desc">
+            Компания занимается производством и поставкой лазерного оборудования для резки, сварки, гравировки металлов
+            и неметаллических материалов. Мы отбираем на рынке лучшие станки от ведущих производителей, тестируем их
+            качество и надежность. Обеспечиваем комплексное обслуживание, гарантию, расходные материалы и запчасти.
+            Оказываем информационную поддержку, консультации, обучение работе на станках
+         </p>
+         <div class="great-deals__row">
+            <div class="great-deals__num-list num-list">
+               <div class="num-list__body">
+                  <ul class="num-list__list">
+                     <li class="num-list__item">
+                        <div class="num-list__num">1</div>
+                        <div class="num-list__text">
+                           <div class="num-list__title">Широкий ассортимент</div>
+                           <p>
+                              Широкий ассортимент оборудования от ведущих производителей производителей производителей
+                           </p>
+                        </div>
+                     </li>
+                     <li class="num-list__item">
+                        <div class="num-list__num">2</div>
+                        <div class="num-list__text">
+                           <div class="num-list__title">Комплексное обслуживание</div>
+                           <p>Комплексное обслуживание, включая гарантию и запчасти</p>
+                        </div>
+                     </li>
+                     <li class="num-list__item">
+                        <div class="num-list__num">3</div>
+                        <div class="num-list__text">
+                           <div class="num-list__title">Поддержка, консультации и обучение</div>
+                           <p>Поддержка, консультации и обучение работе на станках</p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="great-deals__bottom-text great-deals__bottom-text--right">
+                  <p>
+                     Также в каталоге представлены гидравлические станки для гибки листового и трубного металла,
+                     вытяжное оборудование, лазерные комплектующие и запчасти.
+                  </p>
+                  <p>
+                     У нас вы найдете широкий ассортимент качественного оборудования от производителей с высоким уровнем
+                     сервиса и по привлекательным ценам
+                  </p>
+               </div>
+            </div>
+            <!-- Тут возможно будет выбор блок-картинка/блок-видео -->
+            <div class="great-deals__media media-video">
+               <div class="media-video__content">
+                  <a
+                     href="https://www.youtube.com/watch?v=KLuTLF3x9sA"
+                     class="glightbox-video video-link media-video__link js-video-link"
+                  >
+                     <div class="media-video__substrate">
+                        <img src="../../images/main/video.jpg" alt="" class="media-video__img" />
+                     </div>
+                     <div class="video-link__btn">
+                        <span
+                           ><svg
+                              width="18"
+                              height="21"
+                              viewBox="0 0 18 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 fill-rule="evenodd"
+                                 clip-rule="evenodd"
+                                 d="M17.5215 10.0682L0.830219 0.271833C0.690535 0.189764 0.519185 0.190707 0.380354 0.274308C0.241523 0.357909 0.156164 0.511553 0.15625 0.677684V20.2705C0.156164 20.4366 0.241523 20.5903 0.380354 20.6739C0.519185 20.7575 0.690535 20.7584 0.830219 20.6764L17.5215 10.8799C17.6629 10.7971 17.7502 10.6421 17.7502 10.4741C17.7502 10.3061 17.6629 10.1511 17.5215 10.0682Z"
+                                 fill="#E52C2D"
+                              /></svg
+                        ></span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="great-deals__bottom-text great-deals__bottom-text--bottom">
+            <p>
+               Также в каталоге представлены гидравлические станки для гибки листового и трубного металла, вытяжное
+               оборудование, лазерные комплектующие и запчасти.
+            </p>
+            <p>
+               У нас вы найдете широкий ассортимент качественного оборудования от производителей с высоким уровнем
+               сервиса и по привлекательным ценам
+            </p>
+         </div>
+         <div class="great-deals__btns">
+            <a href="##" class="button button--grey">перейти в каталог</a>
+            <button class="button button--red">консультация</button>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="advantages shadow section">
+   <div class="advantages__wrapper">
+      <div class="container">
+         <div class="advantages__body">
+            <div class="advantages__list">
+               <div class="advantages__item advatnage-card">
+                  <div class="advatnage-card__body">
+                     <div class="advatnage-card__icon">
+                        <svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M43.1351 30.4V34.2C43.1351 36.2961 41.4067 38 39.2838 38H6.16216C2.76373 38 0 35.2731 0 31.92C0 31.92 0 6.1028 0 6.08C0 2.72688 2.76373 0 6.16216 0H34.6622C35.9393 0 36.973 1.02144 36.973 2.28C36.973 3.53856 35.9393 4.56 34.6622 4.56H6.16216C5.31332 4.56 4.62162 5.24096 4.62162 6.08C4.62162 6.91904 5.31332 7.6 6.16216 7.6H39.2838C41.4067 7.6 43.1351 9.30392 43.1351 11.4V15.2H35.4324C31.1852 15.2 27.7297 18.6094 27.7297 22.8C27.7297 26.9906 31.1852 30.4 35.4324 30.4H43.1351Z"
+                              fill="#E52C2D"
+                           />
+                           <path
+                              d="M43.1368 17.4609V27.7312H35.4341C32.8814 27.7312 30.8125 25.4324 30.8125 22.5961C30.8125 19.7598 32.8814 17.4609 35.4341 17.4609H43.1368Z"
+                              fill="#E52C2D"
+                           />
+                        </svg>
+                     </div>
+                     <div class="advatnage-card__content">
+                        <div class="advatnage-card__title">Любая форма оплаты</div>
+                        <div class="advatnage-card__descr">Большой выбор способов оплаты</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="advantages__item advatnage-card">
+                  <div class="advatnage-card__body">
+                     <div class="advatnage-card__icon">
+                        <svg width="52" height="40" viewBox="0 0 52 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M33.3569 0H1.68269C0.748967 0 0.015625 0.733341 0.015625 1.66706V21.6718C0.015625 22.5886 0.748967 23.3389 1.68269 23.3389H33.3569C34.2738 23.3389 35.024 22.5886 35.024 21.6718V1.66706C35.024 0.733341 34.274 0 33.3569 0Z"
+                              fill="#E52C2D"
+                           />
+                           <path
+                              d="M0 31.6725C0 32.5892 0.750179 33.3396 1.66706 33.3396H3.46749C4.16766 29.8553 7.03501 27.1214 10.6025 26.6713H1.68374C1.08343 26.6713 0.533627 26.5711 0 26.3711V31.6725Z"
+                              fill="#E52C2D"
+                           />
+                           <path
+                              d="M48.2409 33.3419H50.3081C51.225 33.3419 51.9751 32.5916 51.9751 31.6748V17.0714C51.9751 14.4539 45.5903 8.33594 42.0896 8.33594H38.3554V21.6724C38.3554 24.4229 36.1047 26.6736 33.3542 26.6736H12.7656C16.3333 27.1237 19.2007 29.8576 19.9007 33.3419H31.8035C32.5705 29.5077 35.9547 26.5903 40.0223 26.5903C44.0733 26.5901 47.4741 29.5075 48.2409 33.3419ZM41.089 12.4367C49.6246 12.02 49.2747 20.8388 49.2747 20.8388H41.089V12.4367Z"
+                              fill="#E52C2D"
+                           />
+                           <path
+                              d="M40.0189 39.9988C42.7994 39.9988 45.0534 37.7447 45.0534 34.9642C45.0534 32.1837 42.7994 29.9297 40.0189 29.9297C37.2384 29.9297 34.9844 32.1837 34.9844 34.9642C34.9844 37.7447 37.2384 39.9988 40.0189 39.9988Z"
+                              fill="#E52C2D"
+                           />
+                           <path
+                              d="M11.6752 39.9988C14.4557 39.9988 16.7097 37.7447 16.7097 34.9642C16.7097 32.1837 14.4557 29.9297 11.6752 29.9297C8.89466 29.9297 6.64062 32.1837 6.64062 34.9642C6.64062 37.7447 8.89466 39.9988 11.6752 39.9988Z"
+                              fill="#E52C2D"
+                           />
+                        </svg>
+                     </div>
+                     <div class="advatnage-card__content">
+                        <div class="advatnage-card__title">Бесплатная доставка</div>
+                        <div class="advatnage-card__descr">Бесплатная доставка по России и странам ТС</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="advantages__item advatnage-card">
+                  <div class="advatnage-card__body">
+                     <div class="advatnage-card__icon">
+                        <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M17.0277 12.3789C12.8251 12.3789 9.40625 15.7978 9.40625 20C9.40625 24.2026 12.8251 27.6215 17.0277 27.6215C21.23 27.6215 24.6488 24.2026 24.6488 20C24.6488 15.7978 21.23 12.3789 17.0277 12.3789ZM21.5525 18.5648L16.0926 24.0247C15.8635 24.2539 15.5629 24.3686 15.2626 24.3686C14.9623 24.3686 14.662 24.2542 14.4328 24.0247L12.3463 21.9382C11.8879 21.4801 11.8879 20.737 12.3463 20.2787C12.8044 19.8203 13.5475 19.8203 14.0059 20.2787L15.2626 21.5354L19.893 16.9053C20.3511 16.4469 21.0942 16.4469 21.5525 16.9053C22.0109 17.3633 22.0109 18.1064 21.5525 18.5648Z"
+                              fill="#E52C2D"
+                           />
+                           <path
+                              d="M34.0224 10.853L34.0212 10.8219C34.0038 10.4377 33.9922 10.0312 33.9852 9.57892C33.9526 7.37341 32.1993 5.54908 29.9935 5.42579C25.3945 5.16913 21.8368 3.6695 18.7969 0.706557L18.771 0.681838C17.7795 -0.227279 16.2838 -0.227279 15.292 0.681838L15.2661 0.706557C12.2262 3.6695 8.66849 5.16913 4.0695 5.42609C1.864 5.54908 0.110459 7.37341 0.0778055 9.57922C0.0710916 10.0284 0.0591897 10.4349 0.0417948 10.8219L0.0399637 10.8942C-0.0494526 15.5838 -0.160536 21.4203 1.79197 26.7179C2.86558 29.6311 4.49155 32.1634 6.62442 34.245C9.05362 36.6156 12.2354 38.4976 16.0812 39.8386C16.2063 39.8822 16.3363 39.9176 16.4688 39.9442C16.6555 39.9814 16.8435 40 17.0315 40C17.2195 40 17.4078 39.9814 17.5943 39.9442C17.7267 39.9176 17.8576 39.8819 17.9834 39.838C21.8246 38.4946 25.003 36.6116 27.43 34.2413C29.562 32.1591 31.188 29.6262 32.2625 26.7124C34.2223 21.399 34.1116 15.5515 34.0224 10.853ZM17.0309 29.9692C11.5341 29.9692 7.06235 25.4975 7.06235 20.0006C7.06235 14.5038 11.5341 10.0321 17.0309 10.0321C22.5274 10.0321 26.9994 14.5038 26.9994 20.0006C26.9994 25.4975 22.5274 29.9692 17.0309 29.9692Z"
+                              fill="#E52C2D"
+                           />
+                        </svg>
+                     </div>
+                     <div class="advatnage-card__content">
+                        <div class="advatnage-card__title">1 годгарантии</div>
+                        <div class="advatnage-card__descr">Гарантийное сервисное обслуживание</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="advantages__item advatnage-card">
+                  <div class="advatnage-card__body">
+                     <div class="advatnage-card__icon">
+                        <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M9.15162 37.2992L7.36272 38.1456L2.01646 35.6161C1.58456 35.4113 1.07185 35.4333 0.660388 35.6732C0.249851 35.914 0 36.3377 0 36.7947V46.6799C0 47.4076 0.624164 47.9982 1.39322 47.9982H9.39125C9.23614 47.586 9.15162 47.1422 9.15162 46.6799V37.2992Z"
+                              fill="#E52C2D"
+                           />
+                           <path
+                              d="M46.3701 35.6732C46.0044 35.4333 45.5487 35.4113 45.1647 35.6161L40.4125 38.1456L38.8224 37.2992V46.6799C38.8224 47.1422 38.7473 47.586 38.6094 47.9982H45.7187C46.4023 47.9982 46.9572 47.4076 46.9572 46.6799V36.7947C46.9572 36.3377 46.7351 35.914 46.3701 35.6732Z"
+                              fill="#E52C2D"
+                           />
+                           <path
+                              d="M18.7727 20.8694L21.2702 18.516C22.1398 17.6965 23.296 17.2453 24.5258 17.2453C25.7556 17.2453 26.9117 17.6965 27.7814 18.516L30.2788 20.8694L32.7773 18.516C32.9697 18.3348 33.1763 18.1709 33.3953 18.0272L26.0605 4.20262V1.44619C26.0605 0.647506 25.3733 0 24.5258 0C23.6782 0 22.9911 0.647506 22.9911 1.44619V4.20262L15.6562 18.0262C15.8752 18.1709 16.0819 18.3338 16.2752 18.516L18.7727 20.8694Z"
+                              fill="#E52C2D"
+                           />
+                           <path
+                              d="M34.646 19.9344C34.1414 19.7187 33.5603 19.8379 33.174 20.2366L29.0653 24.4771L24.9567 20.2366C24.4293 19.6921 23.574 19.6921 23.0465 20.2366L18.9379 24.4771L14.8293 20.2366C14.4431 19.8378 13.862 19.7184 13.3573 19.9344C12.8526 20.1502 12.5234 20.6585 12.5234 21.2223V46.6078C12.5234 47.3777 13.1282 48.0019 13.8742 48.0019H34.1291C34.8751 48.0019 35.4798 47.3777 35.4798 46.6078V21.2224C35.4798 20.6586 35.1508 20.1502 34.646 19.9344ZM24.0016 42.0288C20.8635 42.0288 18.3106 39.3937 18.3106 36.1549C18.3106 32.9161 20.8636 30.281 24.0016 30.281C27.1396 30.281 29.6927 32.916 29.6927 36.1549C29.6927 39.3938 27.1397 42.0288 24.0016 42.0288Z"
+                              fill="#E52C2D"
+                           />
+                        </svg>
+                     </div>
+                     <div class="advatnage-card__content">
+                        <div class="advatnage-card__title">Бесплатная доставка</div>
+                        <div class="advatnage-card__descr">Бесплатная доставка по России и странам ТС</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="advantages__item advatnage-card">
+                  <div class="advatnage-card__body">
+                     <div class="advatnage-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M35.6 16.6C35.2 14.8 34.4 13 33.4 11.4L35.4 7.2L32.6 4.4L28.4 6.4C26.8 5.4 25.2 4.8 23.4 4.4L22 0H18L16.4 4.4C14.6 4.8 13 5.6 11.4 6.6L7.2 4.6L4.4 7.2L6.4 11.4C5.4 13 4.8 14.6 4.4 16.4L0 18V22L4.4 23.6C4.8 25.4 5.6 27.2 6.4 28.6L4.4 32.8L7.2 35.6L11.4 33.6C13 34.6 14.6 35.4 16.4 35.8L18 40H22L23.6 35.6C24.2 35.4 25 35.2 25.6 35L22.4 31.8C14.8 33.2 8 27.6 8 20C8 13.4 13.4 8 20 8C27.4 8 33 14.6 31.8 21.6L35.2 25C35.4 24.4 35.6 24 35.6 23.4L40 22V18L35.6 16.6Z"
+                              fill="#E52C2D"
+                           />
+                           <path
+                              d="M39.2879 34.9017L27.7361 23.1098C30.4772 16.9141 24.7992 10.3186 18.5338 12.1173L22.0581 15.7149C23.6244 17.3138 23.6244 19.912 22.0581 21.311C20.6875 22.9099 17.9464 22.9099 16.5759 21.311L13.0516 17.9134C11.2895 23.5095 16.9675 29.9051 23.4286 27.3069L34.9804 39.0988C36.1552 40.298 37.9173 40.298 39.0921 39.0988C40.2668 38.0995 40.2668 36.1009 39.2879 34.9017Z"
+                              fill="#E52C2D"
+                           />
+                        </svg>
+                     </div>
+                     <div class="advatnage-card__content">
+                        <div class="advatnage-card__title">1 годгарантии</div>
+                        <div class="advatnage-card__descr">Гарантийное сервисное обслуживание</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section great-deals">
+   <div class="great-deals__wrapper">
+      <div class="container">
+         <div class="great-deals__body">
+            <h2 class="great-deals__title h2">Выгодные <span>предложения</span></h2>
+            <ul class="great-deals__list">
+               <li class="offer">
+                  <div class="offer__body">
+                     <div class="offer__title">Осторожно скидки</div>
+                     <div class="offer__img">
+                        <img src="../../images/main/offer1.jpg" alt="" />
+                     </div>
+                     <div class="offer__date">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M3.30275 15.962C3.52852 16.0525 3.79101 15.977 3.92288 15.7817L9.92281 6.84418C10.02 6.69953 10.0258 6.51687 9.93794 6.36765C9.85005 6.21796 9.68208 6.12503 9.49995 6.12503H5.49559L6.98484 0.584117C7.04491 0.360273 6.92331 0.129086 6.69725 0.0379918C6.47265 -0.0526333 6.20849 0.0233355 6.07712 0.218336L0.0771892 9.15584C-0.0199764 9.3005 -0.0258431 9.48315 0.0620559 9.63237C0.149955 9.78206 0.31792 9.875 0.500051 9.875H4.50441L3.01516 15.4159C2.95509 15.6398 3.07666 15.8709 3.30275 15.962Z"
+                              fill="#333333"
+                              fill-opacity="0.3"
+                           />
+                        </svg>
+                        <span>19.01.2024</span>
+                     </div>
+                     <div class="offer__desc">Ловите момент!</div>
+                     <a href="#" class="offer__more">
+                        Узнать больше
+                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9H21V7H1V9Z"
+                              fill="#E52C2D"
+                           />
+                        </svg>
+                     </a>
+                  </div>
+               </li>
+               @@for(let i = 0; i < 2; i++){
+               <li class="offer">
+                  <div class="offer__body">
+                     <div class="offer__title">Осторожно скидки</div>
+                     <div class="offer__img">
+                        <img src="../../images/main/offer1.jpg" alt="" />
+                     </div>
+                     <div class="offer__date">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M3.30275 15.962C3.52852 16.0525 3.79101 15.977 3.92288 15.7817L9.92281 6.84418C10.02 6.69953 10.0258 6.51687 9.93794 6.36765C9.85005 6.21796 9.68208 6.12503 9.49995 6.12503H5.49559L6.98484 0.584117C7.04491 0.360273 6.92331 0.129086 6.69725 0.0379918C6.47265 -0.0526333 6.20849 0.0233355 6.07712 0.218336L0.0771892 9.15584C-0.0199764 9.3005 -0.0258431 9.48315 0.0620559 9.63237C0.149955 9.78206 0.31792 9.875 0.500051 9.875H4.50441L3.01516 15.4159C2.95509 15.6398 3.07666 15.8709 3.30275 15.962Z"
+                              fill="#333333"
+                              fill-opacity="0.3"
+                           />
+                        </svg>
+                        <span>19.01.2024</span>
+                     </div>
+                     <div class="offer__desc">Ловите момент! Скидка 893 000р на лазерный станок!</div>
+                     <a href="#" class="offer__more">
+                        Узнать больше
+                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9H21V7H1V9Z"
+                              fill="#E52C2D"
+                           />
+                        </svg>
+                     </a>
+                  </div>
+               </li>
+               }
+            </ul>
+            <div class="great-deals__bottom">
+               <a href="#" class="great-deals__link button button--red">Все акции</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section-faq section background-grey">
+   <div class="section-faq__wrapper">
+      <div class="container">
+         <h2 class="section-faq__title h2">Вопрос — <span>ответ</span></h2>
+         <div class="section-faq__body">
+            <div class="accordion">
+               <div class="accordion__f-a-q">
+                  <div class="accordion__label">
+                     <span>
+                        <img src="../../icons/faq.svg" alt="" />
+                     </span>
+                     <p>При покупке оборудование производится обучение?</p>
+
+                     <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M20.7896 1.23711C20.9299 1.37457 21 1.53265 21 1.71134C21 1.89004 20.9299 2.04811 20.7896 2.18557L10.984 11.7938C10.8437 11.9313 10.6824 12 10.5 12C10.3176 12 10.1563 11.9313 10.016 11.7938L0.210421 2.18557C0.0701396 2.04811 0 1.89004 0 1.71134C0 1.53265 0.0701396 1.37457 0.210421 1.23711L1.26253 0.206186C1.40281 0.0687278 1.56413 0 1.74649 0C1.92886 0 2.09018 0.0687278 2.23046 0.206186L10.5 8.30928L18.7695 0.206186C18.9098 0.0687278 19.0711 0 19.2535 0C19.4359 0 19.5972 0.0687278 19.7375 0.206186L20.7896 1.23711Z"
+                           fill="#333333"
+                        />
+                     </svg>
+                  </div>
+                  <div class="accordion__content">
+                     <p>
+                        По состоянию на сентябрь 2023 года в России закуплено более 350 единиц оптоволоконных лазерных
+                        станков (аппараты ручной лазерной сварки, роботизированные комплексы для лазерной резки, сварки
+                        и наплавки, аппараты лазерной очистки, лазерные станки для раскроя листового металла, круглой
+                        трубы и металлического профиля, а также листогибочные прессы ЧПУ) различной модификации и
+                        комплектации.
+                     </p>
+                  </div>
+               </div>
+               <div class="accordion__f-a-q">
+                  <div class="accordion__label">
+                     <span>
+                        <img src="../../icons/faq.svg" alt="" />
+                     </span>
+                     <p>При покупке оборудование производится обучение?</p>
+
+                     <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M20.7896 1.23711C20.9299 1.37457 21 1.53265 21 1.71134C21 1.89004 20.9299 2.04811 20.7896 2.18557L10.984 11.7938C10.8437 11.9313 10.6824 12 10.5 12C10.3176 12 10.1563 11.9313 10.016 11.7938L0.210421 2.18557C0.0701396 2.04811 0 1.89004 0 1.71134C0 1.53265 0.0701396 1.37457 0.210421 1.23711L1.26253 0.206186C1.40281 0.0687278 1.56413 0 1.74649 0C1.92886 0 2.09018 0.0687278 2.23046 0.206186L10.5 8.30928L18.7695 0.206186C18.9098 0.0687278 19.0711 0 19.2535 0C19.4359 0 19.5972 0.0687278 19.7375 0.206186L20.7896 1.23711Z"
+                           fill="#333333"
+                        />
+                     </svg>
+                  </div>
+                  <div class="accordion__content">
+                     <p>
+                        Однажды наткнулся на блогеров, которые зарабатывали на ставках. Следил за их аккаунтами в
+                        интернете и смотрел, как они зарабатывают, красиво живут и отдыхают.
+                     </p>
+                  </div>
+               </div>
+               <div class="accordion__f-a-q">
+                  <div class="accordion__label">
+                     <span>
+                        <img src="../../icons/faq.svg" alt="" />
+                     </span>
+                     <p>При покупке оборудование производится обучение?</p>
+
+                     <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M20.7896 1.23711C20.9299 1.37457 21 1.53265 21 1.71134C21 1.89004 20.9299 2.04811 20.7896 2.18557L10.984 11.7938C10.8437 11.9313 10.6824 12 10.5 12C10.3176 12 10.1563 11.9313 10.016 11.7938L0.210421 2.18557C0.0701396 2.04811 0 1.89004 0 1.71134C0 1.53265 0.0701396 1.37457 0.210421 1.23711L1.26253 0.206186C1.40281 0.0687278 1.56413 0 1.74649 0C1.92886 0 2.09018 0.0687278 2.23046 0.206186L10.5 8.30928L18.7695 0.206186C18.9098 0.0687278 19.0711 0 19.2535 0C19.4359 0 19.5972 0.0687278 19.7375 0.206186L20.7896 1.23711Z"
+                           fill="#333333"
+                        />
+                     </svg>
+                  </div>
+                  <div class="accordion__content">
+                     <p>
+                        Однажды наткнулся на блогеров, которые зарабатывали на ставках. Следил за их аккаунтами в
+                        интернете и смотрел, как они зарабатывают, красиво живут и отдыхают.
+                     </p>
+                  </div>
+               </div>
+               <div class="accordion__f-a-q">
+                  <div class="accordion__label">
+                     <span>
+                        <img src="../../icons/faq.svg" alt="" />
+                     </span>
+                     <p>При покупке оборудование производится обучение?</p>
+
+                     <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M20.7896 1.23711C20.9299 1.37457 21 1.53265 21 1.71134C21 1.89004 20.9299 2.04811 20.7896 2.18557L10.984 11.7938C10.8437 11.9313 10.6824 12 10.5 12C10.3176 12 10.1563 11.9313 10.016 11.7938L0.210421 2.18557C0.0701396 2.04811 0 1.89004 0 1.71134C0 1.53265 0.0701396 1.37457 0.210421 1.23711L1.26253 0.206186C1.40281 0.0687278 1.56413 0 1.74649 0C1.92886 0 2.09018 0.0687278 2.23046 0.206186L10.5 8.30928L18.7695 0.206186C18.9098 0.0687278 19.0711 0 19.2535 0C19.4359 0 19.5972 0.0687278 19.7375 0.206186L20.7896 1.23711Z"
+                           fill="#333333"
+                        />
+                     </svg>
+                  </div>
+                  <div class="accordion__content">
+                     <p>
+                        По состоянию на сентябрь 2023 года в России закуплено более 350 единиц оптоволоконных лазерных
+                        станков (аппараты ручной лазерной сварки, роботизированные комплексы для лазерной резки, сварки
+                        и наплавки, аппараты лазерной очистки, лазерные станки для раскроя листового металла, круглой
+                        трубы и металлического профиля, а также листогибочные прессы ЧПУ) различной модификации и
+                        комплектации.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section our-blog background-grey">
+   <div class="our-blog__wrapper">
+      <div class="container">
+         <div class="our-blog__body">
+            <h2 class="our-blog__title h2"><span>Наш</span> блог</h2>
+            <p class="our-blog__desc">
+               В нашем блоге вы найдете последние новости индустрии, полезные советы по эксплуатации оборудования и
+               вдохновляющие истории успеха наших клиентов
+            </p>
+
+            <ul class="our-blog__list">
+               @@for(let i = 0; i < 3; i++){
+               <li class="our-blog__item card-blog">
+                  <div class="card-blog__body">
+                     <div class="card-blog__img">
+                        <img src="../../images/blog/2.jpg" alt="" />
+                     </div>
+                     <div class="card-blog__inner">
+                        <a href="##" class="card-blog__link">
+                           <div class="card-blog__top">
+                              <div class="card-blog__tag">Оборудование</div>
+                              <div class="card-blog__date">19.01.2024</div>
+                           </div>
+
+                           <div class="card-blog__title">Промышленные установки установки</div>
+                           <p class="card-blog__text">
+                              Промышленные роботизированные установки для сварки и очистки металла для сварки и очистки
+                              металла
+                           </p>
+                           <div class="card-blog__bottom">
+                              <svg
+                                 width="32"
+                                 height="16"
+                                 viewBox="0 0 32 16"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                              >
+                                 <path
+                                    d="M1 9C0.447715 9 4.8282e-08 8.55228 0 8C1.13222e-08 7.44771 0.447715 7 1 7L1 9ZM31.7071 7.29289C32.0976 7.68341 32.0976 8.31658 31.7071 8.7071L25.3431 15.0711C24.9526 15.4616 24.3195 15.4616 23.9289 15.0711C23.5384 14.6805 23.5384 14.0474 23.9289 13.6569L29.5858 8L23.9289 2.34314C23.5384 1.95262 23.5384 1.31945 23.9289 0.92893C24.3195 0.538405 24.9526 0.538405 25.3431 0.92893L31.7071 7.29289ZM1 7L31 7L31 9L1 9L1 7Z"
+                                    fill="#E52C2D"
+                                 />
+                              </svg>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </li>
+               }
+            </ul>
+
+            <div class="our-blog__bottom">
+               <a href="#" class="our-blog__button button button--red">Все статьи</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
 @@include('../blocks/footer.html')

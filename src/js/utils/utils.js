@@ -16,8 +16,8 @@ function isNodeList(field) {
    return NodeList.prototype.isPrototypeOf(field);
 }
 
-function removeSelector(nodeList, className = 'active') {
-   nodeList.forEach(node => {
+function removeSelector(nodeList, className = "active") {
+   nodeList.forEach((node) => {
       node.classList.remove(className);
    });
 }

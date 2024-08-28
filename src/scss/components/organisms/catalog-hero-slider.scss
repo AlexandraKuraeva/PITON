@@ -2,7 +2,7 @@
    &__wrapper {
       position: relative;
       padding-bottom: 40px;
-      box-shadow: 0px 3px 30px 0px #0000001a;
+      box-shadow: 0px 20px 20px 0px #0000001a;
    }
 
    &__body {
@@ -26,38 +26,138 @@
       z-index: -1;
       right: 0;
       height: 255px;
-   }
-
-   &__content {
-      padding-top: 160px;
 
       @include _Tablet {
-         flex: 0 0 50%;
-         padding-top: 0;
+         height: 300px;
+      }
+
+      @include _Desktop {
+         height: 340px;
+
+         position: static;
+         order: 1;
+         margin: auto 0;
       }
    }
 
-   &__title {
-   }
+   &__content {
+      padding-top: 210px;
 
-   &__desc {
-   }
+      @include _Tablet {
+         flex: 0 0 50%;
+         padding-top: 50px;
+      }
 
-   &__buttons {
+      @include _Desktop {
+         flex: 0 0 40%;
+      }
    }
 }
 
 .catalog-hero {
    &__title {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+
+      @include _Tablet {
+         margin-bottom: 16px;
+      }
+
+      @include _Desktop {
+         margin-bottom: 20px;
+      }
    }
 
    &__subtitle {
+      font-weight: 350;
+      font-size: rem(18);
+      margin-bottom: 20px;
+      line-height: 1.1;
+      span {
+         font-weight: 400;
+      }
+
+      @include _Tablet {
+         font-size: rem(20);
+         margin-bottom: 30px;
+      }
+
+      @include _Desktop {
+         font-size: rem(30);
+      }
    }
 
-   &__buttons {
+   &__desc {
+      font-weight: 350;
+      margin-bottom: 30px;
+
+      @include _Tablet {
+         margin-bottom: 40px;
+      }
+
+      @include _Desktop {
+         margin-bottom: 60px;
+      }
+      & li {
+         display: flex;
+
+         margin-bottom: 10px;
+
+         @include _Desktop {
+            margin-bottom: 20px;
+         }
+         svg {
+            margin-right: 10px;
+         }
+      }
+   }
+
+   &__button {
+      & button {
+         width: 100%;
+
+         @include _Tablet {
+            width: auto;
+         }
+      }
    }
 }
-.button {
+
+.cat-hero-nav-btns--desktop {
+   display: none;
+
+   @include _Tablet {
+      display: flex;
+   }
+
+   .swiper-button__wrapper {
+      justify-content: end;
+      position: absolute;
+      bottom: 0;
+      right: 40px;
+      z-index: 2;
+
+      @include _Laptop {
+         right: 16px;
+      }
+
+      @include _Desktop {
+         right: 30px;
+      }
+
+      @include _LDesktop {
+         right: 40px;
+      }
+   }
 }
-.button--red {
+
+.cat-hero-nav-btns--mobile {
+   position: absolute;
+   top: 146px;
+   left: 0;
+   z-index: 2;
+
+   @include _Tablet {
+      display: none;
+   }
 }
