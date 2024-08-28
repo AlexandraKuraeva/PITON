@@ -2,14 +2,12 @@ import { sliders } from "../config/sliders.js";
 import { isNodeList } from "../utils/utils.js";
 
 function prepareOption(sliderField, slider) {
-   let resultOptions = {
-      ...slider.options,
-   };
+   let resultOptions = JSON.parse(JSON.stringify(slider.options));
 
    if (slider.hasOwnProperty("parentWrapperForActions")) {
       const wrapper = sliderField.closest(slider.parentWrapperForActions);
 
-      if (slider.hasOwnProperty("navigation")) {
+      if (slider.options.hasOwnProperty("navigation")) {
          const navigationOption = slider.options.navigation ? slider.options.navigation : null;
          const navigationLeftSelector = navigationOption ? navigationOption.prevEl : null;
          const navigationRightSelector = navigationOption ? navigationOption.nextEl : null;
@@ -22,8 +20,9 @@ function prepareOption(sliderField, slider) {
          }
       }
 
-      if (slider.hasOwnProperty("pagination")) {
-         const paginationSelector = slider.pagination.el;
+      if (slider.options.hasOwnProperty("pagination")) {
+         const paginationSelector = slider.options.pagination.el;
+
          if (paginationSelector) {
             const paginationField = sliderField.querySelector(paginationSelector);
             resultOptions.pagination.el = paginationField ? paginationField : wrapper.querySelector(paginationSelector);

@@ -41,7 +41,7 @@ const sliders = [
    },
    {
       field: document.querySelectorAll(".catalog-categories-swiper"),
-      //parentWrapperForActions: ".s-catalog-categories__wrapper",
+      parentWrapperForActions: ".s-catalog-categories__wrapper",
       options: {
          speed: 300,
          loop: true,
