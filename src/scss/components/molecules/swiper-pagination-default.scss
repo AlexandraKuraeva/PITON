@@ -1,0 +1,23 @@
+.swiper-pagination-default {
+   & .swiper-pagination-bullet {
+      background: rgba(51, 51, 51, 0.3);
+      width: 12px;
+      height: 12px;
+      opacity: 1;
+
+      &.swiper-pagination-bullet-active {
+         background-color: #ffffff80;
+         opacity: 1;
+      }
+   }
+}
+
+.swiper-pagination-default--grey {
+   & .swiper-pagination-bullet {
+      background: rgba(51, 51, 51, 0.1);
+
+      &.swiper-pagination-bullet-active {
+         background: rgba(51, 51, 51, 0.3);
+      }
+   }
+}

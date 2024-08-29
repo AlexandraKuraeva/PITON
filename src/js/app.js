@@ -14,7 +14,7 @@ import { HeaderSubMenu } from "./components/header-submenu.js";
 // import { ServicesMenu } from "./components/services-menu.js";
 import { header } from "./components/header.js";
 import { initSliders } from "./components/slider.js";
-// import { initTabs } from "./components/tabs.js";
+import { initTabs } from "./components/tabs.js";
 // import { mapsInfo } from "./config/maps-info.js";
 
 function app() {
@@ -28,7 +28,7 @@ function app() {
    const allSliders = initSliders();
    //    console.log(allSliders);
    initAccordion();
-   //    initTabs();
+   initTabs();
    //    const productCards = document.querySelectorAll(".product-card");
    //    productCards.forEach((card) => {
    //       const productCard = new ProductCard(card);

@@ -1,21 +1,25 @@
 function initTabs() {
-   const tabs = document.querySelectorAll(".tab-js-btn");
-   const tabsContent = document.querySelectorAll(".tab-js-content");
+   const tabsButtons = document.querySelectorAll(".js-tabs__button");
 
-   tabs.forEach((tab) => {
-      tab.addEventListener("click", function () {
-         const tabBtn = this.dataset.tab;
-         const tabContent = document.querySelector(`[data-tab-content="${tabBtn}"]`);
+   tabsButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+         const prevActiveItem = document.querySelector(".js-tabs__item._active");
 
-         tabsContent.forEach((tab) => {
-            tab.classList.remove("active");
-         });
-         tabs.forEach((tab) => {
-            tab.classList.remove("active");
-         });
+         const prevActiveButton = document.querySelector(".js-tabs__button._active");
 
-         tabContent.classList.add("active");
-         this.classList.add("active");
+         if (prevActiveButton) {
+            prevActiveButton.classList.remove("_active");
+         }
+
+         if (prevActiveItem) {
+            prevActiveItem.classList.remove("_active");
+         }
+
+         const nextActiveItemId = `#${btn.getAttribute("data-tab")}`;
+         const nextActiveItem = document.querySelector(nextActiveItemId);
+
+         btn.classList.add("_active");
+         nextActiveItem.classList.add("_active");
       });
    });
 }

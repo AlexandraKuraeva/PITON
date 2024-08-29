@@ -13,10 +13,11 @@ function prepareOption(sliderField, slider) {
          const navigationRightSelector = navigationOption ? navigationOption.nextEl : null;
 
          if (navigationLeftSelector && navigationRightSelector) {
-            const prevField = sliderField.querySelector(navigationLeftSelector);
-            const nextField = sliderField.querySelector(navigationRightSelector);
-            resultOptions.navigation.prevEl = prevField ? prevField : wrapper.querySelector(navigationLeftSelector);
-            resultOptions.navigation.nextEl = nextField ? nextField : wrapper.querySelector(navigationRightSelector);
+            const prevFields = wrapper.querySelectorAll(navigationLeftSelector);
+            const nextField = wrapper.querySelectorAll(navigationRightSelector);
+
+            resultOptions.navigation.prevEl = Array.from(prevFields ? prevFields : null);
+            resultOptions.navigation.nextEl = Array.from(nextField ? nextField : null);
          }
       }
 
@@ -24,8 +25,8 @@ function prepareOption(sliderField, slider) {
          const paginationSelector = slider.options.pagination.el;
 
          if (paginationSelector) {
-            const paginationField = sliderField.querySelector(paginationSelector);
-            resultOptions.pagination.el = paginationField ? paginationField : wrapper.querySelector(paginationSelector);
+            const paginationField = wrapper.querySelector(paginationSelector);
+            resultOptions.pagination.el = paginationField ? paginationField : null;
          }
       }
    }
@@ -38,13 +39,16 @@ function initSlider(sliderField, slider, allSliders) {
       if (slider.conditionActive) {
          const resulOptions = prepareOption(sliderField, slider);
          const swiper = new Swiper(sliderField, resulOptions);
+
          allSliders.push(swiper);
       }
    } else {
       const resulOptions = prepareOption(sliderField, slider);
+
       //console.log(resulOptions);
 
       const swiper = new Swiper(sliderField, resulOptions);
+
       allSliders.push(swiper);
    }
 }

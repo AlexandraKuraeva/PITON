@@ -91,16 +91,6 @@
       position: static;
       width: auto !important;
 
-      & .swiper-pagination-bullet {
-         background: rgba(51, 51, 51, 0.3);
-         opacity: 1;
-
-         &.swiper-pagination-bullet-active {
-            background-color: #ffffff80;
-            opacity: 1;
-         }
-      }
-
       @include _Tablet {
          display: none;
       }

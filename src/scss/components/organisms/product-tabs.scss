@@ -1,0 +1,69 @@
+.product-tabs {
+   &__nav {
+      background-color: #eee;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 10px 0px;
+
+      @include _Tablet {
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         padding: 0 30px;
+         gap: 30px;
+      }
+
+      @include _Desktop {
+         gap: 50px;
+      }
+   }
+
+   &__button {
+      text-align: center;
+      padding: 10px 8px 16px;
+      white-space: nowrap;
+      width: auto;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 350;
+      cursor: pointer;
+      line-height: 1.2;
+      &::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: 6px;
+         background-color: cl("red");
+         transform: scale(0);
+         transition: transform 0.15s ease-in-out;
+      }
+      @include _Tablet {
+         padding: 20px 20px 26px;
+
+         flex: 1 0 calc(25% - 60px);
+         font-size: rem(18);
+      }
+
+      &._active {
+         font-weight: 700;
+
+         &::after {
+            transform: scale(1);
+         }
+      }
+   }
+
+   &__content {
+      margin-top: 40px;
+
+      @include _Desktop {
+         margin-top: 60px;
+      }
+   }
+
+   &__item {
+   }
+}

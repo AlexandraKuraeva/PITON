@@ -59,17 +59,46 @@ const sliders = [
 
          breakpoints: {
             768: {
-               speed: 800,
                slidesPerView: "2",
             },
 
             992: {
+               speed: 800,
                slidesPerView: "3",
             },
 
             1200: {
                slidesPerView: "4",
             },
+         },
+      },
+   },
+   {
+      field: document.querySelectorAll(".overview-product-swiper"),
+      //parentWrapperForActions: ".s-catalog-categories__wrapper",
+      options: {
+         speed: 300,
+         loop: true,
+         slidesPerView: "1",
+         spaceBetween: 30,
+
+         navigation: {
+            prevEl: ".overview-product-swiper__prev",
+            nextEl: ".overview-product-swiper__next",
+         },
+
+         pagination: {
+            el: ".overview-product-swiper__pagination",
+         },
+
+         breakpoints: {
+            768: {},
+
+            992: {
+               speed: 800,
+            },
+
+            1200: {},
          },
       },
    },
