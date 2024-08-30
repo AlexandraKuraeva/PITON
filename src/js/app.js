@@ -4,7 +4,7 @@ import { initAccordion } from "./components/accordion.js";
 // import { Dropdown } from "./components/dropdown.js";
 // import { Example } from "./components/example.js";
 // import { FooterMenuMasonry } from "./components/footer-menu-masonry.js";
-import { lightboxVideo } from "./components/g-lightbox/glightbox-video.js";
+import { lightboxVideo, lightboxImg } from "./components/g-lightbox/glightbox-video.js";
 // import { glightBoxReviewInit } from "./components/g-lightbox/glightbox-review.js";
 import { HeaderMenu } from "./components/header-menu.js";
 import { HeaderSubMenu } from "./components/header-submenu.js";
@@ -44,6 +44,7 @@ function app() {
    //    });
    //    reviewReadFullInit();
    lightboxVideo();
+   lightboxImg();
    //    glightBoxReviewInit();
    //    // Header
    //    //const header = new Header();

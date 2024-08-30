@@ -1,0 +1,16 @@
+.table-title {
+   font-weight: 400;
+   margin-bottom: 30px;
+   line-height: 1;
+
+   @include _Tablet {
+      margin-bottom: 40px;
+   }
+
+   @include _Desktop {
+      margin-bottom: 60px;
+   }
+   span {
+      font-weight: 350;
+   }
+}

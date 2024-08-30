@@ -89,7 +89,6 @@
 
    &__pagination {
       position: static;
-      width: auto !important;
 
       @include _Tablet {
          display: none;

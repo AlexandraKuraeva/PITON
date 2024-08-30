@@ -92,13 +92,18 @@ const sliders = [
          },
 
          breakpoints: {
-            768: {},
+            768: {
+               slidesPerView: "2",
+            },
 
             992: {
                speed: 800,
+               slidesPerView: "3",
             },
 
-            1200: {},
+            1200: {
+               slidesPerView: "4",
+            },
          },
       },
    },

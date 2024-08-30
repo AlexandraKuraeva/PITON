@@ -1,0 +1,42 @@
+.image-slider {
+   position: relative;
+   &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &.--desktop {
+         display: none;
+
+         @include _Tablet {
+            display: block;
+         }
+      }
+      &.--mobile {
+         @include _Tablet {
+            display: none;
+         }
+      }
+   }
+
+   &__prev-d {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      @include _Desktop {
+         left: -74px;
+      }
+   }
+
+   &__next-d {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+
+      @include _Desktop {
+         right: -74px;
+      }
+   }
+}
