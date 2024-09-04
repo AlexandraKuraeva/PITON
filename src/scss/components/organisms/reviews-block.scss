@@ -1,0 +1,35 @@
+.reviews-block {
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__list {
+      display: grid;
+      grid-gap: 20px;
+
+      @include _Tablet {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 30px;
+      }
+   }
+
+   &__item {
+   }
+
+   &__btn {
+      margin-top: 30px;
+
+      @include _Tablet {
+         margin-top: 40px;
+      }
+
+      @include _Desktop {
+         margin: 0 0 0 auto;
+         margin-top: 60px;
+
+         width: calc(51% - 30px);
+      }
+   }
+}

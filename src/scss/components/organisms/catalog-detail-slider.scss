@@ -1,0 +1,94 @@
+.catalog-detail-slider {
+   &__body {
+   }
+
+   &__main {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      background-color: #fff;
+      margin-bottom: 20px;
+   }
+
+   &__list {
+   }
+
+   &__item {
+      padding: 40px 40px 70px;
+   }
+
+   &__item-label {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: cl("red");
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 6px;
+      border-radius: 3px;
+      line-height: 1;
+      z-index: 3;
+   }
+
+   &__nav {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      gap: 20px;
+      z-index: 2;
+      @include _Desktop {
+         position: static;
+      }
+   }
+
+   &__prev {
+      @include _Desktop {
+         position: absolute;
+         z-index: 2;
+         left: 20px;
+         top: 50%;
+      }
+   }
+
+   &__next {
+      @include _Desktop {
+         position: absolute;
+         z-index: 2;
+         right: 20px;
+         top: 50%;
+      }
+   }
+
+   &__thumbs {
+   }
+}
+
+.detail-slider-thumbs {
+   &__body {
+   }
+
+   &__swiper {
+   }
+
+   &__list {
+   }
+
+   &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      background-color: #fff;
+      padding: 20px 10px;
+      opacity: 0.4;
+      transition: all 0.3s ease;
+   }
+
+   &__item.swiper-slide-thumb-active {
+      opacity: 1;
+   }
+}

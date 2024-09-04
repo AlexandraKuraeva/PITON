@@ -1,11 +1,13 @@
 import { initAccordion } from "./components/accordion.js";
-// import { CatalogDetail } from './components/catalog-detail.js';
+import { CatalogDetail } from "./components/catalog-detail.js";
 // import { CatalogFilter } from "./components/catalog-filter.js";
 // import { Dropdown } from "./components/dropdown.js";
 // import { Example } from "./components/example.js";
 // import { FooterMenuMasonry } from "./components/footer-menu-masonry.js";
-import { lightboxVideo, lightboxImg } from "./components/g-lightbox/glightbox-video.js";
-// import { glightBoxReviewInit } from "./components/g-lightbox/glightbox-review.js";
+import { lightboxImg } from "./components/g-lightbox/popup-img.js";
+import { popupReviewInit } from "./components/g-lightbox/popup-review.js";
+import { lightboxVideo } from "./components/g-lightbox/popup-video.js";
+
 import { HeaderMenu } from "./components/header-menu.js";
 import { HeaderSubMenu } from "./components/header-submenu.js";
 // import { initMap } from "./components/map.js";
@@ -43,13 +45,15 @@ function app() {
    //       new Dropdown(dropdownElement);
    //    });
    //    reviewReadFullInit();
+
    lightboxVideo();
    lightboxImg();
-   //    glightBoxReviewInit();
+   popupReviewInit();
+
    //    // Header
    //    //const header = new Header();
    //    const filter = new CatalogFilter();
-   //    const catalofDetail = new CatalogDetail();
+   const catalofDetail = new CatalogDetail();
 }
 
 export { app };

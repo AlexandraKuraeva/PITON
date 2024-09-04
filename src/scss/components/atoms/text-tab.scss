@@ -1,0 +1,7 @@
+.text-tab {
+   font-weight: 350;
+   margin: 0;
+   @include _Desktop {
+      font-size: rem(18);
+   }
+}

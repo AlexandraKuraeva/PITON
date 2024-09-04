@@ -1,0 +1,99 @@
+
+.table-processing {
+   &__wrapper {
+   }
+   &__title {
+   }
+   &__table {
+   }
+
+   &__thead {
+      margin-bottom: 10px;
+      @include _Tablet {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__row {
+      display: flex;
+
+      justify-content: space-between;
+   }
+
+   &__column-name {
+      margin: 0;
+      font-weight: 700;
+      &.first {
+         display: none;
+         @include _Tablet {
+            display: block;
+         }
+      }
+   }
+
+   &__t-item {
+      padding: 10px 0;
+   }
+
+   &__t-item:not(:last-child) {
+      border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+      padding-top: 10px;
+   }
+
+   &__t-item:last-child {
+      padding-bottom: 0px;
+   }
+
+   &__row-name {
+      margin: 0;
+      line-height: 1.2;
+
+      @include _Tablet {
+         flex: 1 0 auto;
+      }
+   }
+
+   &__row-markers {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      span:first-child {
+         padding-left: 30px;
+      }
+      span:last-child {
+         padding-right: 30px;
+      }
+
+      @include _Tablet {
+         gap: 20px;
+         width: 290px;
+         span {
+            flex: 0 0 calc(33.33% - 20px);
+            text-align: center;
+         }
+         p {
+            flex: 0 0 calc(33.33% - 20px);
+            text-align: center;
+         }
+         span:first-child {
+            padding-left: 0;
+         }
+         span:last-child {
+            padding-right: 0;
+         }
+      }
+   }
+}
+
+.mob-col {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
+   @include _Tablet {
+      flex-direction: row;
+      gap: 0;
+   }
+}

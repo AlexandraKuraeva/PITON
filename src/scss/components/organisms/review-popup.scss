@@ -1,0 +1,136 @@
+.review-popup {
+   height: 100%;
+   position: relative;
+   &__wrapper {
+      background-color: #fff;
+      position: relative;
+
+      @include _Tablet {
+         height: 100%;
+      }
+
+      @include _Desktop {
+      }
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      height: 100%;
+      padding: 0 20px 0 0;
+
+      @include _Tablet {
+         gap: 40px;
+      }
+
+      @include _Desktop {
+         flex-direction: row;
+         gap: 60px;
+      }
+   }
+
+   &__top {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      @include _Tablet {
+         flex-direction: row;
+         gap: 70px;
+      }
+
+      @include _Desktop {
+         flex-direction: column;
+         gap: 60px;
+      }
+   }
+   &__img {
+      width: 160px;
+      height: 55px;
+      flex-shrink: 0;
+
+      @include _Tablet {
+         width: 200px;
+         height: 70px;
+      }
+   }
+
+   &__info {
+   }
+
+   &__name {
+      font-size: rem(22);
+      font-weight: 700;
+      margin-bottom: 10px;
+
+      @include _Tablet {
+         font-size: rem(20);
+      }
+
+      @include _Desktop {
+         font-size: rem(22);
+      }
+   }
+
+   &__subname {
+      font-size: rem(18);
+      font-weight: 350;
+
+      @include _Tablet {
+         font-size: rem(16);
+      }
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
+   }
+
+   &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex-grow: 1;
+   }
+
+   &__footer {
+      display: flex;
+      justify-content: space-between;
+
+      @include _Tablet {
+         order: 1;
+      }
+   }
+
+   &__rating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+   }
+
+   &__date {
+      font-size: rem(18);
+      font-weight: 350;
+
+      @include _Tablet {
+         font-size: rem(16);
+      }
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
+   }
+
+   &__content {
+      font-size: rem(18);
+
+      @include _Tablet {
+         font-size: rem(16);
+         flex-grow: 1;
+      }
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
+   }
+}

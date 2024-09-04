@@ -1,0 +1,86 @@
+.grey-overlay {
+   background: #474747dd !important;
+}
+
+.glightbox-slider {
+}
+
+.glightbox-reviews-popup {
+   .gslide-media {
+      border-radius: 20px;
+      padding: 20px;
+      width: auto !important;
+      height: 550px !important;
+      @include _Tablet {
+         padding: 30px;
+         width: 510px !important;
+         height: 360px !important;
+      }
+
+      @include _Desktop {
+         width: 910px !important;
+         height: 420px !important;
+         //padding-top: 70px;
+      }
+   }
+}
+
+.gslide-inline .ginlined-content {
+   padding: 0;
+}
+
+.gprev.gbtn {
+   position: absolute;
+   background-color: #a2a2a2;
+   bottom: 0;
+   left: 0;
+   transform: translateY(-50%);
+
+   @include _Tablet {
+      left: 80px;
+      top: 50%;
+   }
+
+   @include _Desktop {
+      left: 100px;
+   }
+
+   @include _LDesktop {
+      left: 200px;
+   }
+}
+
+.gnext.gbtn {
+   background-color: #a2a2a2;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   transform: translateY(-50%);
+
+   @include _Tablet {
+      right: 80px;
+      top: 50%;
+   }
+
+   @include _Desktop {
+      right: 100px;
+   }
+
+   @include _LDesktop {
+      right: 200px;
+   }
+}
+
+.gclose.gbtn {
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: translate(50%, -50%);
+   width: 18px;
+   height: 18px;
+
+   svg {
+      width: 100%;
+      height: 100%;
+   }
+}

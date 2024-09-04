@@ -33,7 +33,7 @@
 .overview-product-slide {
    &__img {
       height: 220px;
-      display: inline-block;
+      display: block;
 
       @include _Tablet {
          height: 200px;

@@ -1,0 +1,46 @@
+.video-one-item {
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @include _Desktop {
+         flex-direction: row;
+      }
+   }
+
+   &__video {
+      flex: 0 0 66%;
+   }
+
+   &__substrate {
+      position: relative;
+      height: 210px;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(22, 28, 45, 0.19);
+         border-radius: 14px;
+         z-index: 1;
+         box-shadow: 0px 21.21px 23.26px -13.68px rgba(0, 0, 0, 0.09);
+      }
+
+      @include _Tablet {
+         height: 440px;
+      }
+
+      @include _Desktop {
+         height: 480px;
+      }
+   }
+
+   &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+   }
+}
