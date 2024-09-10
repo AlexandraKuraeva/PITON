@@ -1,26 +1,24 @@
-import { nextArrow, prevArrow } from "./html-fragments.js";
+import { btnClose, nextArrow, prevArrow } from "./html-fragments.js";
 
 function popupReviewInit() {
    const customLightboxHTML = `
-	 		<div id="glightbox-body" class="glightbox-container glightbox-reviews-popup">
+	   <div id="glightbox-body" class="glightbox-container glightbox-reviews-popup">
 	 		<div class="gloader visible"></div>
 	 		<div class="goverlay grey-overlay"></div>
 	 		<div class="gcontainer">
 		
-		<div id="glightbox-slider" class="gslider">		
-			
-		</div>
-								
-				<div class="gprev gbtn swiper-button__prev image-slider__prev " tabindex="1" aria-label="Previous">${prevArrow}</div>gwrapper-custom
-				<div class="gnext gbtn swiper-button__next image-slider__next " tabindex="0" aria-label="Next">${nextArrow}</div>					
-					
-				<div class="gclose gbtn" tabindex="2" aria-label="Close"> </div>		
-				
+		      <div id="glightbox-slider" class="gslider"></div>
+											
+			   <div class="gprev gbtn swiper-button__prev image-slider__prev " tabindex="1" aria-label="Previous">${prevArrow}</div>
+			   <div class="gnext gbtn  swiper-button__next image-slider__next " tabindex="0" aria-label="Next">${nextArrow}</div>					
+    <div class="gclose gbtn reviews-popup__close" tabindex="2" aria-label="Close">${btnClose}</div>	
+			   					
 	 		</div>
-	 		</div>`;
+	 	</div>`;
 
    const lightBox = GLightbox({
       skin: "reviews-popup",
+
       lightboxHTML: customLightboxHTML,
    });
 
@@ -39,7 +37,8 @@ function popupReviewInit() {
       const contentPopup = `
 				<div class="review-popup">
 				
-   <div class="review-popup__wrapper">
+      <div class="review-popup__wrapper">
+     
       <div class="review-popup__body">
          <div class="review-popup__top">
             <div class="review-popup__img"><img src="../../../images/product-card/logo.png" /></div>

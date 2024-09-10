@@ -17,3 +17,20 @@
       font-size: rem(60);
    }
 }
+
+.h1--product-detail {
+   font-size: rem(22);
+   font-weight: 700;
+   text-transform: none;
+   span {
+      font-weight: 350;
+   }
+
+   @include _Tablet {
+      font-size: rem(22);
+   }
+
+   @include _Desktop {
+      font-size: rem(24);
+   }
+}

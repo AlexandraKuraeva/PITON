@@ -13,19 +13,20 @@ class CatalogDetail {
 
          breakpoints: {
             768: {
-               slidesPerView: 4,
                spaceBetween: 14,
             },
             992: {
+               slidesPerView: 4,
                spaceBetween: 18,
             },
-            1200: {},
+            1200: { slidesPerView: 4 },
          },
       });
 
       this.mainSlider = new Swiper(this.mainSliderField, {
          slidesPerView: 1,
          spaceBetween: 20,
+         loop: true,
          navigation: {
             nextEl: ".catalog-detail-slider__next",
             prevEl: ".catalog-detail-slider__prev",

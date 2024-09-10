@@ -1,7 +1,13 @@
 export function lightboxImg() {
-   const lightBoxVideo = GLightbox({
-      selector: ".glightbox-img",
+   const lightBoxOverview = GLightbox({
+      selector: ".overview-glightbox-img",
+      closeButton: true,
       loop: false,
    });
-   return lightBoxVideo;
+   const lightBoxImgProduct = GLightbox({
+      selector: ".product-glightbox-img",
+      closeButton: true,
+      loop: false,
+   });
+   return { lightBoxOverview, lightBoxImgProduct };
 }

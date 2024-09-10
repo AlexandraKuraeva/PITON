@@ -1,5 +1,5 @@
 @@include('../blocks/header-with-margin.html')
-<div class="breadcrumbs">
+<div class="breadcrumbs background-light-grey">
    <div class="container">
       <div class="breadcrumbs__body">
          <ul class="breadcrumbs__list">
@@ -14,6 +14,9 @@
                <a class="breadcrumbs__link" href="#">Станки для лазерной резки листового металла </a>
             </li>
             <li class="breadcrumbs__item">
+               <a class="breadcrumbs__link" href="#">Бюджетная серия лазерных металлорезчиков SEKIRUS </a>
+            </li>
+            <li class="breadcrumbs__item">
                <a class="breadcrumbs__link" href="#">Лазерный станок по металлу SEKIRUS P2902M-3015E 1500 Вт</a>
             </li>
          </ul>
@@ -21,69 +24,174 @@
    </div>
 </div>
 
-<section class="section catalog-detail background-grey">
+<section class="section catalog-detail background-light-grey section_first">
    <div class="catalog-detail__wrapper">
       <div class="container">
-         <div class="catalog-detail__slider catalog-detail-slider">
-            <div class="catalog-detail-slider__body">
-               <div class="catalog-detail-slider__main swiper">
-                  <span class="catalog-detail-slider__item-label">новинка</span>
-                  <div class="catalog-detail-slider__list swiper-wrapper">
-                     <div class="catalog-detail-slider__item swiper-slide">
-                        <img src="../../images/product-card/2x.jpg" alt="" />
+         <div class="catalog-detail__body">
+            <div class="catalog-detail__top-mobile product-detail">
+               <h1 class="h1 product-detail__title h1--product-detail">
+                  Лазерный станок по металлу
+                  <span>
+                     SEKIRUS P2902M-3015E <br />
+                     1500 Вт
+                  </span>
+               </h1>
+               <div class="product-detail__status">
+                  <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M6.57216 13C6.2614 13 5.95124 12.8783 5.71392 12.6343L0 6.7587L1.71648 4.99304L6.57216 9.98608L16.2835 0L18 1.76566L7.4304 12.6343C7.19308 12.8783 6.88292 13 6.57216 13Z"
+                        fill="#E52C2D"
+                     />
+                  </svg>
+                  Есть в наличии
+               </div>
+            </div>
+
+            <div class="catalog-detail__slider catalog-detail-slider">
+               <div class="catalog-detail-slider__body">
+                  <!-- Слайдер с основным изображением -->
+                  <div class="catalog-detail-slider__main swiper">
+                     <p class="catalog-detail-slider__item-label">НОВИНКА</p>
+                     <div class="catalog-detail-slider__list swiper-wrapper">
+                        <a
+                           href="http://localhost:3000/images/product-card/1-2x.jpg"
+                           class="catalog-detail-slider__item swiper-slide product-glightbox-img"
+                        >
+                           <img src="http://localhost:3000/images/product-card/1.jpg" alt=""
+                        /></a>
+
+                        <a
+                           href="http://localhost:3000/images/product-card/1-2x.jpg"
+                           class="catalog-detail-slider__item swiper-slide product-glightbox-img"
+                        >
+                           <img src="../../images/product-card/1.jpg" alt="" />
+                        </a>
+                        <a
+                           href="http://localhost:3000/images/product-card/1-2x.jpg"
+                           class="catalog-detail-slider__item swiper-slide product-glightbox-img"
+                        >
+                           <img src="https://ir.ozone.ru/s3/multimedia-a/wc1000/6869482318.jpg" alt="" />
+                        </a>
+                        <a
+                           href="http://localhost:3000/images/product-card/1-2x.jpg"
+                           class="catalog-detail-slider__item swiper-slide product-glightbox-img"
+                        >
+                           <img src="../../images/product-card/1.jpg" alt="" />
+                        </a>
+                        <a
+                           href="http://localhost:3000/images/product-card/1-2x.jpg"
+                           class="catalog-detail-slider__item swiper-slide product-glightbox-img"
+                        >
+                           <img src="../../images/product-card/1.jpg" alt="" />
+                        </a>
                      </div>
-                     <div class="catalog-detail-slider__item swiper-slide">
-                        <img src="../../images/product-card/1.jpg" alt="" />
-                     </div>
-                     <div class="catalog-detail-slider__item swiper-slide">
-                        <img src="../../images/product-card/1.jpg" alt="" />
-                     </div>
-                     <div class="catalog-detail-slider__item swiper-slide">
-                        <img src="../../images/product-card/1.jpg" alt="" />
-                     </div>
-                     <div class="catalog-detail-slider__item swiper-slide">
-                        <img src="../../images/product-card/1.jpg" alt="" />
+                     <div class="catalog-detail-slider__nav">
+                        <div class="swiper-button__prev catalog-detail-slider__prev">
+                           <svg width="26" height="16" viewBox="0 0 26 16">
+                              <use href="../../icons/sprite.svg#nav-prev-dark-arrow"></use>
+                           </svg>
+                        </div>
+                        <div class="swiper-button__next catalog-detail-slider__next">
+                           <svg width="26" height="16" viewBox="0 0 26 16">
+                              <use href="../../icons/sprite.svg#nav-next-dark-arrow"></use>
+                           </svg>
+                        </div>
                      </div>
                   </div>
-                  <div class="catalog-detail-slider__nav">
-                     <div class="swiper-button__prev catalog-detail-slider__prev">
-                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M25 9C25.5523 9 26 8.55228 26 8C26 7.44771 25.5523 7 25 7L25 9ZM0.292893 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68054 0.538406 7.04738 0.538406 6.65686 0.92893L0.292893 7.29289ZM25 7L1 7L1 9L25 9L25 7Z"
-                              fill="#333333"
-                              fill-opacity="0.5"
-                           />
-                        </svg>
-                     </div>
-                     <div class="swiper-button__next catalog-detail-slider__next">
-                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M1 9C0.447715 9 4.82821e-08 8.55228 0 8C1.13222e-08 7.44771 0.447715 7 1 7L1 9ZM25.7071 7.29289C26.0976 7.68342 26.0976 8.31658 25.7071 8.7071L19.3431 15.0711C18.9526 15.4616 18.3195 15.4616 17.9289 15.0711C17.5384 14.6805 17.5384 14.0474 17.9289 13.6569L23.5858 8L17.9289 2.34314C17.5384 1.95262 17.5384 1.31945 17.9289 0.92893C18.3195 0.538406 18.9526 0.538406 19.3431 0.92893L25.7071 7.29289ZM1 7L25 7L25 9L1 9L1 7Z"
-                              fill="#333333"
-                              fill-opacity="0.5"
-                           />
-                        </svg>
+                  <!-- Слайдер с миниатюрами -->
+                  <div class="catalog-detail-slider__thumbs detail-slider-thumbs">
+                     <div class="detail-slider-thumbs__body detail-slider-thumbs__swiper swiper">
+                        <div class="detail-slider-thumbs__list swiper-wrapper">
+                           <div class="detail-slider-thumbs__item swiper-slide">
+                              <img
+                                 src="https://istore93.ru/upload/iblock/cd4/6xwem2go5syoa2aqdtx0gcs9dnt257nw.jpeg"
+                                 alt=""
+                              />
+                           </div>
+                           <div class="detail-slider-thumbs__item swiper-slide">
+                              <img src="../../images/product-card/1thumb.jpg" alt="" />
+                           </div>
+                           <div class="detail-slider-thumbs__item swiper-slide">
+                              <img src="https://ir.ozone.ru/s3/multimedia-a/wc1000/6869482318.jpg" alt="" />
+                           </div>
+                           <div class="detail-slider-thumbs__item swiper-slide">
+                              <img src="../../images/product-card/1thumb.jpg" alt="" />
+                           </div>
+                           <div class="detail-slider-thumbs__item swiper-slide">
+                              <img src="../../images/product-card/1thumb.jpg" alt="" />
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
-               <div class="catalog-detail-slider__thumbs detail-slider-thumbs">
-                  <div class="detail-slider-thumbs__body detail-slider-thumbs__swiper swiper">
-                     <div class="detail-slider-thumbs__list swiper-wrapper">
-                        <div class="detail-slider-thumbs__item swiper-slide">
-                           <img src="../../images/product-card/2x.jpg" alt="" />
+            </div>
+
+            <div class="catalog-detail__info product-detail-info">
+               <div class="product-detail-info__body">
+                  <div class="product-detail-info__left">
+                     <div class="catalog-detail__top-desctop product-detail">
+                        <h1 class="h1 product-detail__title h1--product-detail">
+                           Лазерный станок по металлу
+                           <span>
+                              SEKIRUS P2902M-3015E <br />
+                              1500 Вт
+                           </span>
+                        </h1>
+                        <div class="product-detail__status">
+                           <svg
+                              width="18"
+                              height="13"
+                              viewBox="0 0 18 13"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 d="M6.57216 13C6.2614 13 5.95124 12.8783 5.71392 12.6343L0 6.7587L1.71648 4.99304L6.57216 9.98608L16.2835 0L18 1.76566L7.4304 12.6343C7.19308 12.8783 6.88292 13 6.57216 13Z"
+                                 fill="#E52C2D"
+                              />
+                           </svg>
+                           Есть в наличии
                         </div>
-                        <div class="detail-slider-thumbs__item swiper-slide">
-                           <img src="../../images/product-card/1thumb.jpg" alt="" />
+                     </div>
+                     <ul class="product-detail-info__table">
+                        @@for(i = 0; i < 4; i++){
+                        <li class="product-detail-info__table-item">
+                           <div class="product-detail-info__table-key">Мощность лазера</div>
+                           <div class="product-detail-info__table-value">1500&nbsp; Вт</div>
+                        </li>
+                        }
+                     </ul>
+                     <a href="#" class="product-detail-info__show-more">Смотреть остальное</a>
+                  </div>
+                  <div class="product-detail-info__right">
+                     <div class="product-detail-info__prices">
+                        <div class="prices-block">
+                           <div class="prices-block__body">
+                              <div class="prices-block__item order">
+                                 <div class="prices-block__label">Под заказ</div>
+                                 <div class="prices-block__value">2 890 000 руб./шт</div>
+                              </div>
+                              <div class="prices-block__item warehouse">
+                                 <div class="prices-block__label">Под заказ</div>
+                                 <div class="prices-block__value">2 890 000 руб./шт</div>
+                              </div>
+                           </div>
                         </div>
-                        <div class="detail-slider-thumbs__item swiper-slide">
-                           <img src="../../images/product-card/1thumb.jpg" alt="" />
-                        </div>
-                        <div class="detail-slider-thumbs__item swiper-slide">
-                           <img src="../../images/product-card/1thumb.jpg" alt="" />
-                        </div>
-                        <div class="detail-slider-thumbs__item swiper-slide">
-                           <img src="../../images/product-card/1thumb.jpg" alt="" />
-                        </div>
+                     </div>
+                     <a href="#" target="_blank" class="product-detail-info__bidding"> Нашли дешевле? Снизим цену! </a>
+                     <button class="product-detail-info__btn button button--red">Oформить заказ</button>
+                     <button class="product-detail-info__btn button button--grey">Kонсультация</button>
+                     <div class="product-detail-info__social">
+                        <a href="#" target="_blank" class="product-detail-info__social-icon whatsapp">
+                           <svg width="41" height="41" viewBox="0 0 41 41" fill="none">
+                              <use href="../../icons/sprite.svg#whatsapp"></use>
+                           </svg>
+                        </a>
+                        <a href="#" target="_blank" class="product-detail-info__social-icon telegram">
+                           <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                              <use href="../../icons/sprite.svg#telegram"></use>
+                           </svg>
+                        </a>
                      </div>
                   </div>
                </div>
@@ -129,7 +237,7 @@
                                     <div class="swiper-slide overview-product-slide">
                                        <a
                                           href="../../images/product-card/2x.jpg"
-                                          class="overview-product-slide__img glightbox-img"
+                                          class="overview-product-slide__img overview-glightbox-img"
                                        >
                                           <img src="../../images/product-card/rew-pr.jpg" alt="" />
                                        </a>
@@ -139,64 +247,28 @@
                               </div>
                               <div class="overview-product-slider__nav image-slider__nav --mobile">
                                  <div class="swiper-button__prev image-slider__prev overview-product-swiper__prev">
-                                    <svg
-                                       width="32"
-                                       height="16"
-                                       viewBox="0 0 32 16"
-                                       fill="none"
-                                       xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                       <path
-                                          d="M31 9C31.5523 9 32 8.55228 32 8C32 7.44771 31.5523 7 31 7L31 9ZM0.292893 7.29289C-0.0976314 7.68341 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68054 0.538405 7.04738 0.538405 6.65686 0.92893L0.292893 7.29289ZM31 7L1 7L1 9L31 9L31 7Z"
-                                          fill="white"
-                                       />
+                                    <svg width="32" height="16" viewBox="0 0 32 16">
+                                       <use href="../../icons/sprite.svg#nav-prev-white-arrow"></use>
                                     </svg>
                                  </div>
                                  <div
                                     class="overview-product-swiper__pagination swiper-pagination-default swiper-pagination-default--grey"
                                  ></div>
                                  <div class="swiper-button__next image-slider__next overview-product-swiper__next">
-                                    <svg
-                                       width="32"
-                                       height="16"
-                                       viewBox="0 0 32 16"
-                                       fill="none"
-                                       xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                       <path
-                                          d="M1 9C0.447715 9 4.8282e-08 8.55228 0 8C1.13222e-08 7.44771 0.447715 7 1 7L1 9ZM31.7071 7.29289C32.0976 7.68341 32.0976 8.31658 31.7071 8.7071L25.3431 15.0711C24.9526 15.4616 24.3195 15.4616 23.9289 15.0711C23.5384 14.6805 23.5384 14.0474 23.9289 13.6569L29.5858 8L23.9289 2.34314C23.5384 1.95262 23.5384 1.31945 23.9289 0.92893C24.3195 0.538405 24.9526 0.538405 25.3431 0.92893L31.7071 7.29289ZM1 7L31 7L31 9L1 9L1 7Z"
-                                          fill="white"
-                                       />
+                                    <svg width="32" height="16" viewBox="0 0 32 16">
+                                       <use href="../../icons/sprite.svg#nav-next-white-arrow"></use>
                                     </svg>
                                  </div>
                               </div>
                               <div class="overview-product-slider__nav image-slider__nav --desktop">
                                  <div class="swiper-button__prev overview-product-swiper__prev image-slider__prev-d">
-                                    <svg
-                                       width="32"
-                                       height="16"
-                                       viewBox="0 0 32 16"
-                                       fill="none"
-                                       xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                       <path
-                                          d="M31 9C31.5523 9 32 8.55228 32 8C32 7.44771 31.5523 7 31 7L31 9ZM0.292893 7.29289C-0.0976314 7.68341 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68054 0.538405 7.04738 0.538405 6.65686 0.92893L0.292893 7.29289ZM31 7L1 7L1 9L31 9L31 7Z"
-                                          fill="white"
-                                       />
+                                    <svg width="32" height="16" viewBox="0 0 32 16">
+                                       <use href="../../icons/sprite.svg#nav-prev-white-arrow"></use>
                                     </svg>
                                  </div>
                                  <div class="swiper-button__next overview-product-swiper__next image-slider__next-d">
-                                    <svg
-                                       width="32"
-                                       height="16"
-                                       viewBox="0 0 32 16"
-                                       fill="none"
-                                       xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                       <path
-                                          d="M1 9C0.447715 9 4.8282e-08 8.55228 0 8C1.13222e-08 7.44771 0.447715 7 1 7L1 9ZM31.7071 7.29289C32.0976 7.68341 32.0976 8.31658 31.7071 8.7071L25.3431 15.0711C24.9526 15.4616 24.3195 15.4616 23.9289 15.0711C23.5384 14.6805 23.5384 14.0474 23.9289 13.6569L29.5858 8L23.9289 2.34314C23.5384 1.95262 23.5384 1.31945 23.9289 0.92893C24.3195 0.538405 24.9526 0.538405 25.3431 0.92893L31.7071 7.29289ZM1 7L31 7L31 9L1 9L1 7Z"
-                                          fill="white"
-                                       />
+                                    <svg width="32" height="16" viewBox="0 0 32 16">
+                                       <use href="../../icons/sprite.svg#nav-next-white-arrow"></use>
                                     </svg>
                                  </div>
                               </div>
