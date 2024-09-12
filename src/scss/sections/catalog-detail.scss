@@ -179,35 +179,3 @@
       }
    }
 }
-.prices-block {
-   &__body {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-bottom: 20px;
-   }
-   &__item {
-      text-align: end;
-      padding: 10px 20px;
-      border-radius: 10px;
-      &.order {
-         color: cl("white");
-         background: rgba(51, 51, 51, 0.4);
-      }
-
-      &.warehouse {
-         background: rgb(229, 226, 226);
-         color: #333;
-      }
-   }
-
-   &__label {
-      font-size: rem(14);
-      line-height: 1.5;
-   }
-
-   &__value {
-      font-weight: 700;
-      font-size: rem(18);
-   }
-}

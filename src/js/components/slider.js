@@ -25,8 +25,9 @@ function prepareOption(sliderField, slider) {
          const paginationSelector = slider.options.pagination.el;
 
          if (paginationSelector) {
-            const paginationField = wrapper.querySelector(paginationSelector);
-            resultOptions.pagination.el = paginationField ? paginationField : null;
+            const paginationField = wrapper.querySelectorAll(paginationSelector);
+            console.log(paginationField);
+            resultOptions.pagination.el = Array.from(paginationField ? paginationField : null);
          }
       }
    }

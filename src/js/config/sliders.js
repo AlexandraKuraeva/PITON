@@ -107,6 +107,35 @@ const sliders = [
          },
       },
    },
+   {
+      field: document.querySelectorAll(".similar-products-swiper"),
+      parentWrapperForActions: ".similar-products__wrapper",
+      options: {
+         speed: 300,
+         loop: false,
+         slidesPerView: "1",
+         spaceBetween: 30,
+
+         navigation: {
+            prevEl: ".similar-products__prev",
+            nextEl: ".similar-products__next",
+         },
+
+         pagination: {
+            el: ".similar-products__pagination",
+         },
+
+         breakpoints: {
+            768: {
+               slidesPerView: "2",
+            },
+
+            992: {
+               slidesPerView: "3",
+            },
+         },
+      },
+   },
 ];
 
 export { sliders };

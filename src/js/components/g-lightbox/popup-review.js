@@ -22,17 +22,17 @@ function popupReviewInit() {
       lightboxHTML: customLightboxHTML,
    });
 
-   const listLinksReviews = document.getElementsByClassName("reviews-tile__more");
+   const listLinksReviews = document.getElementsByClassName("review-tile__more");
 
    const slides = [];
 
    Array.from(listLinksReviews).forEach((link, index) => {
-      const contentWrapper = link.closest(".reviews-tile");
+      const contentWrapper = link.closest(".review-tile");
 
-      const image = contentWrapper.querySelector(".reviews-tile__avatar img").src;
-      const name = contentWrapper.querySelector(".reviews-tile__name").innerHTML;
-      const date = contentWrapper.querySelector(".reviews-tile__date").innerHTML;
-      const content = contentWrapper.querySelector(".reviews-tile__content").innerHTML;
+      const image = contentWrapper.querySelector(".review-tile__avatar img").src;
+      const name = contentWrapper.querySelector(".review-tile__name").innerHTML;
+      const date = contentWrapper.querySelector(".review-tile__date").innerHTML;
+      const content = contentWrapper.querySelector(".review-tile__content").innerHTML;
 
       const contentPopup = `
 				<div class="review-popup">
