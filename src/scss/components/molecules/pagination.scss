@@ -1,0 +1,55 @@
+.pagination {
+   &__body {
+      display: flex;
+
+      gap: 10px;
+
+      @include _Tablet {
+         gap: 20px;
+      }
+   }
+
+   &__item {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 40px;
+      border-radius: 10px;
+      cursor: pointer;
+      a {
+         color: #000;
+      }
+
+      &.nav {
+         a {
+            display: flex;
+            align-items: center;
+         }
+      }
+
+      &.nav_prev {
+         svg {
+            transform: rotate(180deg);
+         }
+      }
+
+      &.disable {
+      }
+
+      &.active {
+         background-color: cl("red");
+
+         a {
+            color: #fff;
+         }
+      }
+   }
+
+   &__left {
+   }
+
+   &__right {
+   }
+}

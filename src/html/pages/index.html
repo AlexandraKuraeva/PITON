@@ -1,4 +1,5 @@
 @@include('../blocks/header.html')
+
 <section class="hero-slider section_first">
    <div class="hero-slider__wrapper">
       <div class="hero-slider__body">
@@ -60,7 +61,7 @@
                               </div>
                               <div class="hero-slider-slide__buttons hero__buttons">
                                  <a href="##" class="button button--grey">перейти в каталог</a>
-                                 <button class="button button--red">консультация</button>
+                                 <button id="trigger-callback-modal" class="button button--red">консультация</button>
                               </div>
                            </div>
                         </div>
@@ -133,7 +134,7 @@
                               </div>
                               <div class="hero-slider-slide__buttons hero__buttons">
                                  <a href="##" class="button button--grey">перейти в каталог</a>
-                                 <button class="button button--red">консультация</button>
+                                 <button id="trigger-callback-modal" class="button button--red">консультация</button>
                               </div>
                            </div>
                         </div>
@@ -207,7 +208,7 @@
                               </div>
                               <div class="hero-slider-slide__buttons hero__buttons">
                                  <a href="##" class="button button--grey">перейти в каталог</a>
-                                 <button class="button button--red">консультация</button>
+                                 <button id="trigger-callback-modal" class="button button--red">консультация</button>
                               </div>
                            </div>
                         </div>
@@ -451,12 +452,8 @@
                         <img src="../../images/main/offer1.jpg" alt="" />
                      </div>
                      <div class="offer__date">
-                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M3.30275 15.962C3.52852 16.0525 3.79101 15.977 3.92288 15.7817L9.92281 6.84418C10.02 6.69953 10.0258 6.51687 9.93794 6.36765C9.85005 6.21796 9.68208 6.12503 9.49995 6.12503H5.49559L6.98484 0.584117C7.04491 0.360273 6.92331 0.129086 6.69725 0.0379918C6.47265 -0.0526333 6.20849 0.0233355 6.07712 0.218336L0.0771892 9.15584C-0.0199764 9.3005 -0.0258431 9.48315 0.0620559 9.63237C0.149955 9.78206 0.31792 9.875 0.500051 9.875H4.50441L3.01516 15.4159C2.95509 15.6398 3.07666 15.8709 3.30275 15.962Z"
-                              fill="#333333"
-                              fill-opacity="0.3"
-                           />
+                        <svg width="10" height="16" viewBox="0 0 10 16">
+                           <use href="../../icons/sprite.svg#date"></use>
                         </svg>
                         <span>19.01.2024</span>
                      </div>
@@ -480,12 +477,8 @@
                         <img src="../../images/main/offer1.jpg" alt="" />
                      </div>
                      <div class="offer__date">
-                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M3.30275 15.962C3.52852 16.0525 3.79101 15.977 3.92288 15.7817L9.92281 6.84418C10.02 6.69953 10.0258 6.51687 9.93794 6.36765C9.85005 6.21796 9.68208 6.12503 9.49995 6.12503H5.49559L6.98484 0.584117C7.04491 0.360273 6.92331 0.129086 6.69725 0.0379918C6.47265 -0.0526333 6.20849 0.0233355 6.07712 0.218336L0.0771892 9.15584C-0.0199764 9.3005 -0.0258431 9.48315 0.0620559 9.63237C0.149955 9.78206 0.31792 9.875 0.500051 9.875H4.50441L3.01516 15.4159C2.95509 15.6398 3.07666 15.8709 3.30275 15.962Z"
-                              fill="#333333"
-                              fill-opacity="0.3"
-                           />
+                        <svg width="10" height="16" viewBox="0 0 10 16">
+                           <use href="../../icons/sprite.svg#date"></use>
                         </svg>
                         <span>19.01.2024</span>
                      </div>
@@ -605,7 +598,7 @@
          </div>
          <div class="great-deals__btns">
             <a href="##" class="button button--grey">перейти в каталог</a>
-            <button class="button button--red">консультация</button>
+            <button id="trigger-callback-modal" class="button button--red">консультация</button>
          </div>
       </div>
    </div>
@@ -686,7 +679,7 @@
             </div>
             <div class="form-block">
                <label for="phone" class="registration-form__label label required">Телефон</label>
-               <input type="text" placeholder="+7 (999) 999 99 99" id="phone" class="input registration-form__input" />
+               <input type="tel" placeholder="+7 (999) 999 99 99" id="phone" class="input registration-form__input" />
             </div>
             <div class="form-block">
                <label for="email" class="registration-form__label">E-mail</label>

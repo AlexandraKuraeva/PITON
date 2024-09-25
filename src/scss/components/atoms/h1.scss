@@ -34,3 +34,12 @@
       font-size: rem(24);
    }
 }
+
+.h1--small {
+   font-size: rem(28);
+   text-transform: none;
+
+   @include _Desktop {
+      font-size: rem(40);
+   }
+}

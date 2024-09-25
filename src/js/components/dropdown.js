@@ -18,7 +18,7 @@ class Dropdown {
    }
 
    isOpen() {
-      return this.buttonElement.classList.contains('open');
+      return this.buttonElement.classList.contains("open");
    }
 
    openDropdown() {

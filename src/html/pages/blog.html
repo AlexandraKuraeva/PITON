@@ -1,0 +1,289 @@
+@@include('../blocks/header-with-margin.html')
+
+<section class="section blog-page section_last">
+   <div class="blog-page__wrapper">
+      <div class="container">
+         <h1 class="h1 h1--small blog-page__title">Блог</h1>
+         <div class="blog-page__body">
+            <div class="blog-page__descr">
+               <p>
+                  В нашем блоге вы найдете последние новости индустрии, полезные советы по эксплуатации оборудования и
+                  вдохновляющие истории успеха наших клиентов. Мы регулярно публикуем обзоры новых технологий, а также
+                  делимся рекомендациями по повышению эффективности производств
+               </p>
+               <p>В нашем блоге можно найти статьи по категориям, посвященные различным видам оборудования.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section blog-tabs section_last">
+   <div class="blog-tabs__wrapper">
+      <div class="container">
+         <h2 class="h2 blog-tabs__title">Категории <span>по видам оборудования</span></h2>
+
+         <div class="blog-tabs__nav">
+            <ul class="blog-tabs__nav-list">
+               <li class="blog-tabs__nav-button js-tabs__button _active" data-tab="blog-tab_1">
+                  Станки лазерной резки листового металла
+               </li>
+               <li class="blog-tabs__nav-button js-tabs__button" data-tab="blog-tab_2">
+                  Комбинированные станки раскроя (листа и труб)
+               </li>
+               <li class="blog-tabs__nav-button js-tabs__button" data-tab="blog-tab_3">
+                  Комбинированные станки раскроя (листа и труб)
+               </li>
+               <li class="blog-tabs__nav-button js-tabs__button" data-tab="blog-tab_4">
+                  Широкоформатные станки (до 4,600x26,000 мм)
+               </li>
+               <li class="blog-tabs__nav-button js-tabs__button" data-tab="blog-tab_5">Автоматизация к станкам</li>
+               <li class="blog-tabs__nav-button js-tabs__button" data-tab="blog-tab_6">
+                  Системы резки волоконным лазером
+               </li>
+               <li class="blog-tabs__nav-button js-tabs__button" data-tab="blog-tab_7">Лазерные станки 5D резки</li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="blog-tabs__body background-grey">
+         <div class="container">
+            <ul class="blog-tabs__content">
+               <li class="blog-tabs__content-item js-tabs__item _active" id="blog-tab_1">
+                  <div class="blog-tabs__content-cards">
+                     <ul class="our-blog__list">
+                        @@for(let i = 0; i < 6; i++){
+                        <li class="our-blog__item card-blog">
+                           <div class="card-blog__body">
+                              <div class="card-blog__img">
+                                 <img src="../../images/blog/2.jpg" alt="" />
+                              </div>
+                              <div class="card-blog__inner">
+                                 <a href="##" class="card-blog__link">
+                                    <div class="card-blog__top">
+                                       <div class="card-blog__tag">Оборудование</div>
+                                       <div class="card-blog__date">19.01.2024</div>
+                                    </div>
+
+                                    <div class="card-blog__title">Промышленные установки установки</div>
+                                    <p class="card-blog__text">
+                                       Промышленные роботизированные установки для сварки и очистки металла для сварки и
+                                       очистки металла
+                                    </p>
+                                    <div class="card-blog__bottom">
+                                       <svg
+                                          width="32"
+                                          height="16"
+                                          viewBox="0 0 32 16"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                       >
+                                          <path
+                                             d="M1 9C0.447715 9 4.8282e-08 8.55228 0 8C1.13222e-08 7.44771 0.447715 7 1 7L1 9ZM31.7071 7.29289C32.0976 7.68341 32.0976 8.31658 31.7071 8.7071L25.3431 15.0711C24.9526 15.4616 24.3195 15.4616 23.9289 15.0711C23.5384 14.6805 23.5384 14.0474 23.9289 13.6569L29.5858 8L23.9289 2.34314C23.5384 1.95262 23.5384 1.31945 23.9289 0.92893C24.3195 0.538405 24.9526 0.538405 25.3431 0.92893L31.7071 7.29289ZM1 7L31 7L31 9L1 9L1 7Z"
+                                             fill="#E52C2D"
+                                          />
+                                       </svg>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </li>
+                        }
+                     </ul>
+                  </div>
+                  <div class="blog-tabs__content-bottom">
+                     <div class="pagination blog-tabs__pagination">
+                        <div class="pagination__body">
+                           <div class="pagination__item nav nav_prev disable">
+                              <a href="javascript:void(0);" class="pagination__left"
+                                 ><svg width="22" height="16" viewBox="0 0 22 16">
+                                    <use href="../../icons/sprite.svg#pagination_arrow"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                           <div class="pagination__item active">
+                              <a href="javascript:void(0);">1</a>
+                           </div>
+                           <div class="pagination__item">
+                              <a href="javascript:void(0);">2</a>
+                           </div>
+                           <div class="pagination__item">
+                              <a href="javascript:void(0);">3</a>
+                           </div>
+                           <div class="pagination__item">
+                              <a href="javascript:void(0);">4</a>
+                           </div>
+                           <div class="pagination__item nav">
+                              <a href="javascript:void(0);" class="pagination__right"
+                                 ><svg width="22" height="16" viewBox="0 0 22 16">
+                                    <use href="../../icons/sprite.svg#pagination_arrow"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="#" class="blog-tabs__btn-show-more button button--red">Показать еще</a>
+                  </div>
+               </li>
+               <li class="blog-tabs__content-item js-tabs__item" id="blog-tab_2">
+                  <div class="blog-tabs__content-cards">
+                     <ul class="our-blog__list">
+                        @@for(let i = 0; i < 6; i++){
+                        <li class="our-blog__item card-blog">
+                           <div class="card-blog__body">
+                              <div class="card-blog__img">
+                                 <img src="../../images/blog/1.jpg" alt="" />
+                              </div>
+                              <div class="card-blog__inner">
+                                 <a href="##" class="card-blog__link">
+                                    <div class="card-blog__top">
+                                       <div class="card-blog__tag">Оборудование</div>
+                                       <div class="card-blog__date">19.01.2024</div>
+                                    </div>
+
+                                    <div class="card-blog__title">Установки</div>
+                                    <p class="card-blog__text">
+                                       Промышленные роботизированные установки для сварки и очистки металла для сварки и
+                                       очистки металла
+                                    </p>
+                                    <div class="card-blog__bottom">
+                                       <svg
+                                          width="32"
+                                          height="16"
+                                          viewBox="0 0 32 16"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                       >
+                                          <path
+                                             d="M1 9C0.447715 9 4.8282e-08 8.55228 0 8C1.13222e-08 7.44771 0.447715 7 1 7L1 9ZM31.7071 7.29289C32.0976 7.68341 32.0976 8.31658 31.7071 8.7071L25.3431 15.0711C24.9526 15.4616 24.3195 15.4616 23.9289 15.0711C23.5384 14.6805 23.5384 14.0474 23.9289 13.6569L29.5858 8L23.9289 2.34314C23.5384 1.95262 23.5384 1.31945 23.9289 0.92893C24.3195 0.538405 24.9526 0.538405 25.3431 0.92893L31.7071 7.29289ZM1 7L31 7L31 9L1 9L1 7Z"
+                                             fill="#E52C2D"
+                                          />
+                                       </svg>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </li>
+                        }
+                     </ul>
+                  </div>
+                  <div class="blog-tabs__content-bottom">
+                     <div class="pagination blog-tabs__pagination">
+                        <div class="pagination__body">
+                           <div class="pagination__item nav nav_prev disable">
+                              <a href="javascript:void(0);" class="pagination__left"
+                                 ><svg width="22" height="16" viewBox="0 0 22 16">
+                                    <use href="../../icons/sprite.svg#pagination_arrow"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                           <div class="pagination__item active">
+                              <a href="javascript:void(0);">1</a>
+                           </div>
+                           <div class="pagination__item">
+                              <a href="javascript:void(0);">2</a>
+                           </div>
+                           <div class="pagination__item">
+                              <a href="javascript:void(0);">3</a>
+                           </div>
+                           <div class="pagination__item">
+                              <a href="javascript:void(0);">4</a>
+                           </div>
+                           <div class="pagination__item nav">
+                              <a href="javascript:void(0);" class="pagination__right"
+                                 ><svg width="22" height="16" viewBox="0 0 22 16">
+                                    <use href="../../icons/sprite.svg#pagination_arrow"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="#" class="blog-tabs__btn-show-more button button--red">Показать еще</a>
+                  </div>
+               </li>
+               <li class="blog-tabs__content-item js-tabs__item" id="blog-tab_3">
+                  <div class="blog-tabs__content-cards">
+                     <ul class="our-blog__list">
+                        @@for(let i = 0; i < 6; i++){
+                        <li class="our-blog__item card-blog">
+                           <div class="card-blog__body">
+                              <div class="card-blog__img">
+                                 <img src="../../images/blog/3.jpg" alt="" />
+                              </div>
+                              <div class="card-blog__inner">
+                                 <a href="##" class="card-blog__link">
+                                    <div class="card-blog__top">
+                                       <div class="card-blog__tag">Оборудование</div>
+                                       <div class="card-blog__date">19.01.2024</div>
+                                    </div>
+
+                                    <div class="card-blog__title">Оборудование</div>
+                                    <p class="card-blog__text">
+                                       Промышленные роботизированные установки для сварки и очистки металла для сварки и
+                                       очистки металла
+                                    </p>
+                                    <div class="card-blog__bottom">
+                                       <svg
+                                          width="32"
+                                          height="16"
+                                          viewBox="0 0 32 16"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                       >
+                                          <path
+                                             d="M1 9C0.447715 9 4.8282e-08 8.55228 0 8C1.13222e-08 7.44771 0.447715 7 1 7L1 9ZM31.7071 7.29289C32.0976 7.68341 32.0976 8.31658 31.7071 8.7071L25.3431 15.0711C24.9526 15.4616 24.3195 15.4616 23.9289 15.0711C23.5384 14.6805 23.5384 14.0474 23.9289 13.6569L29.5858 8L23.9289 2.34314C23.5384 1.95262 23.5384 1.31945 23.9289 0.92893C24.3195 0.538405 24.9526 0.538405 25.3431 0.92893L31.7071 7.29289ZM1 7L31 7L31 9L1 9L1 7Z"
+                                             fill="#E52C2D"
+                                          />
+                                       </svg>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </li>
+                        }
+                     </ul>
+                  </div>
+                  <div class="blog-tabs__content-bottom">
+                     <div class="pagination blog-tabs__pagination">
+                        <div class="pagination__body">
+                           <div class="pagination__item nav nav_prev disable">
+                              <a href="javascript:void(0);" class="pagination__left"
+                                 ><svg width="22" height="16" viewBox="0 0 22 16">
+                                    <use href="../../icons/sprite.svg#pagination_arrow"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                           <div class="pagination__item active">
+                              <a href="javascript:void(0);">1</a>
+                           </div>
+                           <div class="pagination__item">
+                              <a href="javascript:void(0);">2</a>
+                           </div>
+                           <div class="pagination__item">
+                              <a href="javascript:void(0);">3</a>
+                           </div>
+                           <div class="pagination__item">
+                              <a href="javascript:void(0);">4</a>
+                           </div>
+                           <div class="pagination__item nav">
+                              <a href="javascript:void(0);" class="pagination__right"
+                                 ><svg width="22" height="16" viewBox="0 0 22 16">
+                                    <use href="../../icons/sprite.svg#pagination_arrow"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="#" class="blog-tabs__btn-show-more button button--red">Показать еще</a>
+                  </div>
+               </li>
+               <li class="blog-tabs__content-item js-tabs__item" id="blog-tab_4">tab4</li>
+               <li class="blog-tabs__content-item js-tabs__item" id="blog-tab_5">tab5</li>
+               <li class="blog-tabs__content-item js-tabs__item" id="blog-tab_6">tab6</li>
+               <li class="blog-tabs__content-item js-tabs__item" id="blog-tab_7">tab7</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+@@include('../blocks/footer.html')

@@ -1,0 +1,67 @@
+.counter-input {
+   display: flex;
+   &__button {
+      position: relative;
+      width: 35px;
+      cursor: pointer;
+   }
+
+   &__button--increment {
+      &::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 10px;
+         height: 2px;
+         background-color: #333333;
+      }
+   }
+   &__button--decrement {
+      &::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 10px;
+         height: 2px;
+         background-color: #333333;
+      }
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 2px;
+         height: 10px;
+         background-color: #333333;
+      }
+   }
+
+   &__number {
+   }
+
+   &__number-input {
+      font-weight: 700;
+      display: block;
+      width: 35px;
+      text-align: center;
+      border: none;
+      border-left: 1px solid #3333334d;
+      border-right: 1px solid #3333334d;
+      @include _Desktop {
+         font-size: rem(18);
+      }
+   }
+}
+
+.is-increment-disabled {
+}
+.is-decrement-disabled {
+}
+.js-quantity-input {
+}

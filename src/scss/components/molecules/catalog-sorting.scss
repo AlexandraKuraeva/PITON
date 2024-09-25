@@ -1,0 +1,33 @@
+.catalog-sorting {
+   &__wrapper {
+      position: relative;
+      &:after {
+         content: " ";
+         position: absolute;
+         right: 20px;
+         top: 50%;
+         transform: translateY(-50%) rotate(180deg);
+         pointer-events: none;
+         width: 10px;
+         height: 10px;
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         background-image: url("../../../icons/arrow-sort.svg");
+      }
+   }
+   &__select {
+      appearance: none;
+      width: 100%;
+      padding: 12px 20px;
+      background-color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 350;
+
+      &:focus {
+         outline: none;
+      }
+   }
+}

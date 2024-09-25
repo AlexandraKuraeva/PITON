@@ -1,0 +1,92 @@
+@@include('../blocks/header.html')
+
+<section class="hero section_first">
+   <div class="hero__wrapper">
+      <div class="container">
+         <div class="hero__body">
+            <div class="hero__background">
+               <div class="hero__background-img">
+                  <picture>
+                     <source srcset="../../images/hero/feedback-1400.jpg" media="(min-width: 992px)" />
+                     <source srcset="../../images/hero/feedback-768.jpg" media="(min-width: 550px)" />
+                     <img src="../../images/hero/feedback-360.jpg" alt="" />
+                  </picture>
+               </div>
+            </div>
+            <div class="hero__background-left-side"></div>
+            <div class="hero__background-top-side"></div>
+            <div class="hero__content">
+               <h1 class="h1 hero__title">отзывы <span>о компании</span></h1>
+               <p class="hero__desc">
+                  Более 10 лет мы работаем для вас, постоянно совершенствуясь. Мы будем рады получить ваши отзывы, чтобы
+                  сделать наше сотрудничество еще лучше. Спасибо за вашу поддержку и доверие!
+               </p>
+               <div class="hero__buttons">
+                  <a href="##" class="button button--red">оставить отзыв</a>
+                  <button id="trigger-callback-modal" class="button button--grey">написать директору</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section reviews background-grey">
+   <div class="reviews__wrapper">
+      <div class="container">
+         <h2 class="h2 reviews__title">Благодарственные <span>письма</span></h2>
+         <div class="reviews__body">
+            <div class="reviews__descr">
+               <p>
+                  Мы искренне благодарны нашим клиентам за доверие и плодотворное сотрудничество. Ваши теплые слова и
+                  благодарственные письма вдохновляют нас на дальнейшее развитие и совершенствование. Мы гордимся тем,
+                  что наша работа приносит вам пользу и помогает достигать поставленных целей
+               </p>
+            </div>
+            <div class="reviews__img-slider reviews-img-slider image-slider">
+               <div class="swiper reviews-img-swiper reviews-img-slider__wrapper">
+                  <div class="swiper-wrapper">
+                     @@for(let i = 0; i < 5; i++){
+                     <div class="swiper-slide reviews-img-slider__slide">
+                        <a href="../../images/rev/2x.jpg" class="reviews-img-slider__img review-glightbox-img">
+                           <img
+                              src="https://avatars.mds.yandex.net/i?id=3719551d19bcb316b8a5b16fc2758d4d_l-4407838-images-thumbs&n=13"
+                              alt=""
+                           />
+                        </a>
+                     </div>
+                     }
+                  </div>
+               </div>
+               <div class="reviews-img-slider__nav image-slider__nav --mobile">
+                  <div class="swiper-button__prev image-slider__prev reviews-img-slider__prev">
+                     <svg width="32" height="16" viewBox="0 0 32 16">
+                        <use href="../../icons/sprite.svg#nav-prev-white-arrow"></use>
+                     </svg>
+                  </div>
+                  <div
+                     class="reviews-img-slider__pagination swiper-pagination-default swiper-pagination-default--grey"
+                  ></div>
+                  <div class="swiper-button__next image-slider__next reviews-img-slider__next">
+                     <svg width="32" height="16" viewBox="0 0 32 16">
+                        <use href="../../icons/sprite.svg#nav-next-white-arrow"></use>
+                     </svg>
+                  </div>
+               </div>
+               <div class="reviews-img-slider__nav image-slider__nav --desktop">
+                  <div class="swiper-button__prev reviews-img-slider__prev image-slider__prev-d">
+                     <svg width="32" height="16" viewBox="0 0 32 16">
+                        <use href="../../icons/sprite.svg#nav-prev-white-arrow"></use>
+                     </svg>
+                  </div>
+                  <div class="swiper-button__next reviews-img-slider__next image-slider__next-d">
+                     <svg width="32" height="16" viewBox="0 0 32 16">
+                        <use href="../../icons/sprite.svg#nav-next-white-arrow"></use>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+@@include('../blocks/footer.html')

@@ -9,5 +9,9 @@ export function lightboxImg() {
       closeButton: true,
       loop: false,
    });
-   return { lightBoxOverview, lightBoxImgProduct };
+   const lightBoxImgReview = GLightbox({
+      selector: ".review-glightbox-img",
+      closeButton: true,
+   });
+   return { lightBoxOverview, lightBoxImgProduct, lightBoxImgReview };
 }

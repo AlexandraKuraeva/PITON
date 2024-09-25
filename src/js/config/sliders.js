@@ -136,6 +136,40 @@ const sliders = [
          },
       },
    },
+   {
+      field: document.querySelectorAll(".reviews-img-swiper"),
+
+      options: {
+         speed: 300,
+         loop: true,
+         slidesPerView: "1",
+         spaceBetween: 30,
+
+         navigation: {
+            prevEl: ".reviews-img-slider__prev",
+            nextEl: ".reviews-img-slider__next",
+         },
+
+         pagination: {
+            el: ".reviews-img-slider__pagination",
+         },
+
+         breakpoints: {
+            768: {
+               slidesPerView: "2",
+            },
+
+            992: {
+               speed: 800,
+               slidesPerView: "3",
+            },
+
+            1200: {
+               slidesPerView: "4",
+            },
+         },
+      },
+   },
 ];
 
 export { sliders };

@@ -1,0 +1,72 @@
+.cart-modal-form {
+   &__body {
+      display: grid;
+      gap: 20px;
+
+      @include _Tablet {
+         row-gap: 20px;
+         column-gap: 30px;
+         grid-template-columns: repeat(2, 1fr);
+         align-items: end;
+      }
+
+      @include _Desktop {
+         grid-template-columns: repeat(4, 1fr);
+         gap: 20px;
+      }
+   }
+
+   &__field {
+   }
+
+   &__label {
+      margin-bottom: 10px;
+      display: block;
+   }
+
+   &__input {
+      height: 44px;
+   }
+
+   &__policy {
+      font-size: rem(12);
+      color: #b8b8b8;
+      a {
+         color: cl("red");
+         text-decoration: underline;
+      }
+
+      @include _Tablet {
+         order: 2;
+         align-self: start;
+      }
+
+      @include _Desktop {
+         grid-column: 1 / span 3;
+         grid-row: 2;
+      }
+   }
+
+   &__btn {
+      height: 44px;
+
+      @include _Tablet {
+         order: 1;
+      }
+      @include _Desktop {
+         padding: 11px 17px;
+      }
+   }
+
+   &__btn--grey {
+      background-color: rgba(51, 51, 51, 0.4);
+      margin-top: -10px;
+      &:hover {
+         background-color: rgba(51, 51, 51, 0.6);
+      }
+      @include _Tablet {
+         order: 3;
+         margin-top: 0;
+      }
+   }
+}

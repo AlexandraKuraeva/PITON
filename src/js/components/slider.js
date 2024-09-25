@@ -26,7 +26,7 @@ function prepareOption(sliderField, slider) {
 
          if (paginationSelector) {
             const paginationField = wrapper.querySelectorAll(paginationSelector);
-            console.log(paginationField);
+
             resultOptions.pagination.el = Array.from(paginationField ? paginationField : null);
          }
       }
@@ -58,7 +58,6 @@ function initSliders() {
    const allSliders = [];
 
    sliders.forEach((slider) => {
-      console.log(slider);
       //console.log(isNodeList(slider.field));
 
       if (isNodeList(slider.field)) {

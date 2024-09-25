@@ -25,6 +25,4 @@ class Header {
    }
 }
 
-const header = new Header();
-
-export { header };
+export { Header };

@@ -1,0 +1,163 @@
+<!-- Заявка -->
+<div class="modal callback-modal" id="callback-modal">
+   <div class="callback-modal__wrapper modal__wrapper">
+      <div class="callback-modal__body">
+         <h2 class="h2 callback-modal__title">Заявка</h2>
+         <p class="callback-modal__subtitle">Оставьте заявку, и мы свяжемся с Вами в ближайшее время</p>
+         <form class="callback-modal__form callback-modal-form">
+            <div class="callback-modal-form__body">
+               <div class="feedback-form__field">
+                  <label for="name" class="feedback-form__label label required">Ваше имя</label>
+                  <input id="name" type="text" class="input feedback-form__input" required placeholder="Имя" />
+               </div>
+               <div class="feedback-form__field">
+                  <label for="phone" class="feedback-form__label label required">Телефон</label>
+                  <input
+                     id="phone"
+                     type="tel"
+                     class="input feedback-form__input"
+                     required
+                     placeholder="+7 (999) 999 99 99"
+                  />
+               </div>
+               <div class="feedback-form__field">
+                  <label for="question" class="feedback-form__label label">Комментарий</label>
+                  <textarea id="question" type="text" class="input feedback-form__textarea callback-modal__textarea">
+                  </textarea>
+               </div>
+               <div class="feedback-form__policy">
+                  Нажимая “Отправить”, вы соглашаетесь с <a href="##">политикой обработки персональных данных</a>
+               </div>
+               <button type="submit" id="show-success-modal" class="button button--red feedback-form__btn">
+                  Отправить
+               </button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+
+<!-- Спасибо за заявку -->
+<div class="modal" id="success-modal">
+   <div class="modal__wrapper">
+      <h2 class="h2">Заявка отправлена</h2>
+      <p class="callback-modal__subtitle">Мы свяжемся с Вами в ближайшее время</p>
+   </div>
+</div>
+
+<!-- Корзина -->
+<div class="modal cart-modal" id="cart-modal">
+   <div class="cart-modal__wrapper">
+      <div class="cart-modal__body">
+         <h3 class="h3 cart-modal__title">Вы выбрали:</h3>
+         <div class="cart-modal__cart cart-products">
+            <div class="cart-products__main">
+               <div class="cart-products__header-labels">
+                  <div class="cart-products__header-label--products">Товары</div>
+                  <div class="cart-products__header-label--price">Цена</div>
+                  <div class="cart-products__header-label--quantity">Количество</div>
+               </div>
+               <ul class="cart-products__list">
+                  @@for(let i = 0; i < 2; i++){
+                  <li class="cart-products__item product-card">
+                     <div class="product-card__body">
+                        <a href="" class="product-card__image">
+                           <img src="../../images/product-card/1.jpg" alt="" />
+                        </a>
+                        <a href="" class="product-card__title">
+                           Лазерный станок по металлу <br />
+                           <span>SEKIRUS P2902M-3015E 1500 Вт</span>
+                        </a>
+                        <div class="product-card__info">
+                           <div class="product-card__info--price">
+                              <div class="product-card__info-label label-price">Цена</div>
+                              <div class="product-card__info-value value-price">2 890 000 руб./шт</div>
+                           </div>
+                           <div class="product-card__info quantity--mobile">
+                              <div class="product-card__info-label label-quantity">Количество</div>
+                              <div class="product-card__info-value value-quantity">
+                                 <div class="product-card-count">
+                                    <div class="counter-input is-increment-disabled is-decrement-disabled">
+                                       <div class="counter-input__button counter-input__button--increment"></div>
+                                       <div class="counter-input__number">
+                                          <input
+                                             type="text"
+                                             class="counter-input__number-input js-quantity-input"
+                                             value="1"
+                                             data-min="1"
+                                             data-max="10"
+                                          />
+                                       </div>
+                                       <div class="counter-input__button counter-input__button--decrement"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="quantity--desktop">
+                           <div class="product-card__info-label label-quantity">Количество</div>
+                           <div class="product-card__info-value value-quantity">
+                              <div class="product-card-count">
+                                 <div class="counter-input is-increment-disabled is-decrement-disabled">
+                                    <div class="counter-input__button counter-input__button--increment"></div>
+                                    <div class="counter-input__number">
+                                       <input
+                                          type="text"
+                                          class="counter-input__number-input js-quantity-input"
+                                          value="1"
+                                          data-min="1"
+                                          data-max="10"
+                                       />
+                                    </div>
+                                    <div class="counter-input__button counter-input__button--decrement"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  }
+               </ul>
+            </div>
+            <div class="cart-products__total">
+               <p>Итого:</p>
+               <span>2 890 000 руб.</span>
+            </div>
+         </div>
+         <div class="cart-modal__form">
+            <form class="cart-modal-form">
+               <div class="cart-modal-form__body">
+                  <div class="cart-modal-form__field">
+                     <label for="name" class="cart-modal-form__label label required">Ваше имя</label>
+                     <input id="name" type="text" class="input cart-modal-form__input" required placeholder="Имя" />
+                  </div>
+                  <div class="cart-modal-form__field">
+                     <label for="phone" class="cart-modal-form__label label required">Телефон</label>
+                     <input
+                        id="phone"
+                        type="tel"
+                        class="input cart-modal-form__input"
+                        required
+                        placeholder="+7 (999) 999 99 99"
+                     />
+                  </div>
+                  <div class="cart-modal-form__field">
+                     <label for="email" class="cart-modal-form__label label">E-mail</label>
+                     <input type="text" placeholder="mail@domen.com" id="email" class="input cart-modal-form__input" />
+                  </div>
+                  <div class="cart-modal-form__policy">
+                     Нажимая “Oформить заказ”, вы соглашаетесь с
+                     <a href="##">политикой обработки персональных данных</a>
+                  </div>
+                  <button id="show-success-modal" class="button cart-modal-form__btn button--red">
+                     оформить заказ
+                  </button>
+                  <a href="" type="submit" class="button cart-modal-form__btn cart-modal-form__btn--grey"
+                     >продолжить покупки</a
+                  >
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>

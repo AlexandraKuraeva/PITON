@@ -1,0 +1,37 @@
+.cart-modal {
+   display: none;
+   padding: 0;
+   width: 95%;
+   @include _Tablet {
+   }
+
+   @include _Desktop {
+      width: 1170px;
+   }
+
+   &__wrapper {
+      padding: 20px;
+
+      @include _Tablet {
+         padding: 30px;
+      }
+   }
+
+   &__body {
+   }
+
+   &__title {
+      margin-bottom: 30px;
+
+      @include _Tablet {
+         margin-bottom: 40px;
+      }
+
+      @include _Desktop {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__cart {
+   }
+}

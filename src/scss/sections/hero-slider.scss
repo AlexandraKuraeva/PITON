@@ -7,13 +7,6 @@
    &__body {
    }
 }
-.section {
-   &_first {
-   }
-}
-
-.hero-slider-swiper {
-}
 
 .hero-slider-slide {
    &__wrapper {
@@ -26,7 +19,6 @@
       position: absolute;
       top: 0;
       right: 0;
-
       width: 100%;
       height: 450px;
       z-index: -1;
@@ -97,27 +89,6 @@
    &__buttons {
    }
 }
-.hero {
-   &__content {
-   }
-
-   &__title {
-   }
-
-   &__desc {
-   }
-
-   &__buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-
-      @include _Tablet {
-         flex-direction: row;
-         gap: 20px;
-      }
-   }
-}
 
 .swiper-buttons--mobile {
    margin-bottom: 20px;
@@ -140,33 +111,5 @@
 
    @include _Desktop {
       bottom: 60px;
-   }
-}
-
-@keyframes fadeInUpSD {
-   0% {
-      opacity: 0;
-      transform: translate3d(0, 50px, 0);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-   }
-}
-
-.hero-slider-swiper .swiper-slide-active .hero__title {
-   @include _Tablet {
-      animation: fadeInUpSD 0.2s both 0s;
-   }
-}
-.hero-slider-swiper .swiper-slide-active .hero__desc {
-   @include _Tablet {
-      animation: fadeInUpSD 0.6s both 0.1s;
-   }
-}
-.hero-slider-swiper .swiper-slide-active .hero__buttons {
-   @include _Tablet {
-      animation: fadeInUpSD 0.8s both 0.2s;
    }
 }

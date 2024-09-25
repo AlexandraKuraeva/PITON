@@ -1,0 +1,33 @@
+.section {
+}
+.blog-page {
+   padding-top: 20px;
+
+   @include _Desktop {
+      padding-top: 40px;
+   }
+
+   &__wrapper {
+   }
+
+   &__title {
+      margin-bottom: 20px;
+
+      @include _Desktop {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__body {
+   }
+
+   &__descr {
+      p {
+         font-weight: 350;
+
+         @include _Desktop {
+            font-size: rem(18);
+         }
+      }
+   }
+}

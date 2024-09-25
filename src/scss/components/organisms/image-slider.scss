@@ -26,7 +26,7 @@
       transform: translateY(-50%);
       left: 0;
 
-      @include _Desktop {
+      @include _LDesktop {
          left: -74px;
       }
    }
@@ -37,7 +37,7 @@
       transform: translateY(-50%);
       right: 0;
 
-      @include _Desktop {
+      @include _LDesktop {
          right: -74px;
       }
    }

@@ -1,0 +1,50 @@
+.components-hardware-card {
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__img {
+      height: 200px;
+      margin-bottom: 10px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         display: block;
+         border-radius: 20px;
+      }
+
+      @include _Desktop {
+         margin-bottom: 20px;
+         height: 350px;
+      }
+   }
+
+   &__provider {
+      color: rgba(51, 51, 51, 0.4);
+      margin-bottom: 20px;
+
+      @include _Desktop {
+         margin-bottom: 30px;
+      }
+      svg {
+         margin-right: 10px;
+      }
+   }
+
+   &__title {
+      font-size: rem(18);
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 20px;
+
+      @include _Desktop {
+         font-size: rem(20);
+      }
+   }
+
+   &__descr {
+   }
+}

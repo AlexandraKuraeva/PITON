@@ -1,0 +1,35 @@
+.modal {
+   background-color: #eeeeee;
+   border-radius: 20px;
+
+   .f-button.is-close-btn {
+      top: 20px !important;
+      right: 20px !important;
+      height: auto;
+      width: auto;
+      background: none;
+
+      &:hover {
+         background: none;
+      }
+      svg {
+         width: 20px;
+         height: 20px;
+         path {
+            stroke: #33333380;
+         }
+      }
+
+      @include _Tablet {
+         top: 30px;
+         right: 30px;
+      }
+   }
+   &__wrapper {
+      padding: 40px 30px 30px;
+
+      @include _Tablet {
+         padding: 30px;
+      }
+   }
+}

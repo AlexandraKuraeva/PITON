@@ -1,0 +1,91 @@
+.catalog-params {
+   &__dropdown {
+   }
+
+   &__label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: rem(18);
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      font-weight: 350;
+
+      @include _Tablet {
+         font-size: rem(20);
+      }
+
+      @include _Desktop {
+         margin-bottom: 60px;
+      }
+   }
+
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__list {
+      @include _Tablet {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 30px;
+      }
+
+      @include _Desktop {
+         grid-template-columns: repeat(1, 1fr);
+         gap: 0;
+      }
+   }
+
+   &__item {
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+
+      &:last-child {
+         border: none;
+      }
+
+      @include _Tablet {
+         border-bottom: none;
+         padding: 0;
+      }
+
+      @include _Desktop {
+         padding: 20px 0;
+         &:not(:last-child) {
+            border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+         }
+      }
+   }
+
+   &__btns {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 10px;
+
+      button {
+         width: 150px;
+      }
+
+      @include _Tablet {
+         margin-top: 30px;
+         justify-content: end;
+         button {
+            width: 120px;
+         }
+      }
+
+      @include _Desktop {
+         margin-top: 40px;
+         flex-direction: column;
+         gap: 20px;
+
+         button {
+            width: 100%;
+         }
+      }
+   }
+}

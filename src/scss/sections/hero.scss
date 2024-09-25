@@ -1,0 +1,154 @@
+.hero {
+   box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.999);
+
+   &__wrapper {
+      position: relative;
+   }
+
+   &__body {
+   }
+
+   &__breadcrumbs {
+   }
+
+   &__background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 400px;
+      z-index: -2;
+
+      img {
+         width: 100%;
+         height: 100%;
+         display: block;
+         object-fit: cover;
+         object-position: left bottom;
+      }
+      @include _Tablet {
+         width: 80%;
+         height: 100%;
+      }
+
+      @include _Desktop {
+         width: 60%;
+      }
+   }
+
+   &__background-img {
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+      &::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 40%;
+
+         background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 1) 15%,
+            rgba(255, 255, 255, 0.37307422969187676) 27%,
+            rgba(255, 255, 255, 0.2190126050420168) 35%,
+            rgba(255, 255, 255, 0.006127450980392135) 40%
+         );
+
+         @include _Tablet {
+            display: none;
+         }
+      }
+   }
+
+   &__background-left-side {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+
+      background: linear-gradient(
+         90deg,
+         rgba(255, 255, 255, 1) 27%,
+         rgba(255, 255, 255, 0.5354516806722689) 58%,
+         rgba(255, 255, 255, 0) 66%
+      );
+
+      @include _Desktop {
+         background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 47%,
+            rgba(255, 255, 255, 0.37307422969187676) 72%,
+            rgba(255, 255, 255, 0.006127450980392135) 76%
+         );
+      }
+   }
+
+   &__background-top-side {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      width: 100%;
+      z-index: -1;
+
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+         180deg,
+         rgba(255, 255, 255, 1) 13%,
+         rgba(255, 255, 255, 0.6755952380952381) 31%,
+         rgba(255, 255, 255, 0.468312324929972) 39%,
+         rgba(255, 255, 255, 0.2190126050420168) 49%,
+         rgba(255, 255, 255, 0.006127450980392135) 65%
+      );
+
+      @include _Tablet {
+         height: 70%;
+      }
+   }
+
+   &__content {
+      padding: 280px 0 40px;
+      @include _Tablet {
+         padding: 230px 0 110px;
+      }
+
+      @include _Desktop {
+         padding: 320px 0 150px;
+      }
+   }
+
+   &__title {
+      margin-bottom: 20px;
+   }
+
+   &__desc {
+      font-weight: 350;
+      margin-bottom: 40px;
+
+      @include _Tablet {
+         width: 50%;
+      }
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
+   }
+
+   &__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      @include _Tablet {
+         flex-direction: row;
+         gap: 20px;
+      }
+   }
+}

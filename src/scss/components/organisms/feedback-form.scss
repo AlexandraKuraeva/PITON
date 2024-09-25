@@ -29,7 +29,11 @@
 
    &__textarea {
       height: 88px;
-      max-width: 390px;
+      max-width: 100%;
+
+      @include _Tablet {
+         max-width: 390px;
+      }
 
       @include _Desktop {
          height: 100px;

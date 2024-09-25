@@ -1,0 +1,37 @@
+.callback-modal {
+   display: none;
+   padding: 0;
+   &__wrapper {
+      padding: 30px;
+   }
+
+   &__body {
+   }
+
+   &__title {
+      text-align: center;
+   }
+
+   &__subtitle {
+      text-align: center;
+   }
+
+   &__form {
+   }
+
+   &__textarea {
+      max-width: 100%;
+
+      @include _Tablet {
+         max-width: 100%;
+      }
+   }
+}
+
+.callback-modal-form {
+   &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+}

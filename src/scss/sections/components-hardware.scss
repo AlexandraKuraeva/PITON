@@ -1,0 +1,58 @@
+.components-hardware {
+   &.shadow {
+      box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+   }
+   &__wrapper {
+   }
+
+   &__title {
+      margin-bottom: 30px;
+
+      @include _Tablet {
+         margin-bottom: 40px;
+      }
+      @include _Desktop {
+         margin-bottom: 60px;
+      }
+   }
+
+   &__body {
+   }
+
+   &__list-1-col {
+   }
+
+   &__list-2-col {
+      @include _Tablet {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 30px;
+         margin-top: 40px;
+      }
+   }
+
+   &__section {
+   }
+
+   &__sub-title {
+      font-size: rem(18);
+      font-weight: 350;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+
+      @include _Desktop {
+         font-size: rem(30);
+      }
+   }
+
+   &__items {
+      @include _Tablet {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 30px;
+      }
+   }
+
+   &__item {
+   }
+}
