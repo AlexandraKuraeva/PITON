@@ -1,6 +1,4 @@
 .hero {
-   box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.999);
-
    &__wrapper {
       position: relative;
    }
@@ -120,7 +118,7 @@
       }
 
       @include _Desktop {
-         padding: 320px 0 150px;
+         padding: 275px 0 150px;
       }
    }
 

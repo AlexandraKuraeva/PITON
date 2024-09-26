@@ -137,7 +137,7 @@ const sliders = [
       },
    },
    {
-      field: document.querySelectorAll(".reviews-img-swiper"),
+      field: document.querySelectorAll(".reviews-gallery-swiper"),
 
       options: {
          speed: 300,
@@ -146,12 +146,12 @@ const sliders = [
          spaceBetween: 30,
 
          navigation: {
-            prevEl: ".reviews-img-slider__prev",
-            nextEl: ".reviews-img-slider__next",
+            prevEl: ".reviews-gallery-slider__prev",
+            nextEl: ".reviews-gallery-slider__next",
          },
 
          pagination: {
-            el: ".reviews-img-slider__pagination",
+            el: ".reviews-gallery-slider__pagination",
          },
 
          breakpoints: {
@@ -167,6 +167,21 @@ const sliders = [
             1200: {
                slidesPerView: "4",
             },
+         },
+      },
+   },
+   {
+      field: document.querySelectorAll(".reviews-background-full-width-swiper"),
+
+      options: {
+         speed: 300,
+         loop: true,
+         slidesPerView: "1",
+         spaceBetween: 30,
+
+         navigation: {
+            prevEl: ".reviews-background-full-width-swiper__prev",
+            nextEl: ".reviews-background-full-width-swiper__next",
          },
       },
    },

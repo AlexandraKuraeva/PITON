@@ -30,24 +30,24 @@
       </div>
    </div>
 </section>
-<section class="section reviews background-grey">
-   <div class="reviews__wrapper">
+<section class="section reviews-gallery background-grey">
+   <div class="reviews-gallery__wrapper">
       <div class="container">
-         <h2 class="h2 reviews__title">Благодарственные <span>письма</span></h2>
-         <div class="reviews__body">
-            <div class="reviews__descr">
+         <h2 class="h2 reviews-gallery__title">Благодарственные <span>письма</span></h2>
+         <div class="reviews-gallery__body">
+            <div class="reviews-gallery__descr">
                <p>
                   Мы искренне благодарны нашим клиентам за доверие и плодотворное сотрудничество. Ваши теплые слова и
                   благодарственные письма вдохновляют нас на дальнейшее развитие и совершенствование. Мы гордимся тем,
                   что наша работа приносит вам пользу и помогает достигать поставленных целей
                </p>
             </div>
-            <div class="reviews__img-slider reviews-img-slider image-slider">
-               <div class="swiper reviews-img-swiper reviews-img-slider__wrapper">
+            <div class="reviews-gallery__slider reviews-gallery-slider image-slider">
+               <div class="swiper reviews-gallery-swiper reviews-gallery-slider__wrapper">
                   <div class="swiper-wrapper">
                      @@for(let i = 0; i < 5; i++){
-                     <div class="swiper-slide reviews-img-slider__slide">
-                        <a href="../../images/rev/2x.jpg" class="reviews-img-slider__img review-glightbox-img">
+                     <div class="swiper-slide reviews-gallery-slider__slide">
+                        <a href="../../images/reviews/2x.jpg" class="reviews-gallery-slider__img review-glightbox-img">
                            <img
                               src="https://avatars.mds.yandex.net/i?id=3719551d19bcb316b8a5b16fc2758d4d_l-4407838-images-thumbs&n=13"
                               alt=""
@@ -57,28 +57,28 @@
                      }
                   </div>
                </div>
-               <div class="reviews-img-slider__nav image-slider__nav --mobile">
-                  <div class="swiper-button__prev image-slider__prev reviews-img-slider__prev">
+               <div class="reviews-gallery-slider__nav image-slider__nav --mobile">
+                  <div class="swiper-button__prev image-slider__prev reviews-gallery-slider__prev">
                      <svg width="32" height="16" viewBox="0 0 32 16">
                         <use href="../../icons/sprite.svg#nav-prev-white-arrow"></use>
                      </svg>
                   </div>
                   <div
-                     class="reviews-img-slider__pagination swiper-pagination-default swiper-pagination-default--grey"
+                     class="reviews-gallery-slider__pagination swiper-pagination-default swiper-pagination-default--grey"
                   ></div>
-                  <div class="swiper-button__next image-slider__next reviews-img-slider__next">
+                  <div class="swiper-button__next image-slider__next reviews-gallery-slider__next">
                      <svg width="32" height="16" viewBox="0 0 32 16">
                         <use href="../../icons/sprite.svg#nav-next-white-arrow"></use>
                      </svg>
                   </div>
                </div>
-               <div class="reviews-img-slider__nav image-slider__nav --desktop">
-                  <div class="swiper-button__prev reviews-img-slider__prev image-slider__prev-d">
+               <div class="reviews-gallery-slider__nav image-slider__nav --desktop">
+                  <div class="swiper-button__prev reviews-gallery-slider__prev image-slider__prev-d">
                      <svg width="32" height="16" viewBox="0 0 32 16">
                         <use href="../../icons/sprite.svg#nav-prev-white-arrow"></use>
                      </svg>
                   </div>
-                  <div class="swiper-button__next reviews-img-slider__next image-slider__next-d">
+                  <div class="swiper-button__next reviews-gallery-slider__next image-slider__next-d">
                      <svg width="32" height="16" viewBox="0 0 32 16">
                         <use href="../../icons/sprite.svg#nav-next-white-arrow"></use>
                      </svg>
@@ -86,6 +86,152 @@
                </div>
             </div>
          </div>
+      </div>
+   </div>
+</section>
+
+<section class="reviews-background-full-width">
+   <div class="reviews-background-full-width__wrapper">
+      <div class="container">
+         <div class="reviews-background-full-width__body">
+            <h2 class="reviews-background-full-width__title h2">Отзывы</h2>
+            <div class="reviews-background-full-width__descr">
+               <p>
+                  Мы ценим ваше доверие и рады служить вам уже более 10 лет. Пожалуйста, поделитесь своими отзывами,
+                  чтобы мы могли продолжать улучшать нашу работу. Спасибо за ваш выбор и обратную связь!
+               </p>
+            </div>
+            <div class="reviews-background-full-width__slider">
+               <div class="swiper reviews-background-full-width-swiper">
+                  <div class="swiper-wrapper">
+                     @@for(let i = 0; i < 5; i++){
+                     <div
+                        class="swiper-slide reviews-background-full-width-swiper__slide review-background-full-width-item"
+                     >
+                        <div class="review-background-full-width-item__wrapper">
+                           <div class="review-background-full-width-item__pic">
+                              <div class="review-background-full-width-item__pic-wrap">
+                                 <picture>
+                                    <source srcset="../../images/reviews/fon-1200.jpg" media="(min-width: 1200px)" />
+                                    <source srcset="../../images/reviews/fon-360.png" media="(min-width: 768px)" />
+                                    <img src="../../images/reviews/fon-360.png" alt="" />
+                                 </picture>
+                              </div>
+                           </div>
+                           <div class="review-background-full-width-item__body">
+                              <h4 class="review-background-full-width-item__author h4">Алексей Кондратьев</h4>
+                              <div class="review-background-full-width-item__content">
+                                 <p>
+                                    PITON всегда на шаг впереди, предлагая инновационные решения, которые помогают
+                                    нашему бизнесу развиваться и процветать. 
+                                 </p>
+                              </div>
+                              <div class="review-background-full-width-item__btn-more button button--red">
+                                 подробнее
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     }
+                  </div>
+                  <div class="reviews-background-full-width-swiper__nav">
+                     <div class="reviews-background-full-width-swiper__prev swiper-button__prev">
+                        <svg width="32" height="16" viewBox="0 0 32 16">
+                           <use href="../../icons/sprite.svg#nav-prev-dark-arrow"></use>
+                        </svg>
+                     </div>
+                     <div class="reviews-background-full-width-swiper__next swiper-button__next">
+                        <svg width="32" height="16" viewBox="0 0 32 16">
+                           <use href="../../icons/sprite.svg#nav-next-dark-arrow"></use>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="reviews-text reviews-block">
+   <div class="reviews-block__wrapper reviews-text__wrapper">
+      <div class="container">
+         <div class="reviews-block__body reviews-text__body">
+            <ul class="reviews-block__list">
+               @@for(let i = 0; i < 4; i++){
+               <li class="reviews-block__item review-tile">
+                  <div class="review-tile__body">
+                     <div class="review-tile__top">
+                        <div class="review-tile__author">
+                           <div class="review-tile__avatar">
+                              <img src="../../images/product-card/ava.jpg" alt="" />
+                           </div>
+                           <div class="review-tile__info">
+                              <p class="review-tile__name">Алексей Кондратьев ${i}</p>
+                              <div class="review-tile__date">18-11-2023</div>
+                           </div>
+                        </div>
+                        <div class="review-tile__source">
+                           <img src="../../images/product-card/гис.jpg" alt="" />
+                        </div>
+                     </div>
+                     <p class="review-tile__content text-tab">
+                        Внезапно и качество на высоте и цена вполне доступная. Приятно удивлен такому сочетанию, заказал
+                        без лишних раздумий. Внезапно и качество на высоте и цена вполне доступная. Приятно удивлен
+                        такому сочетанию,
+                     </p>
+                     <div class="review-tile__footer">
+                        <div class="review-tile__rating rating">
+                           @@for(i = 0; i < 4; i++){
+                           <span> <img src="../../images/product-card/star-red.svg" alt="" /></span>
+                           }
+
+                           <span> <img src="../../images/product-card/star-grey.svg" alt="" /></span>
+                        </div>
+                        <div class="review-tile__more">
+                           <span>Подробнее</span>
+                           <svg width="22" height="8" viewBox="0 0 22 8">
+                              <use href="../../icons/sprite.svg#arrow-reviews-more-show"></use>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               }
+            </ul>
+
+            <a href="" class="reviews-block__btn button button--red">загрузить ещё</a>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section-create-review background-grey">
+   <div class="section-create-review__wrapper">
+      <div class="container">
+         <div class="section-create-review__body">
+            <h2 class="section-create-review__title h2">Оставьте отзыв <span>о нас</span></h2>
+            <p class="section-create-review__subtitle">
+               Оставьте свой отзыв и помогите другим покупателям. Отзывы помогут вам принять правильные решения и
+               сделать вашу покупку более удовлетворительной.
+            </p>
+            <ul class="section-create-review__list">
+               @@for(let i = 0; i < 4; i++){
+               <li class="section-create-review__item">
+                  <a href="#" class="section-create-review__link">
+                     <img src="../../images/reviews/soc.svg" alt="" />
+                  </a>
+               </li>
+               }
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="red-line">
+   <div class="container">
+      <div class="red-line__body">
+         <div class="red-line__text">УВЕЛИЧЬТЕ СКОРОСТЬ ПРОИЗВОДСТВА В 3 РАЗА</div>
       </div>
    </div>
 </section>

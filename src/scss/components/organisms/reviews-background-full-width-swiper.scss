@@ -1,0 +1,26 @@
+.reviews-background-full-width-swiper {
+   &__slide {
+   }
+
+   &__nav {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10;
+      display: flex;
+      gap: 20px;
+
+      @include _Desktop {
+         bottom: 30px;
+         right: 30px;
+      }
+   }
+
+   &__prev {
+      background-color: rgba(255, 255, 255, 0.8);
+   }
+
+   &__next {
+      background-color: rgba(255, 255, 255, 0.8);
+   }
+}

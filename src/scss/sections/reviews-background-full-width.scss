@@ -1,0 +1,32 @@
+.reviews-background-full-width {
+   padding: 30px 0 15px;
+   @include _Tablet {
+      padding: 60px 0 20px;
+   }
+
+   @include _Desktop {
+      padding: 80px 0 30px;
+   }
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__title {
+      margin-bottom: 30px;
+   }
+
+   &__descr {
+      color: #707070;
+      margin-bottom: 30px;
+      p {
+         @include _Desktop {
+            font-size: rem(18);
+         }
+      }
+   }
+
+   &__slider {
+   }
+}

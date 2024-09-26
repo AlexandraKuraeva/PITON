@@ -1,0 +1,31 @@
+.reviews-gallery {
+   &__wrapper {
+   }
+
+   &__title {
+      margin-bottom: 20px;
+
+      @include _Desktop {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__body {
+   }
+
+   &__descr {
+      margin-bottom: 20px;
+      font-weight: 350;
+      @include _Tablet {
+         margin-bottom: 40px;
+      }
+
+      @include _Desktop {
+         margin-bottom: 60px;
+         font-size: rem(18);
+      }
+   }
+
+   &__img-slider {
+   }
+}

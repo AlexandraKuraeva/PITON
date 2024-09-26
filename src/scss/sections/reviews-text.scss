@@ -1,0 +1,16 @@
+.reviews-text {
+   &__wrapper {
+      padding: 15px 0 20px;
+
+      @include _Tablet {
+         padding: 20px 0 30px;
+      }
+
+      @include _Desktop {
+         padding: 30px 0 40px;
+      }
+   }
+
+   &__body {
+   }
+}
