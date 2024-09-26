@@ -26,6 +26,8 @@ import { Dropdown } from "./components/dropdown.js";
 
 import initDropdownParams from "./components/dropdown-params.js";
 
+import initMap from "./components/map.js";
+
 function app() {
    const header = new Header();
 
@@ -50,6 +52,8 @@ function app() {
    initModal();
 
    initMask();
+
+   initMap();
 
    const dropdownElements = document.querySelectorAll(".dropdown-list");
 

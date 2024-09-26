@@ -30,7 +30,7 @@
       }
 
       @include _Desktop {
-         width: 60%;
+         width: 53%;
       }
    }
 
@@ -80,7 +80,7 @@
       @include _Desktop {
          background: linear-gradient(
             90deg,
-            rgba(255, 255, 255, 1) 47%,
+            rgba(255, 255, 255, 1) 51%,
             rgba(255, 255, 255, 0.37307422969187676) 72%,
             rgba(255, 255, 255, 0.006127450980392135) 76%
          );
