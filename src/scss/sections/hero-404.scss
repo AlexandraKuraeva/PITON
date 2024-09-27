@@ -1,0 +1,50 @@
+.hero-404 {
+   &__background {
+      width: 100%;
+      @include _Tablet {
+         width: 100%;
+      }
+
+      @include _Desktop {
+         width: 100%;
+      }
+   }
+
+   &__content {
+      @include _Tablet {
+         max-width: 600px;
+      }
+   }
+
+   &__title {
+      font-size: rem(90);
+      font-weight: 350;
+      color: #6b6b6b;
+
+      @include _Tablet {
+         margin-bottom: 10px;
+      }
+
+      @include _Desktop {
+         font-size: rem(120);
+      }
+   }
+
+   &__subtitle {
+      font-size: rem(18);
+      font-weight: 350;
+      margin-bottom: 40px;
+      @include _Tablet {
+         font-size: rem(28);
+      }
+
+      @include _Desktop {
+         font-size: rem(30);
+         margin-bottom: 60px;
+      }
+   }
+
+   &__btn {
+      display: inline-block;
+   }
+}

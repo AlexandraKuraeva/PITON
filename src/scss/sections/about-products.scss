@@ -1,9 +1,6 @@
 .about-products {
    &__wrapper {
    }
-}
-
-.great-deals {
    &__title {
       margin-bottom: 20px;
    }
@@ -58,6 +55,10 @@
       }
    }
 
+   &__row.row--reverse .about-products__num-list {
+      order: 1;
+   }
+
    &__num-list {
       @include _Tablet {
          flex: 0 0 calc(45% - 30px);
@@ -80,6 +81,10 @@
          flex-direction: row;
          gap: 20px;
       }
+   }
+
+   &__btns--right {
+      justify-content: end;
    }
 }
 
