@@ -29,5 +29,118 @@
       </div>
    </div>
 </section>
-<div id="map" style="width: 600px; height: 400px"></div>
+
+<section class="section store-info background-grey">
+   <div class="store-info__wrapper">
+      <div class="container">
+         <h2 class="h2 store-info__title store-info__title--mobile">Самовывоз</h2>
+         <div class="store-info__body">
+            <div class="store-info__content">
+               <h2 class="h2 store-info__title store-info__title--desktop">Самовывоз</h2>
+               <div class="store-info__content-item">
+                  <div class="store-info__content-item-row">
+                     <div class="store-info__content-item-icon">
+                        <svg width="16" height="23" viewBox="0 0 16 23">
+                           <use href="../../icons/sprite.svg#pin"></use>
+                        </svg>
+                     </div>
+                     <div class="store-info__content-item-text">
+                        <p class="store-info__content-item-text--title">Москва, ул. Енисейская, 3 к. 4, строение 5</p>
+                        <p class="store-info__content-item-text--desc">
+                           Для получения товара требуется печать или оригинал доверенности с печатью организации
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="store-info__content-item">
+                  <div class="store-info__content-item-row">
+                     <div class="store-info__content-item-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20">
+                           <use href="../../icons/sprite.svg#clock"></use>
+                        </svg>
+                     </div>
+
+                     <div class="store-info__content-item-text">
+                        <p class="store-info__content-item-text--title">ПН — ПТ С &nbsp; 10:00 до&nbsp;19:00</p>
+                        <p class="store-info__content-item-text--desc">
+                           Для получения товара требуется печать или оригинал доверенности с печатью организации
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="store-info__map map">
+               <div class="map__wrapper">
+                  <div id="map"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section delivery">
+   <div class="container">
+      <h2 class="delivery__title h2">
+         Сроки
+         <span>поставки</span>
+      </h2>
+      <div class="delivery__text">
+         <p>
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Turpis sodales conubia conubia per pharetra litora.
+            Laoreet vel efficitur per vestibulum placerat. Vitae suscipit mi lacus fusce a cubilia pellentesque. Lacus
+            pharetra sem fusce nunc magna non vulputate mattis. Et nam congue vitae augue lacus hac in.
+         </p>
+      </div>
+      <div class="delivery__body">
+         <div class="delivery__item delivery__item--table">
+            <div class="delivery__item-title">стандартный тариф <span class="delivery__item-price">990 ₽</span></div>
+            <div class="delivery__table default-table">
+               <div class="default-table__body">
+                  <div class="default-table__row">
+                     <div class="default-table__col">Ростов-на-Дону, Екатеринбург, Казань</div>
+                     <div class="default-table__col default-table__col--time">
+                        <svg width="20" height="20" viewBox="0 0 20 20">
+                           <use href="../../icons/sprite.svg#clock"></use>
+                        </svg>
+                        <span>5 — 6 дней</span>
+                     </div>
+                  </div>
+                  @@for(let i = 0; i < 4; i++){
+                  <div class="default-table__row">
+                     <div class="default-table__col">Санкт-Петербург, Тула, Нижний Новгород</div>
+                     <div class="default-table__col default-table__col--time">
+                        <svg width="20" height="20" viewBox="0 0 20 20">
+                           <use href="../../icons/sprite.svg#clock"></use>
+                        </svg>
+                        <span>1 — 2 дня</span>
+                     </div>
+                  </div>
+                  }
+               </div>
+            </div>
+         </div>
+         <div class="delivery__item delivery__item--conditions">
+            <div class="delivery__item-title">срочный тариф<span class="delivery__item-price">2 500 ₽</span></div>
+            <div class="delivery__descr-conditions">
+               <p>
+                  Оплата заказа должна быть исполнена до 11:00 текущего дня. Для подтверждения необходимо прислать
+                  платёжку, исполненную банком. В этом случае товар доставят по вашему адресу до 16:00 следующего дня,
+                  максимум 2 рабочих дня. Срочная доставка может быть недоступна для удаленных от города населенных
+                  пунктов
+               </p>
+            </div>
+            <a href="" class="button button--red delivery__btn">каталог</a>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="red-line">
+   <div class="container">
+      <div class="red-line__body">
+         <div class="red-line__text">УВЕЛИЧЬТЕ СКОРОСТЬ ПРОИЗВОДСТВА В 3 РАЗА</div>
+      </div>
+   </div>
+</section>
+
 @@include('../blocks/footer.html')

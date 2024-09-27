@@ -1,0 +1,107 @@
+.delivery {
+   &__title {
+      margin-bottom: 30px;
+   }
+
+   &__text {
+      font-weight: 350;
+      margin-bottom: 30px;
+
+      @include _Tablet {
+         margin-bottom: 40px;
+      }
+
+      @include _Desktop {
+         font-size: rem(18);
+         margin-bottom: 60px;
+      }
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @include _Tablet {
+         flex-direction: row;
+      }
+
+      @include _Desktop {
+         gap: 130px;
+      }
+   }
+
+   &__item {
+   }
+
+   &__item--table {
+      @include _Tablet {
+         flex: 0 0 56%;
+      }
+
+      @include _Desktop {
+         flex: 0 0 49%;
+      }
+   }
+
+   &__item--conditions {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__item-title {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: rem(18);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      @include _Desktop {
+         font-size: rem(20);
+         margin-bottom: 30px;
+      }
+   }
+
+   &__item-price {
+      color: cl("white");
+      font-size: rem(18);
+      font-weight: 700;
+      background-color: cl("red");
+      padding: 5px 10px;
+      border-radius: 50px;
+      margin-left: 10px;
+      line-height: 1;
+      @include _Desktop {
+         font-size: rem(20);
+         margin-left: 20px;
+      }
+   }
+
+   &__table {
+   }
+
+   &__descr-conditions {
+      color: #6b6b6b;
+      margin-bottom: 20px;
+
+      p {
+         &:first-child {
+            margin-top: 0;
+         }
+      }
+
+      @include _Tablet {
+         margin-bottom: 30px;
+      }
+      @include _Desktop {
+         font-size: rem(18);
+         flex-grow: 1;
+      }
+   }
+
+   &__btn {
+      @include _Desktop {
+         margin: 0 0 0 auto;
+         display: table;
+      }
+   }
+}
