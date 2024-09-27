@@ -35,6 +35,7 @@
    &__col {
       display: flex;
       align-items: center;
+      //text-align: right;
 
       svg {
          margin-right: 6px;
@@ -47,6 +48,13 @@
       @include _Desktop {
          font-size: rem(18);
       }
+   }
+
+   &__col--left {
+   }
+
+   &__col--right {
+      text-align: right;
    }
 
    &__col--time {

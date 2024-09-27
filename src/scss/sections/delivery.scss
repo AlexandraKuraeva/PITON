@@ -94,6 +94,11 @@
       }
       @include _Desktop {
          font-size: rem(18);
+      }
+   }
+
+   &__descr-conditions.full-height {
+      @include _Desktop {
          flex-grow: 1;
       }
    }

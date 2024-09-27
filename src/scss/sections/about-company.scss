@@ -1,4 +1,7 @@
 .about-company {
+   &.shadow {
+      box-shadow: 0px 3px 30px 0px #0000001a;
+   }
    &__wrapper {
    }
 
