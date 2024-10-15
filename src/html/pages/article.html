@@ -1,0 +1,68 @@
+@@include('../blocks/header-with-margin.html')
+
+<section class="section article">
+   <div class="article__wrapper">
+      <div class="container">
+         <div class="article__body">
+            <div class="article__top">
+               <p class="article__subtitle">Станки лазерной резки труб и профиля</p>
+               <h2 class="h2 article__title">
+                  Устройство режущей головы
+                  <span>для волоконных лазерных станков на приме ре головы BOCI: как это работает?</span>
+               </h2>
+               <div class="article__details">
+                  <div class="article__author">
+                     <div class="article__author-img">
+                        <img src="../../images/article/ava.jpg" alt="" />
+                     </div>
+                     <div class="article__author-wrapper">
+                        <div class="article__author-name">Александр Лобанов</div>
+                        <div class="article__author-descr">Специалист по устройству режущей головы</div>
+                     </div>
+                  </div>
+                  <div class="article__info">
+                     <div class="article__info-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                           <use href="../../icons/sprite.svg#article-boock"></use>
+                        </svg>
+
+                        <span class="article__info-text">8 мин.</span>
+                     </div>
+                     <div class="article__info-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                           <use href="../../icons/sprite.svg#article-clock"></use>
+                        </svg>
+
+                        <span class="article__info-text">19.01.2024</span>
+                     </div>
+
+                     <div class="article__info-item">
+                        <svg width="23" height="14" viewBox="0 0 23 14">
+                           <use href="../../icons/sprite.svg#article-views"></use>
+                        </svg>
+
+                        <span class="article__info-text">133</span>
+                     </div>
+
+                     <div class="article__rating rating">
+                        @@for(i = 0; i < 4; i++){
+                        <span> <img src="../../images/product-card/star-red.svg" alt="" /></span>
+                        }
+
+                        <span> <img src="../../images/product-card/star-grey.svg" alt="" /></span>
+
+                        <span class="article__rating-text">(10 оценок)</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="article__tags">
+                  @@for(i = 0; i < 3; i++){
+                  <a href="" class="article__tag">#sekirus</a>
+                  }
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+@@include('../blocks/footer.html')

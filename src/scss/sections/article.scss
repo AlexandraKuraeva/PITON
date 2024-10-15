@@ -1,0 +1,96 @@
+.article {
+   &__wrapper {
+   }
+
+   &__body {
+   }
+
+   &__top {
+   }
+
+   &__subtitle {
+      opacity: 0.5;
+      margin: 0;
+      margin-bottom: 10px;
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
+   }
+
+   &__title {
+      line-height: 1.1;
+      margin-bottom: 20px;
+      @include _Desktop {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__details {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__author {
+      display: flex;
+   }
+
+   &__author-wrapper {
+   }
+
+   &__author-img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         border-radius: 50%;
+      }
+   }
+
+   &__author-name {
+      font-weight: 700;
+      margin-bottom: 5px;
+      line-height: 1.1;
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
+   }
+
+   &__author-descr {
+      opacity: 0.5;
+      font-size: rem(14);
+   }
+
+   &__info {
+      display: flex;
+
+      gap: 20px;
+
+      @include _Desktop {
+         gap: 30px;
+      }
+   }
+
+   &__info-item {
+   }
+
+   &__info-text {
+   }
+
+   &__rating {
+   }
+
+   &__rating-text {
+   }
+
+   &__tags {
+   }
+
+   &__tag {
+   }
+}
