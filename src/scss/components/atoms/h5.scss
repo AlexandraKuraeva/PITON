@@ -1,0 +1,8 @@
+.h5 {
+   font-size: rem(18);
+   font-weight: 700;
+
+   @include _Desktop {
+      font-size: rem(20);
+   }
+}

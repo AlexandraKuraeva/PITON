@@ -29,6 +29,19 @@
    &__details {
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 20px;
+
+      @include _Tablet {
+         flex-direction: row;
+         margin-bottom: 5px;
+      }
+
+      @include _Desktop {
+         gap: 30px;
+         margin-bottom: 30px;
+      }
    }
 
    &__author {
@@ -64,33 +77,118 @@
    &__author-descr {
       opacity: 0.5;
       font-size: rem(14);
+      font-weight: 350;
    }
 
    &__info {
       display: flex;
-
       gap: 20px;
+      flex-wrap: wrap;
 
+      @include _Tablet {
+         width: 50%;
+         justify-content: end;
+      }
       @include _Desktop {
          gap: 30px;
       }
    }
 
    &__info-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
    }
 
    &__info-text {
+      font-size: rem(16);
+      opacity: 0.7;
+      color: #b7b7b7;
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
    }
 
    &__rating {
+      display: flex;
+      align-items: center;
+
+      @include _Tablet {
+         width: 100%;
+         justify-content: end;
+      }
+
+      @include _Desktop {
+         width: auto;
+      }
    }
 
    &__rating-text {
+      display: inline-block;
+      margin: 0;
+      font-size: rem(16);
+      opacity: 0.7;
+      color: #b7b7b7;
+      line-height: 1;
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
    }
 
    &__tags {
    }
 
    &__tag {
+      &:not(:last-child) {
+         margin-right: 5px;
+
+         @include _Desktop {
+            margin-right: 10px;
+         }
+      }
+
+      color: #e52c2d80;
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
+   }
+
+   &__begin {
+      display: grid;
+      gap: 20px;
+      padding: 40px 0 0;
+
+      @include _Tablet {
+         grid-template-columns: 1fr 270px;
+         row-gap: 40px;
+         column-gap: 30px;
+         padding: 80px 0 0;
+      }
+
+      @include _Desktop {
+         grid-template-columns: 1fr 1fr;
+         row-gap: 60px;
+         padding: 60px 0 0;
+      }
+   }
+
+   &__grade {
+      color: #33333380;
+      margin-top: 20px;
+      @include _Desktop {
+         margin-top: 40px;
+      }
+   }
+
+   &__grade-body {
+      display: flex;
+      gap: 10px;
+
+      @include _Desktop {
+         font-size: rem(18);
+      }
    }
 }

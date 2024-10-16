@@ -1,0 +1,40 @@
+.img-text-block {
+   &__full-img {
+      height: 200px;
+      margin-top: 20px;
+
+      @include _Desktop {
+         height: 300px;
+         margin-top: 40px;
+      }
+   }
+
+   &__row {
+      @include _Desktop {
+         display: flex;
+         gap: 30px;
+      }
+   }
+   &__col {
+      img {
+         margin-top: 20px;
+         max-height: 200px;
+
+         @include _Desktop {
+            margin-top: 0;
+            max-height: 280px;
+         }
+      }
+
+      @include _Desktop {
+         flex: 0 0 calc(50% - 15px);
+      }
+   }
+
+   img {
+      border-radius: 20px;
+      display: block;
+      object-fit: cover;
+      height: 100%;
+   }
+}
